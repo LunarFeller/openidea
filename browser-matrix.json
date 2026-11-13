@@ -1,0 +1,90 @@
+{
+  "results": [
+    {
+      "kind": "native-image",
+      "text": "keep prompt",
+      "draft": "keep prompt",
+      "selection": {
+        "anchor": 0,
+        "head": 4
+      },
+      "images": 1,
+      "calls": 1,
+      "prevented": true
+    },
+    {
+      "kind": "native-empty",
+      "text": "keep prompt",
+      "draft": "keep prompt",
+      "selection": {
+        "anchor": 0,
+        "head": 4
+      },
+      "images": 0,
+      "calls": 1,
+      "prevented": true
+    },
+    {
+      "kind": "native-error",
+      "text": "keep prompt",
+      "draft": "keep prompt",
+      "selection": {
+        "anchor": 0,
+        "head": 4
+      },
+      "images": 0,
+      "calls": 1,
+      "prevented": true
+    },
+    {
+      "kind": "text",
+      "text": "new prompt",
+      "draft": "new prompt",
+      "selection": {
+        "anchor": 3,
+        "head": 3
+      },
+      "images": 0,
+      "calls": 0,
+      "prevented": true
+    },
+    {
+      "kind": "rich-text",
+      "text": "new prompt",
+      "draft": "new prompt",
+      "selection": {
+        "anchor": 3,
+        "head": 3
+      },
+      "images": 0,
+      "calls": 0,
+      "prevented": true
+    },
+    {
+      "kind": "uri",
+      "text": "https://example.com prompt",
+      "draft": "https://example.com prompt",
+      "selection": {
+        "anchor": 19,
+        "head": 19
+      },
+      "images": 0,
+      "calls": 0,
+      "prevented": true
+    },
+    {
+      "kind": "image-file",
+      "text": "keep prompt",
+      "draft": "keep prompt",
+      "selection": {
+        "anchor": 0,
+        "head": 4
+      },
+      "images": 1,
+      "calls": 0,
+      "prevented": true
+    }
+  ],
+  "pageErrors": [],
+  "limitations": "Chromium; native command is stubbed and empty WebKitGTK events are replayed. This is not Linux native clipboard verification."
+}

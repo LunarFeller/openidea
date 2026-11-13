@@ -1,0 +1,73 @@
+
+ RUN  v5.0.5 /Users/Thomas/code/my_github/openidea-clipboard-tests
+
+ ✓ src/features/agents/composerFolders.test.tsx > Composer dropped paths > references files and folders dragged from the Project view 267ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer dropped paths > deduplicates live references and allows a deleted reference to be dropped again 109ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer dropped paths > maps project files and folders into the task worktree, rejecting external paths 48ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer @ folders > lists the root for a bare @ when the index has no results 144ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer @ folders > lists index folders among files and references one on Enter 157ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer @ folders > highlights the matched characters of a file name 96ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer commands > reaches commands after the first twelve with the keyboard 746ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer @ folders > keeps completing inside a folder on Tab, which drops the folder once a file is picked 136ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer commands > groups commands before skills, skips headers, wraps and hides empty groups 215ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer commands > names the icon-only Start action and disables it while starting 86ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer @ folders > references a folder of a typed path 100ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer reference chips > shows a referenced file as a chip with its name and lines, and leaves the text as written 22ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer commands > completes the project's skills merged with the agent's commands 76ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer commands > tags file references and skills where they stand 93ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer reference chips > turns a chip back into its text on Backspace, and folds it again when the caret leaves 197ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer reference chips > moves over and deletes a chip as one piece 84ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer commands > offers nothing the project does not have 134ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer reference chips > deletes a reference that names no file character by character 37ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer quotes > draws quote lines as a block without their marker 51ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer editing > offers no completion while the input method composes 35ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer commands > completes at the caret without replacing the rest of the message 119ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer commands > completes a command typed after other text in place 75ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer editing > pastes plain text as text 79ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer editing > references a pasted path of a project file, with its lines 31ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer editing > references pasted folders, several paths and file URLs 12ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer editing > pastes a path that is gone, or holds a space, as text 16ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > attaches the clipboard's image when WebKitGTK pastes an empty clipboardData 84ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer current file > offers the focused editor's file until the draft references it 17ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer pasted code and terminal output > turns terminal output into a terminal card, and opens it as text when the caret enters it 86ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with part of the prompt selected when pasting a native image 64ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with the whole prompt selected when pasting a native image 57ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with a backwards selection when pasting a native image 19ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer pasted code and terminal output > removes a card with its button 95ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer pasted code and terminal output > references the lines copied from an editor, and pastes a copied single line as text 67ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with a caret in the prompt when pasting a native image 53ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with a multiline Unicode selection when pasting a native image 72ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns no image 15ms
+stdout | src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns an error
+[error] Cannot insert image
+
+stdout | src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard request rejects
+[error] Cannot insert image
+
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns an invalid image 45ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns an error 77ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer pasted code and terminal output > pastes a stack trace as a card, its project lines as references after it 83ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer pasted code and terminal output > folds long pasted text into a card 20ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer pasted code and terminal output > pastes other text as written 14ms
+ ✓ src/features/agents/composerFolders.test.tsx > editor copies > notes the copied lines of a file editor, or the caret's line when nothing is selected 8ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard request rejects 17ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps edits made while the native image is being read 56ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > attaches an image file without replacing selected text or reading the native clipboard 87ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > leaves a text paste to the text box 35ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > still replaces selected text when pasting plain text 30ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer @ context and symbols > offers what features contribute above the files and inserts it 281ms
+ ✓ src/features/agents/composerFolders.test.tsx > Composer @ context and symbols > references a symbol's file and line with @# 114ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > still replaces selected text when pasting rich text 79ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > still replaces selected text when pasting a URI 31ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > still replaces selected text when pasting browser text 29ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer OS file drop > attaches files from outside the project and images that cannot be inlined 21ms
+ ✓ src/features/agents/composerCommands.test.tsx > workspace task project > defaults to the active member, last used member, then first member 0ms
+ ✓ src/features/agents/composerCommands.test.tsx > workspace task project > sends the selected project with local isolation 122ms
+ ✓ src/features/agents/composerCommands.test.tsx > workspace task project > sends the selected project with worktree isolation 162ms
+ ✓ src/features/agents/composerCommands.test.tsx > sendKeyAction > sends with Enter, or with the modifier, the way the settings say 0ms
+
+ Test Files  2 passed (2)
+      Tests  58 passed (58)
+   Start at  03:31:46
+   Duration  11.73s (transform 42%, tests 23%, import 17%, environment 13%, setup 4%)
+

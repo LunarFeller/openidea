@@ -1,0 +1,162 @@
+
+ RUN  v5.0.5 /Users/Thomas/code/my_github/openidea-clipboard-tests
+
+ ↓ src/features/agents/composerCommands.test.tsx > New Task composer commands > reaches commands after the first twelve with the keyboard
+ ↓ src/features/agents/composerCommands.test.tsx > New Task composer commands > groups commands before skills, skips headers, wraps and hides empty groups
+ ↓ src/features/agents/composerCommands.test.tsx > New Task composer commands > names the icon-only Start action and disables it while starting
+ ↓ src/features/agents/composerCommands.test.tsx > New Task composer commands > completes the project's skills merged with the agent's commands
+ ↓ src/features/agents/composerCommands.test.tsx > New Task composer commands > tags file references and skills where they stand
+ ↓ src/features/agents/composerCommands.test.tsx > New Task composer commands > offers nothing the project does not have
+ ↓ src/features/agents/composerCommands.test.tsx > New Task composer commands > completes at the caret without replacing the rest of the message
+ ↓ src/features/agents/composerCommands.test.tsx > New Task composer commands > completes a command typed after other text in place
+Not implemented: Window's scrollBy() method
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > attaches the clipboard's image when WebKitGTK pastes an empty clipboardData 185ms
+ × src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with part of the prompt selected when pasting a native image 42ms
+   → expected ' prompt' to be 'keep prompt' // Object.is equality
+ × src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with the whole prompt selected when pasting a native image 21ms
+   → expected '' to be 'keep prompt' // Object.is equality
+ × src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with a backwards selection when pasting a native image 39ms
+   → expected ' prompt' to be 'keep prompt' // Object.is equality
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with a caret in the prompt when pasting a native image 80ms
+ × src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with a multiline Unicode selection when pasting a native image 14ms
+   → expected 'prompt' to be '保留🙂\nprompt' // Object.is equality
+stdout | src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns an error
+[error] Cannot insert image
+
+stdout | src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard request rejects
+[error] Cannot insert image
+
+ × src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns no image 30ms
+   → expected ' prompt' to be 'keep prompt' // Object.is equality
+ × src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns an invalid image 31ms
+   → expected ' prompt' to be 'keep prompt' // Object.is equality
+ × src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns an error 25ms
+   → expected ' prompt' to be 'keep prompt' // Object.is equality
+ × src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard request rejects 40ms
+   → expected ' prompt' to be 'keep prompt' // Object.is equality
+ × src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps edits made while the native image is being read 24ms
+   → expected ' prompt' to be 'keep prompt' // Object.is equality
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > attaches an image file without replacing selected text or reading the native clipboard 27ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > leaves a text paste to the text box 25ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > still replaces selected text when pasting plain text 23ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > still replaces selected text when pasting rich text 20ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > still replaces selected text when pasting a URI 10ms
+ ✓ src/features/agents/composerCommands.test.tsx > New Task composer paste > still replaces selected text when pasting browser text 13ms
+ ↓ src/features/agents/composerCommands.test.tsx > New Task composer OS file drop > attaches files from outside the project and images that cannot be inlined
+ ↓ src/features/agents/composerCommands.test.tsx > workspace task project > defaults to the active member, last used member, then first member
+ ↓ src/features/agents/composerCommands.test.tsx > workspace task project > sends the selected project with local isolation
+ ↓ src/features/agents/composerCommands.test.tsx > workspace task project > sends the selected project with worktree isolation
+ ↓ src/features/agents/composerCommands.test.tsx > sendKeyAction > sends with Enter, or with the modifier, the way the settings say
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 9 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with part of the prompt selected when pasting a native image
+ FAIL  src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with a backwards selection when pasting a native image
+AssertionError: expected ' prompt' to be 'keep prompt' // Object.is equality
+
+Expected: "keep prompt"
+Received: " prompt"
+
+ ❯ src/features/agents/composerCommands.test.tsx:306:25
+    304|       clipboardData: { types: [], files: [], getData: () => "" },
+    305|     });
+    306|     expect(textOf(box)).toBe(text);
+       |                         ^
+    307|     expect(allowed).toBe(false);
+    308|     await waitFor(() => expect(composerDraft(HOME).images).toHaveLengt…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/9]⎯
+
+ FAIL  src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with the whole prompt selected when pasting a native image
+AssertionError: expected '' to be 'keep prompt' // Object.is equality
+
+- Expected
++ Received
+
+- keep prompt
+
+ ❯ src/features/agents/composerCommands.test.tsx:306:25
+    304|       clipboardData: { types: [], files: [], getData: () => "" },
+    305|     });
+    306|     expect(textOf(box)).toBe(text);
+       |                         ^
+    307|     expect(allowed).toBe(false);
+    308|     await waitFor(() => expect(composerDraft(HOME).images).toHaveLengt…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/9]⎯
+
+ FAIL  src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps text and selection with a multiline Unicode selection when pasting a native image
+AssertionError: expected 'prompt' to be '保留🙂\nprompt' // Object.is equality
+
+- Expected
++ Received
+
+- 保留🙂
+  prompt
+
+ ❯ src/features/agents/composerCommands.test.tsx:306:25
+    304|       clipboardData: { types: [], files: [], getData: () => "" },
+    305|     });
+    306|     expect(textOf(box)).toBe(text);
+       |                         ^
+    307|     expect(allowed).toBe(false);
+    308|     await waitFor(() => expect(composerDraft(HOME).images).toHaveLengt…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/9]⎯
+
+ FAIL  src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns no image
+ FAIL  src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns an invalid image
+ FAIL  src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard returns an error
+AssertionError: expected ' prompt' to be 'keep prompt' // Object.is equality
+
+Expected: "keep prompt"
+Received: " prompt"
+
+ ❯ src/features/agents/composerCommands.test.tsx:328:25
+    326|     });
+    327|     expect(clipboardImage).toHaveBeenCalledTimes(1);
+    328|     expect(textOf(box)).toBe("keep prompt");
+       |                         ^
+    329|     expect(composerDraft(HOME)).toMatchObject({ text: "keep prompt", i…
+    330|     expect(EditorView.findFromDOM(box)!.state.selection.main).toMatchO…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/9]⎯
+
+ FAIL  src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps selected text when the native clipboard request rejects
+AssertionError: expected ' prompt' to be 'keep prompt' // Object.is equality
+
+Expected: "keep prompt"
+Received: " prompt"
+
+ ❯ src/features/agents/composerCommands.test.tsx:342:25
+    340|       fireEvent.paste(box, { clipboardData: { types: [], files: [], ge…
+    341|     });
+    342|     expect(textOf(box)).toBe("keep prompt");
+       |                         ^
+    343|     expect(composerDraft(HOME)).toMatchObject({ text: "keep prompt", i…
+    344|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/9]⎯
+
+ FAIL  src/features/agents/composerCommands.test.tsx > New Task composer paste > keeps edits made while the native image is being read
+AssertionError: expected ' prompt' to be 'keep prompt' // Object.is equality
+
+Expected: "keep prompt"
+Received: " prompt"
+
+ ❯ src/features/agents/composerCommands.test.tsx:354:25
+    352|     setCaret(box, 0, 4);
+    353|     fireEvent.paste(box, { clipboardData: { types: [], files: [], getD…
+    354|     expect(textOf(box)).toBe("keep prompt");
+       |                         ^
+    355|     typeIn(box, "edited while reading");
+    356|     await act(async () => finish({ status: "ok", data: "data:image/png…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/9]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  9 failed | 8 passed | 13 skipped (30)
+   Start at  03:31:19
+   Duration  8.49s (transform 61%, import 16%, environment 11%, tests 8%, setup 4%)
+

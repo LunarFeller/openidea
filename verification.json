@@ -1,0 +1,97 @@
+{
+  "repository": "l0ng-ai/openidea",
+  "base_commit": "504ffac10a9bdcbc459e8074d3298f932cd794c7",
+  "fix_commit": "07c77b3126bd8c52c400e785bd749fc7131b422a",
+  "latest_main_checked": "88f73630a63d0acbbce34cbb018ac46360e7729e",
+  "main_composer_identical_to_base": true,
+  "paste_regressions": {
+    "before": {
+      "passed": 8,
+      "failed": 9,
+      "exit_code": 1
+    },
+    "after": {
+      "passed": 17,
+      "failed": 0
+    },
+    "focused_total": 58,
+    "focused_exit_code": 0
+  },
+  "full_frontend": {
+    "numTotalTests": 11277,
+    "numPassedTests": 11269,
+    "numFailedTests": 2,
+    "numPendingTests": 6,
+    "success": false
+  },
+  "unrelated_rerun": {
+    "numPassedTests": 42,
+    "numFailedTests": 0,
+    "success": true
+  },
+  "full_frontend_failed_tests": [
+    {
+      "file": "src/features/github/reviewMode/reviewMode.test.tsx",
+      "tests": [
+        "review in the editor shows the unresolved threads under their lines, following local edits"
+      ]
+    },
+    {
+      "file": "src/features/vcs/__tests__/logLoading.test.ts",
+      "tests": [
+        "commit navigation finds an old parent beyond thirty pages with one graph snapshot per check"
+      ]
+    }
+  ],
+  "static_checks": {
+    "pnpm typecheck": 0,
+    "pnpm lint": 0,
+    "pnpm format:check": 0,
+    "pnpm knip": 0,
+    "pnpm build": 0
+  },
+  "e2e": {
+    "command": "pnpm e2e e2e/agentScroll.spec.ts e2e/agentMarkdown.spec.ts e2e/agentQuestions.spec.ts e2e/agentApproval.spec.ts e2e/agentsDock.spec.ts e2e/terminal-clipboard.spec.ts --workers=2",
+    "passed": 39,
+    "exit_code": 0
+  },
+  "chromium_replay": {
+    "passed": 7,
+    "page_errors": 0,
+    "exit_code": 0
+  },
+  "native": {
+    "host": "macOS aarch64",
+    "before": {
+      "passed": 5,
+      "failed": 7
+    },
+    "after": {
+      "passed": 12,
+      "failed": 0
+    },
+    "real_backend_case": "macOS clipboard_image returns None; selected prompt is preserved after the fix",
+    "build_command": "RUSTUP_TOOLCHAIN=stable-aarch64-apple-darwin CARGO_BUILD_JOBS=2 CARGO_PROFILE_DEV_DEBUG=0 CARGO_INCREMENTAL=0 pnpm dev:app -- --config 'profile.dev.package.\"*\".opt-level=0'",
+    "app_identifier": "ai.l0ng.openidea.dev.w1ca6efd45223098b",
+    "bridge_port": 9223
+  },
+  "limitations": [
+    "Native image replies are stubbed for the Linux event replay. The macOS None case calls the real backend.",
+    "Linux and Windows native clipboard integration was not run.",
+    "The first full suite had two time-sensitive failures in unchanged review/VCS tests; both files passed their focused rerun."
+  ],
+  "independent_review": {
+    "findings": [],
+    "focused_tests_passed": 58,
+    "source_sha256": {
+      "src/features/agents/Composer.tsx": "67b1d192f3a5f47e47e041bfda3de45d9565cd4def8e1819cd593d1ed7678bb7",
+      "src/features/agents/composerCommands.test.tsx": "58cf3035dfbd8354d97d682a56a694bee5b88b9e87c5e84ad1872bb5e7de31a2"
+    }
+  },
+  "commands": {
+    "before": "pnpm vitest run src/features/agents/composerCommands.test.tsx -t \"New Task composer paste\" --reporter=verbose",
+    "after": "pnpm vitest run src/features/agents/composerCommands.test.tsx src/features/agents/composerFolders.test.tsx --reporter=verbose",
+    "full": "pnpm test --maxWorkers=4 --reporter=json",
+    "unrelated_rerun": "pnpm vitest run src/features/github/reviewMode/reviewMode.test.tsx src/features/vcs/__tests__/logLoading.test.ts --maxWorkers=1 --reporter=json"
+  }
+}

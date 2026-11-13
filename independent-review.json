@@ -1,0 +1,48 @@
+{
+  "reviewed_at_utc": "2026-11-13T19:39:32.571942+00:00",
+  "reviewer": "/root/review_clipboard_test_doubles",
+  "review_kind": "independent production-fix review; supersedes the earlier test-only review",
+  "worktree": "/Users/Thomas/code/my_github/openidea-clipboard-tests",
+  "branch": "codex/preserve-composer-text-on-image-paste",
+  "head": "504ffac10a9bdcbc459e8074d3298f932cd794c7",
+  "base": "504ffac10a9bdcbc459e8074d3298f932cd794c7",
+  "snapshot": "uncommitted diff over base",
+  "sha256": {
+    "src/features/agents/Composer.tsx": "67b1d192f3a5f47e47e041bfda3de45d9565cd4def8e1819cd593d1ed7678bb7",
+    "src/features/agents/composerCommands.test.tsx": "58cf3035dfbd8354d97d682a56a694bee5b88b9e87c5e84ad1872bb5e7de31a2"
+  },
+  "findings": [],
+  "verdict": "No actionable issues found in the reviewed production/test diff.",
+  "checks": [
+    "The highest-precedence custom paste handler prevents default synchronously and returns true before async native clipboard reading, blocking CodeMirror empty-text replacement of the selection.",
+    "Existing file-image handling uses the same event-consumption pattern; normal text, rich text, URI, copied references and path handling retain their existing flow.",
+    "HomeEditor and SessionEditor instantiate the same Composer component, covering both entry points through shared logic.",
+    "Tests provide getData consistently with the clipboard payload and use the real CodeMirror editor. They assert actual document/store text, selection and attachment state without suppressing exceptions.",
+    "The native fallback performs no editor document transaction, so the fix introduces no empty-paste text-history transaction; no separate undo runtime test was performed."
+  ],
+  "independent_tests": [
+    {
+      "command": "pnpm vitest run src/features/agents/composerCommands.test.tsx src/features/agents/composerFolders.test.tsx --reporter=verbose",
+      "exit_code": 0,
+      "test_files_passed": 2,
+      "tests_passed": 58,
+      "tests_failed": 0,
+      "duration_seconds": 51.55,
+      "unhandled_error_markers": 0,
+      "log": "/tmp/openidea-composer-clipboard-20261114/review/product-file-tests.log"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "before_after_evidence_inspected": {
+    "before": "/tmp/openidea-composer-clipboard-20261114/before-product-fix.log",
+    "before_result": "Same expanded paste group before production fix: 9 failed, 8 passed, 13 skipped; selected prompt text is replaced by empty text.",
+    "after": "/tmp/openidea-composer-clipboard-20261114/after-product-fix.log",
+    "after_result": "Parent run: 2 files, 58 passed; independently confirmed above."
+  },
+  "limitations": [
+    "Independent tests use jsdom/component integration; native OS clipboard verification and wider checks are handled by the parent agent. No Rust/Tauri build or external post was performed by this reviewer."
+  ]
+}

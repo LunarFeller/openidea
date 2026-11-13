@@ -1,0 +1,267 @@
+{
+  "data": {
+    "limitations": "Native macOS WebView. Empty clipboard events replay the Linux shape; image replies are stubbed except the real macOS None case. Linux native clipboard not verified.",
+    "results": [
+      {
+        "calls": 1,
+        "dataPresent": true,
+        "draft": " prompt",
+        "expected": "keep prompt",
+        "expectedCalls": 1,
+        "expectedImages": 0,
+        "expectedSelection": {
+          "anchor": 0,
+          "head": 4
+        },
+        "images": 0,
+        "name": "real-macos-empty-clipboard-result",
+        "prevented": true,
+        "selection": {
+          "anchor": 0,
+          "head": 0
+        },
+        "text": " prompt",
+        "types": []
+      },
+      {
+        "calls": 1,
+        "dataPresent": true,
+        "draft": " prompt",
+        "expected": "keep prompt",
+        "expectedCalls": 1,
+        "expectedImages": 1,
+        "expectedSelection": {
+          "anchor": 0,
+          "head": 4
+        },
+        "images": 1,
+        "name": "image-partial-selection",
+        "prevented": true,
+        "selection": {
+          "anchor": 0,
+          "head": 0
+        },
+        "text": " prompt",
+        "types": []
+      },
+      {
+        "calls": 1,
+        "dataPresent": true,
+        "draft": "",
+        "expected": "keep prompt",
+        "expectedCalls": 1,
+        "expectedImages": 1,
+        "expectedSelection": {
+          "anchor": 0,
+          "head": 11
+        },
+        "images": 1,
+        "name": "image-full-selection",
+        "prevented": true,
+        "selection": {
+          "anchor": 0,
+          "head": 0
+        },
+        "text": "",
+        "types": []
+      },
+      {
+        "calls": 1,
+        "dataPresent": true,
+        "draft": " prompt",
+        "expected": "keep prompt",
+        "expectedCalls": 1,
+        "expectedImages": 1,
+        "expectedSelection": {
+          "anchor": 4,
+          "head": 0
+        },
+        "images": 1,
+        "name": "image-reversed-selection",
+        "prevented": true,
+        "selection": {
+          "anchor": 0,
+          "head": 0
+        },
+        "text": " prompt",
+        "types": []
+      },
+      {
+        "calls": 1,
+        "dataPresent": true,
+        "draft": "keep prompt",
+        "expected": "keep prompt",
+        "expectedCalls": 1,
+        "expectedImages": 1,
+        "expectedSelection": {
+          "anchor": 4,
+          "head": 4
+        },
+        "images": 1,
+        "name": "image-caret",
+        "prevented": true,
+        "selection": {
+          "anchor": 4,
+          "head": 4
+        },
+        "text": "keep prompt",
+        "types": []
+      },
+      {
+        "calls": 1,
+        "dataPresent": true,
+        "draft": "prompt",
+        "expected": "保留🙂\nprompt",
+        "expectedCalls": 1,
+        "expectedImages": 1,
+        "expectedSelection": {
+          "anchor": 0,
+          "head": 5
+        },
+        "images": 1,
+        "name": "image-unicode-multiline",
+        "prevented": true,
+        "selection": {
+          "anchor": 0,
+          "head": 0
+        },
+        "text": "prompt",
+        "types": []
+      },
+      {
+        "calls": 1,
+        "dataPresent": true,
+        "draft": " prompt",
+        "expected": "keep prompt",
+        "expectedCalls": 1,
+        "expectedImages": 0,
+        "expectedSelection": {
+          "anchor": 0,
+          "head": 4
+        },
+        "images": 0,
+        "name": "empty-image-reply",
+        "prevented": true,
+        "selection": {
+          "anchor": 0,
+          "head": 0
+        },
+        "text": " prompt",
+        "types": []
+      },
+      {
+        "calls": 1,
+        "dataPresent": true,
+        "draft": " prompt",
+        "expected": "keep prompt",
+        "expectedCalls": 1,
+        "expectedImages": 0,
+        "expectedSelection": {
+          "anchor": 0,
+          "head": 4
+        },
+        "images": 0,
+        "name": "failed-image-reply",
+        "prevented": true,
+        "selection": {
+          "anchor": 0,
+          "head": 0
+        },
+        "text": " prompt",
+        "types": []
+      },
+      {
+        "calls": 0,
+        "dataPresent": true,
+        "draft": "new prompt",
+        "expected": "new prompt",
+        "expectedCalls": 0,
+        "expectedImages": 0,
+        "expectedSelection": null,
+        "images": 0,
+        "name": "ordinary-text",
+        "prevented": true,
+        "selection": {
+          "anchor": 3,
+          "head": 3
+        },
+        "text": "new prompt",
+        "types": [
+          "text/plain"
+        ]
+      },
+      {
+        "calls": 0,
+        "dataPresent": true,
+        "draft": "new prompt",
+        "expected": "new prompt",
+        "expectedCalls": 0,
+        "expectedImages": 0,
+        "expectedSelection": null,
+        "images": 0,
+        "name": "rich-text",
+        "prevented": true,
+        "selection": {
+          "anchor": 3,
+          "head": 3
+        },
+        "text": "new prompt",
+        "types": [
+          "text/plain",
+          "text/html"
+        ]
+      },
+      {
+        "calls": 0,
+        "dataPresent": true,
+        "draft": "https://example.com prompt",
+        "expected": "https://example.com prompt",
+        "expectedCalls": 0,
+        "expectedImages": 0,
+        "expectedSelection": null,
+        "images": 0,
+        "name": "uri-text",
+        "prevented": true,
+        "selection": {
+          "anchor": 19,
+          "head": 19
+        },
+        "text": "https://example.com prompt",
+        "types": [
+          "text/uri-list"
+        ]
+      },
+      {
+        "calls": 0,
+        "dataPresent": true,
+        "draft": "keep prompt",
+        "expected": "keep prompt",
+        "expectedCalls": 0,
+        "expectedImages": 1,
+        "expectedSelection": {
+          "anchor": 0,
+          "head": 4
+        },
+        "images": 1,
+        "name": "image-file",
+        "prevented": true,
+        "selection": {
+          "anchor": 0,
+          "head": 4
+        },
+        "text": "keep prompt",
+        "types": [
+          "Files"
+        ]
+      }
+    ]
+  },
+  "error": null,
+  "id": "0a703e79-13e4-4d07-ab1d-384ebdee1d19",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

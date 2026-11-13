@@ -1,0 +1,28 @@
+{
+  "data": {
+    "box": {
+      "height": 31,
+      "width": 900,
+      "x": 393,
+      "y": 433.90625
+    },
+    "dpr": 2,
+    "draft": "keep prompt",
+    "images": 1,
+    "prevented": true,
+    "text": "keep prompt",
+    "title": "fixture",
+    "viewport": {
+      "height": 885,
+      "width": 1440
+    }
+  },
+  "error": null,
+  "id": "d51cb8f8-5ef2-47d8-8c64-4354428fc8d7",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}
