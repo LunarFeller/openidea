@@ -1,0 +1,70 @@
+{
+  "data": {
+    "boundary": "disconnect",
+    "passed": 0,
+    "results": [
+      {
+        "backendConnected": [],
+        "boundary": "disconnect",
+        "cache": "{\"status\":\"error\",\"message\":\"this data source does not list databases\"}",
+        "connected": "[]",
+        "expectedConnected": "[]",
+        "kind": "databases",
+        "passed": false,
+        "realIpcError": "this data source does not list databases",
+        "realIpcStatus": "error"
+      },
+      {
+        "backendConnected": [],
+        "boundary": "disconnect",
+        "cache": "{\"status\":\"ok\",\"value\":[\"main\"]}",
+        "connected": "[\"lifecycle\"]",
+        "expectedConnected": "[]",
+        "kind": "schemas",
+        "passed": false,
+        "realIpcStatus": "ok"
+      },
+      {
+        "backendConnected": [
+          "lifecycle"
+        ],
+        "boundary": "disconnect",
+        "cache": "{\"status\":\"ok\",\"value\":[{\"name\":\"customers\",\"kind\":\"table\"}]}",
+        "connected": "[\"lifecycle\"]",
+        "expectedConnected": "[]",
+        "kind": "tables",
+        "passed": false,
+        "realIpcStatus": "ok"
+      },
+      {
+        "backendConnected": [],
+        "boundary": "disconnect",
+        "cache": "{\"status\":\"ok\",\"value\":{\"columns\":[{\"name\":\"id\",\"dataType\":\"INTEGER\",\"nullable\":true,\"default\":null,\"primaryKey\":true},{\"name\":\"name\",\"dataType\":\"TEXT\",\"nullable\":true,\"default\":null,\"primaryKey\":false}],\"indexes\":[],\"foreignKeys\":[],\"triggers\":[]}}",
+        "connected": "[\"lifecycle\"]",
+        "expectedConnected": "[]",
+        "kind": "details",
+        "passed": false,
+        "realIpcStatus": "ok"
+      },
+      {
+        "backendConnected": [],
+        "boundary": "disconnect",
+        "cache": "{\"defaultSchema\":\"main\",\"tables\":[{\"schema\":\"main\",\"name\":\"customers\",\"kind\":\"table\",\"columns\":[{\"name\":\"id\",\"dataType\":\"INTEGER\",\"nullable\":true,\"primaryKey\":true,\"hasDefault\":true},{\"name\":\"name\",\"dataType\":\"TEXT\",\"nullable\":true,\"primaryKey\":false,\"hasDefault\":false}]}],\"foreignKeys\":[]}",
+        "connected": "[]",
+        "expectedConnected": "[]",
+        "kind": "completion",
+        "passed": false,
+        "realIpcStatus": "ok"
+      }
+    ],
+    "total": 5
+  },
+  "error": null,
+  "id": "eca5a346-db50-4ccc-afce-59becb3ae63a",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

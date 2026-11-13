@@ -1,0 +1,909 @@
+{
+  "phase": "before",
+  "total": 117,
+  "passed": 24,
+  "failed": 93,
+  "tests": [
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection starts from the catalog saved on disk without reading the server",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection reads every shown database, saves as it goes and forgets dropped ones",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection reads again on connect only when the saved catalog is over a day old and the user agreed before",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection keeps to the databases the Schemas tab shows, and goes on past one it may not read",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection does nothing for other databases",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection ignores a saved catalog returned after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { sf: { status: 'done', \u2026(4) } } to deeply equal {}"
+      ]
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection stops live introspection after disconnect and a late success",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { sf: { status: 'done', \u2026(4) } } to deeply equal {}"
+      ]
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection stops live introspection after disconnect and a late failure",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { sf: { status: 'done', \u2026(4) } } to deeply equal {}"
+      ]
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection ignores a saved catalog returned after project switch",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { sf: { status: 'done', \u2026(4) } } to deeply equal {}"
+      ]
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection stops live introspection after project switch and a late success",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { sf: { status: 'done', \u2026(4) } } to deeply equal {}"
+      ]
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection stops live introspection after project switch and a late failure",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { sf: { status: 'done', \u2026(4) } } to deeply equal {}"
+      ]
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection loads a new saved catalog without reusing the previous project's request",
+      "status": "failed",
+      "failure": [
+        "Error: Test timed out in 30000ms."
+      ]
+    },
+    {
+      "file": "introspection.test.ts",
+      "name": "Snowflake introspection keeps a new introspection intact when an older run finishes",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected [ { name: 'PUBLIC', \u2026(1) } ] to deeply equal [ { name: 'PUBLIC', \u2026(1) } ]"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes loads databases normally",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes loads schemas normally",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes loads tables normally",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes loads details normally",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for databases after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(2) } } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for schemas after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for tables after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for details after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(4) } } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for databases after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for schemas after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for tables after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for details after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for databases after delete",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(2) } } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for schemas after delete",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for tables after delete",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for details after delete",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(4) } } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for databases after delete",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for schemas after delete",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for tables after delete",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for details after delete",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for databases after edit",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(2) } } to deeply equal { status: 'ok', value: { \u2026(2) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for schemas after edit",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for tables after edit",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for details after edit",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(4) } } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for databases after edit",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal { status: 'ok', value: { \u2026(2) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for schemas after edit",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for tables after edit",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for details after edit",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for databases after project switch with the same source ID",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(2) } } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for schemas after project switch with the same source ID",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for tables after project switch with the same source ID",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for details after project switch with the same source ID",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(4) } } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for databases after project switch with the same source ID",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for schemas after project switch with the same source ID",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for tables after project switch with the same source ID",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for details after project switch with the same source ID",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for databases after project A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(2) } } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for schemas after project A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for tables after project A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late success for details after project A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(4) } } to deeply equal undefined",
+        "AssertionError: expected [ 'pg' ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for databases after project A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for schemas after project A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for tables after project A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores late failure for details after project A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps the latest databases when responses arrive out of order",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(2) } } to deeply equal { status: 'ok', value: { \u2026(2) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps the latest schemas when responses arrive out of order",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to deeply equal { status: 'ok', value: [ 'public' ] }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps the latest tables when responses arrive out of order",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to deeply equal { status: 'ok', value: [ { \u2026(2) } ] }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps the latest details when responses arrive out of order",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(4) } } to deeply equal { status: 'ok', value: { \u2026(4) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not replace fresh databases with an older failure",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal { status: 'ok', value: { \u2026(2) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not replace fresh schemas with an older failure",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal { status: 'ok', value: [ 'public' ] }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not replace fresh tables with an older failure",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal { status: 'ok', value: [ { \u2026(2) } ] }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not replace fresh details with an older failure",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'error', \u2026(1) } to deeply equal { status: 'ok', value: { \u2026(4) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps fresh databases after disconnect and reconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(2) } } to deeply equal { status: 'ok', value: { \u2026(2) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps fresh schemas after disconnect and reconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to deeply equal { status: 'ok', value: [ 'public' ] }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps fresh tables after disconnect and reconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to deeply equal { status: 'ok', value: [ { \u2026(2) } ] }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps fresh details after disconnect and reconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(4) } } to deeply equal { status: 'ok', value: { \u2026(4) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps a pending fresh databases when the old reply arrives first",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(2) } } to deeply equal { status: 'loading' }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps a pending fresh schemas when the old reply arrives first",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to deeply equal { status: 'loading' }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps a pending fresh tables when the old reply arrives first",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to deeply equal { status: 'loading' }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps a pending fresh details when the old reply arrives first",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(4) } } to deeply equal { status: 'loading' }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not restore deleted databases after the source ID is reused",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(2) } } to deeply equal { status: 'ok', value: { \u2026(2) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not restore deleted schemas after the source ID is reused",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to deeply equal { status: 'ok', value: [ 'public' ] }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not restore deleted tables after the source ID is reused",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to deeply equal { status: 'ok', value: [ { \u2026(2) } ] }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not restore deleted details after the source ID is reused",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: { \u2026(4) } } to deeply equal { status: 'ok', value: { \u2026(4) } }"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not invalidate another source's pending databases",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not invalidate another source's pending schemas",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not invalidate another source's pending tables",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not invalidate another source's pending details",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes invalidates every database of a source",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ 'old' ] } to be undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes disconnects one database without invalidating its sibling",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes does not request extra schema objects after the table request becomes stale",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes ignores schema objects that were already in flight at disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { status: 'ok', value: [ { \u2026(2) } ] } to be undefined"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes still lists tables when optional objects cannot be read",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps metadata in flight when an unchanged source list is reloaded",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "database metadata request lifetimes keeps metadata in flight when the current project is renamed",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations stores credentials when the save emits a source-change event before returning",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not let a pending disconnect clear a newer explicit connection",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected false to be true // Object.is equality"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not restore connected state from a listing started before disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected true to be false // Object.is equality"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not clear a new connection with an old empty listing",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected false to be true // Object.is equality"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations keeps listing source definitions when its connected snapshot is stale",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected true to be false // Object.is equality"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations ignores a source-list success from project A after A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected [ { id: 'pg', name: 'Old', \u2026(1) } ] to deeply equal [ { id: 'pg', \u2026(2) }, \u2026(1) ]"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations ignores a source-list failure from project A after A to B to A",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations can load metadata again after a disconnect fails",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations stops refresh between metadata stages",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations stops tree reveal after its connection becomes stale",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations preserves successful write results without restoring a stale connection",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected true to be false // Object.is equality"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not prompt for credentials after the request becomes stale",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { kind: 'password', \u2026(2) } to be null"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not retry if disconnected while waiting for a password",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to be called once, but got 2 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations still retries a current request after a password is supplied",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not continue save in a different project",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not continue delete in a different project",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not continue rename in a different project",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "completion requests deduplicates requests in the same lifetime",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "completion requests ignores completion resolved after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { defaultSchema: 'public', \u2026(2) } to be null"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "completion requests does not reuse old completion or let its cleanup remove a newer request",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected Promise{\u2026} not to be Promise{\u2026} // Object.is equality"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "completion requests lets completion recover after failure",
+      "status": "failed",
+      "failure": [
+        "Error: Test timed out in 5000ms."
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "overlapping database operations failed reconnect does not preserve the old disconnected flag",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "overlapping database operations successful implicit reconnect survives the old disconnect acknowledgement",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected undefined to be 'ok' // Object.is equality"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "overlapping database operations unrelated local connect does not keep an edited source marked connected",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected false to be true // Object.is equality"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "saving a source must not reconnect after a later disconnect",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "whole-source refresh does not restart a disconnected child database",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected [ 'pg:app', 'pg:other' ] to deeply equal [ 'pg:other' ]"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "late successful DDL does not refresh metadata after disconnect",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times",
+        "AssertionError: expected [ { id: 1, \u2026(4) }, { id: 2, \u2026(4) } ] to deeply equal []"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "old SQL is not executed in a new project after completion finishes",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to be called once, but got 0 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "querying a source's default database does not freeze a sibling connection snapshot",
+      "status": "passed",
+      "failure": []
+    }
+  ]
+}

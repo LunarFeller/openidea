@@ -1,0 +1,40 @@
+{
+  "reviewer": "independent subagent /root/review_db_lifecycle",
+  "reviewed_at_utc": "2026-11-13T17:00:26.247395+00:00",
+  "base_commit": "1b08d5de",
+  "scope": "Read-only review of frontend database metadata request lifetime fix; no native verification or backend build in reviewer process.",
+  "executed_probe_count": 10,
+  "passed": 10,
+  "failed": 0,
+  "pending_review_findings": [],
+  "probe_source": "review-probes.test.ts",
+  "probe_results": "review-results.json",
+  "production_sha256": {
+    "store.ts": "ea6bcb7617a4bef2e15444c0e18c31ace7743310649e3c688c047a86f2ac19f5",
+    "requests.ts": "6228eae6bf97c2a92d840d791ae75b14b3275412d35ad810751eefb06607994c",
+    "DatabaseView.tsx": "081aec3b98b64612a21d8aec27db8f464905bfabff833695e433eb21c85a4f34",
+    "SourceDialog.tsx": "4a04505ab694bade96494c59cf7ba9b5c7c5077840c8323b17ef000f57a59ebb",
+    "console.tsx": "4d65e8173046216236b8a6748a07129fee79564a5b0e9cfcdc63eeb7db442107",
+    "index.ts": "212b43c45e82964b07a75f412085806906479680d65732d42614b3db82cd716b",
+    "introspection.ts": "6ae627d78ed96c5117c9c222d989125b42a02e278fcee8a1a77eb2520b78a5dd",
+    "treeActions.ts": "369af7d8c231197f24e7c8032ac27feed222417658c910721ec264b8de2f7316"
+  },
+  "resolved_cases": [
+    "Same-root project rename preserves in-flight metadata",
+    "Source-changed event does not skip password/SSH storage",
+    "Failed reconnect leaves a successful disconnect inactive",
+    "Implicit successful reconnect survives old disconnect acknowledgement",
+    "An unrelated source connect does not retain edited-source connected state",
+    "A pending save does not automatically reconnect after a later disconnect",
+    "Whole-source refresh respects a disconnected child and continues siblings",
+    "Late completed DDL does not refresh stale metadata or write current output",
+    "Old SQL is not issued after stale completion returns in a new project",
+    "A default-database query does not freeze a sibling connection snapshot"
+  ],
+  "static_followup": "SourceDialog closes only its captured dialog identity. No additional actionable findings in final static pass.",
+  "limitations": [
+    "Deferred IPC mocks exercise real production store functions; they do not establish physical backend pool lifecycle correctness.",
+    "Parent agent owns committed regression tests, full checks and native before/after verification."
+  ],
+  "overlaps_committed_cases": true
+}

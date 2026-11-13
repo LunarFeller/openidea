@@ -1,0 +1,63 @@
+{
+  "data": {
+    "boundary": "disconnect",
+    "passed": 5,
+    "results": [
+      {
+        "backendConnected": [],
+        "boundary": "disconnect",
+        "connected": "[]",
+        "expectedConnected": "[]",
+        "kind": "databases",
+        "passed": true,
+        "realIpcError": "this data source does not list databases",
+        "realIpcStatus": "error"
+      },
+      {
+        "backendConnected": [],
+        "boundary": "disconnect",
+        "connected": "[]",
+        "expectedConnected": "[]",
+        "kind": "schemas",
+        "passed": true,
+        "realIpcStatus": "ok"
+      },
+      {
+        "backendConnected": [],
+        "boundary": "disconnect",
+        "connected": "[]",
+        "expectedConnected": "[]",
+        "kind": "tables",
+        "passed": true,
+        "realIpcStatus": "ok"
+      },
+      {
+        "backendConnected": [],
+        "boundary": "disconnect",
+        "connected": "[]",
+        "expectedConnected": "[]",
+        "kind": "details",
+        "passed": true,
+        "realIpcStatus": "ok"
+      },
+      {
+        "backendConnected": [],
+        "boundary": "disconnect",
+        "connected": "[]",
+        "expectedConnected": "[]",
+        "kind": "completion",
+        "passed": true,
+        "realIpcStatus": "ok"
+      }
+    ],
+    "total": 5
+  },
+  "error": null,
+  "id": "22fdeefc-1045-4d25-9acd-b622290a2e32",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

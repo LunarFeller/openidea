@@ -1,0 +1,16 @@
+{
+  "data": {
+    "backendConnected": [],
+    "connected": [],
+    "connectedDots": 0,
+    "schemas": {}
+  },
+  "error": null,
+  "id": "67955eb2-2b20-4e4d-a389-2b7def0bf37a",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

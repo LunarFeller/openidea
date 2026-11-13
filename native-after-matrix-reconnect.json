@@ -1,0 +1,83 @@
+{
+  "data": {
+    "boundary": "reconnect",
+    "passed": 5,
+    "results": [
+      {
+        "backendConnected": [
+          "lifecycle"
+        ],
+        "boundary": "reconnect",
+        "cache": "{\"status\":\"error\",\"message\":\"this data source does not list databases\"}",
+        "connected": "[\"lifecycle\"]",
+        "expectedCache": "{\"status\":\"error\",\"message\":\"this data source does not list databases\"}",
+        "expectedConnected": "[\"lifecycle\"]",
+        "kind": "databases",
+        "passed": true,
+        "realIpcError": "this data source does not list databases",
+        "realIpcStatus": "error"
+      },
+      {
+        "backendConnected": [
+          "lifecycle"
+        ],
+        "boundary": "reconnect",
+        "cache": "{\"status\":\"ok\",\"value\":[\"main\"]}",
+        "connected": "[\"lifecycle\"]",
+        "expectedCache": "{\"status\":\"ok\",\"value\":[\"main\"]}",
+        "expectedConnected": "[\"lifecycle\"]",
+        "kind": "schemas",
+        "passed": true,
+        "realIpcStatus": "ok"
+      },
+      {
+        "backendConnected": [
+          "lifecycle"
+        ],
+        "boundary": "reconnect",
+        "cache": "{\"status\":\"ok\",\"value\":[{\"name\":\"customers\",\"kind\":\"table\"}]}",
+        "connected": "[\"lifecycle\"]",
+        "expectedCache": "{\"status\":\"ok\",\"value\":[{\"name\":\"customers\",\"kind\":\"table\"}]}",
+        "expectedConnected": "[\"lifecycle\"]",
+        "kind": "tables",
+        "passed": true,
+        "realIpcStatus": "ok"
+      },
+      {
+        "backendConnected": [
+          "lifecycle"
+        ],
+        "boundary": "reconnect",
+        "cache": "{\"status\":\"ok\",\"value\":{\"columns\":[{\"name\":\"id\",\"dataType\":\"INTEGER\",\"nullable\":true,\"default\":null,\"primaryKey\":true},{\"name\":\"name\",\"dataType\":\"TEXT\",\"nullable\":true,\"default\":null,\"primaryKey\":false}],\"indexes\":[],\"foreignKeys\":[],\"triggers\":[]}}",
+        "connected": "[\"lifecycle\"]",
+        "expectedCache": "{\"status\":\"ok\",\"value\":{\"columns\":[{\"name\":\"id\",\"dataType\":\"INTEGER\",\"nullable\":true,\"default\":null,\"primaryKey\":true},{\"name\":\"name\",\"dataType\":\"TEXT\",\"nullable\":true,\"default\":null,\"primaryKey\":false}],\"indexes\":[],\"foreignKeys\":[],\"triggers\":[]}}",
+        "expectedConnected": "[\"lifecycle\"]",
+        "kind": "details",
+        "passed": true,
+        "realIpcStatus": "ok"
+      },
+      {
+        "backendConnected": [
+          "lifecycle"
+        ],
+        "boundary": "reconnect",
+        "cache": "{\"defaultSchema\":\"main\",\"tables\":[{\"schema\":\"main\",\"name\":\"customers\",\"kind\":\"table\",\"columns\":[{\"name\":\"id\",\"dataType\":\"INTEGER\",\"nullable\":true,\"primaryKey\":true,\"hasDefault\":true},{\"name\":\"name\",\"dataType\":\"TEXT\",\"nullable\":true,\"primaryKey\":false,\"hasDefault\":false}]}],\"foreignKeys\":[]}",
+        "connected": "[\"lifecycle\"]",
+        "expectedCache": "{\"defaultSchema\":\"main\",\"tables\":[{\"schema\":\"main\",\"name\":\"customers\",\"kind\":\"table\",\"columns\":[{\"name\":\"id\",\"dataType\":\"INTEGER\",\"nullable\":true,\"primaryKey\":true,\"hasDefault\":true},{\"name\":\"name\",\"dataType\":\"TEXT\",\"nullable\":true,\"primaryKey\":false,\"hasDefault\":false}]}],\"foreignKeys\":[]}",
+        "expectedConnected": "[\"lifecycle\"]",
+        "kind": "completion",
+        "passed": true,
+        "realIpcStatus": "ok"
+      }
+    ],
+    "total": 5
+  },
+  "error": null,
+  "id": "64c17901-a588-47c4-834e-b41afec9e09e",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

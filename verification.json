@@ -1,0 +1,96 @@
+{
+  "feature_commit": "e7d32730453652dc7ddd1f7a5c04bbcf6481c630",
+  "base_commit": "01a60ef16458734891d893eaa5f548c2ca8bf324",
+  "native_base_commit": "1b08d5de090fca5e206527613161f495581af097",
+  "native_note": "Database production sources are unchanged between these main commits. Fixed source hashes match the independent review. Real SQLite IPC replies were delayed inside the native WebKit app; 20 cases cover four boundaries and five paths. SQLite database listing exercises its real unsupported-driver error, while schemas/tables/details/completion return real data.",
+  "focused_before": {
+    "total": 117,
+    "passed": 24,
+    "failed": 93
+  },
+  "focused_after": {
+    "total": 117,
+    "passed": 117,
+    "failed": 0
+  },
+  "browser_before": {
+    "total": 5,
+    "failed": 5
+  },
+  "browser_after": {
+    "total": 5,
+    "passed": 5
+  },
+  "native_before": {
+    "total": 20,
+    "passed": 4,
+    "failed": 16
+  },
+  "native_after": {
+    "total": 20,
+    "passed": 20,
+    "failed": 0
+  },
+  "platforms_verified_natively": [
+    "macOS/WebKit + SQLite"
+  ],
+  "not_verified_natively": [
+    "Windows",
+    "Linux",
+    "Live PostgreSQL/SQL Server/Snowflake services"
+  ],
+  "images": {
+    "operation": "Crop original native screenshots; draw rectangles, arrows and captions with Pillow",
+    "source_script": "annotate.py",
+    "comparison": "before-after.png",
+    "before_sequence": "before-sequence.gif",
+    "after_sequence": "after-sequence.gif"
+  },
+  "production_sha256": {
+    "store.ts": "ea6bcb7617a4bef2e15444c0e18c31ace7743310649e3c688c047a86f2ac19f5",
+    "requests.ts": "6228eae6bf97c2a92d840d791ae75b14b3275412d35ad810751eefb06607994c",
+    "DatabaseView.tsx": "081aec3b98b64612a21d8aec27db8f464905bfabff833695e433eb21c85a4f34",
+    "SourceDialog.tsx": "4a04505ab694bade96494c59cf7ba9b5c7c5077840c8323b17ef000f57a59ebb",
+    "console.tsx": "4d65e8173046216236b8a6748a07129fee79564a5b0e9cfcdc63eeb7db442107",
+    "index.ts": "212b43c45e82964b07a75f412085806906479680d65732d42614b3db82cd716b",
+    "introspection.ts": "6ae627d78ed96c5117c9c222d989125b42a02e278fcee8a1a77eb2520b78a5dd",
+    "treeActions.ts": "369af7d8c231197f24e7c8032ac27feed222417658c910721ec264b8de2f7316"
+  },
+  "database_full_suite": {
+    "passed": 592,
+    "failed": 0
+  },
+  "database_browser_regression": {
+    "passed": 29,
+    "failed": 0
+  },
+  "checks": {
+    "typecheck": "pass",
+    "lint": "pass (existing warnings)",
+    "format:check": "pass",
+    "knip": "pass (existing configuration hint)",
+    "build": "pass, including Safari 16 API/syntax checks",
+    "full_frontend": "see full-suite-comparison.json"
+  },
+  "full_suite_remaining_failures": {
+    "deterministic_on_main": [
+      "icons.test.tsx: slint.toml icon mapping",
+      "textCatalog.test.ts: zh source text coverage"
+    ],
+    "intermittent_on_main": {
+      "test": "diffToolbar.test.tsx keyboard navigation",
+      "original_file": {
+        "branch_passed": 66,
+        "main_passed": 66
+      },
+      "unchanged_cases_repeated": {
+        "per_side": 200,
+        "branch_failed": 12,
+        "main_failed": 17
+      },
+      "identical_local_dependencies": 301,
+      "database_in_dependency_graph": false,
+      "evidence": "difftoolbar-flakiness.json"
+    }
+  }
+}

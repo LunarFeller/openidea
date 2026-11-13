@@ -1,0 +1,43 @@
+{
+  "branch": {
+    "total": 11241,
+    "passed": 11232,
+    "failed": 3,
+    "skipped": 6,
+    "non_database_failures": [
+      {
+        "file": "icons.test.tsx",
+        "name": "fileIconName gives every detected language file a specific icon",
+        "failure": "AssertionError: expected [ 'slint.toml: name.slint' ] to deeply equal []"
+      },
+      {
+        "file": "textCatalog.test.ts",
+        "name": "source-text catalog zh translates every literal UI text",
+        "failure": "AssertionError: expected [ Array(1) ] to deeply equal []"
+      },
+      {
+        "file": "diffToolbar.test.tsx",
+        "name": "Jump to Source of a revision diff jumps with ArrowDown when the working copy is found after the pane gains focus",
+        "failure": "AssertionError: expected \"vi.fn()\" to be called once with arguments: [ '/p/a.ts', { \u2026(2) } ]"
+      }
+    ]
+  },
+  "main_with_regression_tests": {
+    "total": 11241,
+    "passed": 11140,
+    "failed": 95,
+    "skipped": 6,
+    "non_database_failures": [
+      {
+        "file": "icons.test.tsx",
+        "name": "fileIconName gives every detected language file a specific icon",
+        "failure": "AssertionError: expected [ 'slint.toml: name.slint' ] to deeply equal []"
+      },
+      {
+        "file": "textCatalog.test.ts",
+        "name": "source-text catalog zh translates every literal UI text",
+        "failure": "AssertionError: expected [ Array(1) ] to deeply equal []"
+      }
+    ]
+  }
+}

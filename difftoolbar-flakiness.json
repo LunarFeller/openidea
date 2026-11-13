@@ -1,0 +1,43 @@
+{
+  "branch_commit": "e7d32730453652dc7ddd1f7a5c04bbcf6481c630",
+  "main_commit": "01a60ef16458734891d893eaa5f548c2ca8bf324",
+  "scope": "No production or repository test changes. Original single-file suite once per side, then paired temporary copies repeating the same two test bodies 100 times each; timing assertions/operations unchanged.",
+  "standalone": {
+    "branch": {
+      "passed": 66,
+      "failed": 0
+    },
+    "main": {
+      "passed": 66,
+      "failed": 0
+    }
+  },
+  "repeated_cases": {
+    "branch": {
+      "executed": 200,
+      "passed": 188,
+      "failed": 12,
+      "duration_ms": 32317.34423828125,
+      "failed_ArrowDown": 7,
+      "failed_F4": 5,
+      "all_failures_same_zero_calls": true
+    },
+    "main": {
+      "executed": 200,
+      "passed": 183,
+      "failed": 17,
+      "duration_ms": 37849.419189453125,
+      "failed_ArrowDown": 8,
+      "failed_F4": 9,
+      "all_failures_same_zero_calls": true
+    }
+  },
+  "dependency_check": {
+    "entry": "src/features/vcs/__tests__/diffToolbar.test.tsx",
+    "resolved_local_files": 301,
+    "differing_files": [],
+    "database_modules": [],
+    "method": "Conservative scan of static import/export-from and literal dynamic imports; ignores packages and runtime-computed imports."
+  },
+  "conclusion": "The exact missing-openFile keyboard failure reproduces independently on main. Consistent with an existing passive-effect/shortcut timing race; no failure-rate comparison or general proof of all VCS behavior is inferred."
+}
