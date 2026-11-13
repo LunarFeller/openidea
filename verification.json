@@ -1,0 +1,272 @@
+{
+  "base_commit": "b98bddbbab7decdbc9d19eeef59573e0d7e3c50a",
+  "main_checked_for_duplicate_fix": "b463252bc5d14dd2def88ba013cfc8e7dd57fe64",
+  "numeric_unit_before": {
+    "numTotalTests": 61,
+    "numPassedTests": 29,
+    "numFailedTests": 32
+  },
+  "numeric_unit_after": {
+    "total": 61,
+    "passed": 61,
+    "new_cases": 42,
+    "rational_cross_comparisons": 14400
+  },
+  "database_unit_after": {
+    "total": 375,
+    "passed": 375
+  },
+  "full_unit_after": {
+    "numTotalTests": 10793,
+    "numPassedTests": 10786,
+    "numFailedTests": 1,
+    "numPendingTests": 6
+  },
+  "existing_main_unit_failure": "keymap.test.ts: VS Code preset missing vcs.log.changes.showDiff; reproduced in an unmodified b98bddbb worktree",
+  "browser_e2e_after": {
+    "total": 386,
+    "passed_first_run": 384,
+    "transient_focus_failures": 2,
+    "passed_on_targeted_rerun": 2
+  },
+  "native": {
+    "platform": "macOS x86_64",
+    "bridge_port": 9223,
+    "identifier": "ai.l0ng.openidea.dev.w5acd8eeb4935b8c2",
+    "database": "real SQLite; INTEGER BIGINT values and TEXT exact decimal values",
+    "checks": [
+      "positive and negative BIGINT ascending",
+      "exact positive and negative decimal ascending",
+      "descending",
+      "query-order reset",
+      "filter values order",
+      "selection Min/Max"
+    ],
+    "screenshot_size": [
+      1440,
+      1000
+    ],
+    "before": {
+      "bigint": {
+        "buttons": [
+          "Show Record / Value / Aggregates",
+          "Filter big_id",
+          "Filter precise"
+        ],
+        "grids": [
+          {
+            "name": "Result 1",
+            "rows": [
+              [
+                "-9007199254740992",
+                "-1.0000000000000000001"
+              ],
+              [
+                "-9007199254740993",
+                "-1.0000000000000000002"
+              ],
+              [
+                "9007199254740993",
+                "1.0000000000000000002"
+              ],
+              [
+                "9007199254740992",
+                "1.0000000000000000001"
+              ]
+            ]
+          }
+        ],
+        "title": "fixture – exact-console.sql",
+        "url": "http://localhost:32474/"
+      },
+      "decimal": {
+        "buttons": [
+          "Show Record / Value / Aggregates",
+          "Filter big_id",
+          "Filter precise"
+        ],
+        "grids": [
+          {
+            "name": "Result 1",
+            "rows": [
+              [
+                "-9007199254740992",
+                "-1.0000000000000000001"
+              ],
+              [
+                "-9007199254740993",
+                "-1.0000000000000000002"
+              ],
+              [
+                "9007199254740993",
+                "1.0000000000000000002"
+              ],
+              [
+                "9007199254740992",
+                "1.0000000000000000001"
+              ]
+            ]
+          }
+        ],
+        "title": "fixture – exact-console.sql",
+        "url": "http://localhost:32474/"
+      },
+      "filter": [
+        "-9007199254740992",
+        "-9007199254740993",
+        "9007199254740993",
+        "9007199254740992"
+      ],
+      "aggregates": [
+        {
+          "label": "Count",
+          "value": "8"
+        },
+        {
+          "label": "Distinct",
+          "value": "8"
+        },
+        {
+          "label": "Nulls",
+          "value": "0"
+        },
+        {
+          "label": "Sum",
+          "value": "2"
+        },
+        {
+          "label": "Avg",
+          "value": "0.25"
+        },
+        {
+          "label": "Median",
+          "value": "0"
+        },
+        {
+          "label": "Min",
+          "value": "-9007199254740992"
+        },
+        {
+          "label": "Max",
+          "value": "9007199254740992"
+        }
+      ]
+    },
+    "after": {
+      "bigint": {
+        "buttons": [
+          "Show Record / Value / Aggregates",
+          "Filter big_id",
+          "Filter precise"
+        ],
+        "grids": [
+          {
+            "name": "Result 1",
+            "rows": [
+              [
+                "-9007199254740993",
+                "-1.0000000000000000002"
+              ],
+              [
+                "-9007199254740992",
+                "-1.0000000000000000001"
+              ],
+              [
+                "9007199254740992",
+                "1.0000000000000000001"
+              ],
+              [
+                "9007199254740993",
+                "1.0000000000000000002"
+              ]
+            ]
+          }
+        ],
+        "title": "fixture – exact-console.sql",
+        "url": "http://localhost:32474/"
+      },
+      "decimal": {
+        "buttons": [
+          "Show Record / Value / Aggregates",
+          "Filter big_id",
+          "Filter precise"
+        ],
+        "grids": [
+          {
+            "name": "Result 1",
+            "rows": [
+              [
+                "-9007199254740993",
+                "-1.0000000000000000002"
+              ],
+              [
+                "-9007199254740992",
+                "-1.0000000000000000001"
+              ],
+              [
+                "9007199254740992",
+                "1.0000000000000000001"
+              ],
+              [
+                "9007199254740993",
+                "1.0000000000000000002"
+              ]
+            ]
+          }
+        ],
+        "title": "fixture – exact-console.sql",
+        "url": "http://localhost:32474/"
+      },
+      "filter": [
+        "-9007199254740993",
+        "-9007199254740992",
+        "9007199254740992",
+        "9007199254740993"
+      ],
+      "aggregates": [
+        {
+          "label": "Count",
+          "value": "8"
+        },
+        {
+          "label": "Distinct",
+          "value": "8"
+        },
+        {
+          "label": "Nulls",
+          "value": "0"
+        },
+        {
+          "label": "Sum",
+          "value": "2"
+        },
+        {
+          "label": "Avg",
+          "value": "0.25"
+        },
+        {
+          "label": "Median",
+          "value": "0"
+        },
+        {
+          "label": "Min",
+          "value": "-9007199254740993"
+        },
+        {
+          "label": "Max",
+          "value": "9007199254740993"
+        }
+      ]
+    }
+  },
+  "checks_passed": [
+    "pnpm typecheck",
+    "pnpm lint (existing warnings)",
+    "pnpm format:check",
+    "pnpm knip (existing config hint)",
+    "git diff --check",
+    "pnpm build (including Safari 16 startup API and bundle syntax checks)"
+  ],
+  "recording": "numeric-sort.webm: browser production result grid, ascending / descending / query order",
+  "source_commit": "7dbbc8cbb5e656e6d1ced1ddcb123a7804498c52"
+}
