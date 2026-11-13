@@ -1,0 +1,17 @@
+[
+  {
+    "big_id": 9223372036854776000,
+    "precise": "1.0000000000000000002",
+    "note": "maximum 64-bit integer"
+  },
+  {
+    "big_id": -9223372036854776000,
+    "precise": "-1.0000000000000000002",
+    "note": "minimum 64-bit integer"
+  },
+  {
+    "big_id": 9007199254740992,
+    "precise": "0.0000000000000000001",
+    "note": "adjacent integer above 2^53"
+  }
+]

@@ -1,0 +1,233 @@
+{
+  "repository": "https://github.com/l0ng-ai/openidea",
+  "base_commit": "835c44615b0aa847d8aa8461a5d3f812ff8c8919",
+  "source_commit": "629319941407be099f3d1bb2911808685fda820a",
+  "main_checked_for_duplicate_fix_through": "c942b87abb64a2916b3833084239fc5b3cb25ef6",
+  "checked_at_utc": "2026-11-13T08:10:07.817476+00:00",
+  "root_cause": "Database cells arrive as exact text; the JSON exporter converted numeric text to JavaScript Number before JSON.stringify, rounding away original decimal digits.",
+  "fix": "Serialize normalized decimal tokens directly, retain per-column numeric detection and finite-number classification, escape text and keys with JSON.stringify, and retain Object.fromEntries key behavior.",
+  "focused_tests": {
+    "command": "pnpm vitest run src/features/database/export.test.ts src/features/database/ExportDialog.test.tsx src/features/database/database.test.ts",
+    "before": {
+      "numTotalTests": 124,
+      "numPassedTests": 84,
+      "numFailedTests": 40,
+      "numPendingTests": 0,
+      "success": false
+    },
+    "after": {
+      "numTotalTests": 124,
+      "numPassedTests": 124,
+      "numFailedTests": 0,
+      "numPendingTests": 0,
+      "success": true
+    },
+    "new_cases": 78,
+    "independent_integer_arithmetic_samples": 250,
+    "coverage": [
+      "signed/unsigned 64-bit bounds",
+      "high-precision decimal types across vendor metadata",
+      "minimum subnormal and underflow",
+      "exponents beyond safe integer range",
+      "leading plus/zero/fraction normalization",
+      "true zero and negative zero",
+      "ordinary and legacy numeric coercions",
+      "non-finite/invalid numeric text",
+      "JSON injection-like cell text",
+      "numeric-looking TEXT/JSON/boolean/point/interval fields",
+      "unknown type inference and first-50 sample boundary",
+      "NULL/missing/extra cells",
+      "duplicate columns with differing types",
+      "integer key order and literal __proto__ keys",
+      "escaped names, controls and Unicode",
+      "empty results/zero-column rows",
+      "20,000 fractional digits",
+      "other export formats",
+      "preview, dialog clipboard and file output",
+      "101-row exports beyond the 100-row preview cap"
+    ]
+  },
+  "full_units": {
+    "command": "pnpm test",
+    "numTotalTests": 10863,
+    "numPassedTests": 10857,
+    "numFailedTests": 0,
+    "numPendingTests": 6,
+    "success": true
+  },
+  "database_units": {
+    "passed": 411,
+    "failed": 0,
+    "pending": 0
+  },
+  "browser": {
+    "before_new_scenarios": {
+      "startTime": "2026-11-13T06:48:55.665Z",
+      "duration": 29931.021,
+      "expected": 0,
+      "skipped": 0,
+      "unexpected": 3,
+      "flaky": 0
+    },
+    "full_after": {
+      "stats": {
+        "startTime": "2026-11-13T07:29:00.883Z",
+        "duration": 576912.829,
+        "expected": 384,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "database": {
+        "databaseDialogLayout.spec.ts": {
+          "passed": 3,
+          "failed": 0
+        },
+        "databaseJsonExport.spec.ts": {
+          "passed": 3,
+          "failed": 0
+        },
+        "databaseJsonValue.spec.ts": {
+          "passed": 3,
+          "failed": 0
+        },
+        "databaseResultSpacing.spec.ts": {
+          "passed": 1,
+          "failed": 0
+        },
+        "databaseResultTabs.spec.ts": {
+          "passed": 6,
+          "failed": 0
+        }
+      },
+      "failures": [
+        {
+          "file": "commitDoubleClick.spec.ts",
+          "title": "non-modal Commit window: double-click opens the diff by default",
+          "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('region', { name: 'Commit', exact: true }).getByRole('textbox', { name: 'Commit message' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('region', { name: 'Commit', exact: true }).getByRole('textbox', { name: 'Commit message' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('region', { name: 'Commit', exact: true }).g"
+        }
+      ]
+    },
+    "original_exporter_focus_control": {
+      "startTime": "2026-11-13T07:46:23.441Z",
+      "duration": 19132.507,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "baseline_control_description": "The only production change (export.ts) was restored to the exact base version while repeating the unrelated Commit focus test three times: two passed, one failed at the same toBeFocused assertion. The fixed exporter was restored in finally and matches the committed source.",
+    "command": "OPENIDEA_E2E_PORT=15385 pnpm e2e --config /tmp/openidea-json-precision/playwright-validation.config.ts --workers=2",
+    "config_difference": "Only reporting, output path and explicit web-server cwd; test/browser settings match the repository config.",
+    "recording": {
+      "scenario": "Export Data preserves exact preview and exported file values",
+      "result": {
+        "startTime": "2026-11-13T08:04:59.857Z",
+        "duration": 5915.089999999999,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "file": "json-export.webm"
+    }
+  },
+  "native": {
+    "platform": "macOS x86_64, Tauri 2.12.4, debug application 0.1.43",
+    "app_identifier": "ai.l0ng.openidea.dev.w2613a32a738df828",
+    "bridge_port": 9223,
+    "real_database": "SQLite INTEGER signed 64-bit boundaries and TEXT decimals; decimals remain strings in this SQLite fixture.",
+    "checked": [
+      "real SQL query values",
+      "JSON preview",
+      "native dialog clipboard",
+      "native quick Copy as JSON",
+      "actual exported file contents"
+    ],
+    "independent_decimal_fixture": "120 deterministic NUMERIC-typed values exported by the native JavaScript runtime; synthetic frontend values, no live PostgreSQL.",
+    "verifier": "python3 verify.py (SQLite in-memory reproduction plus json.loads(parse_float=Decimal) and integer arithmetic)",
+    "results": {
+      "before": {
+        "sqlite_rows": 3,
+        "mismatches": [
+          {
+            "row": 0,
+            "expected": 9223372036854775807,
+            "actual": 9223372036854776000
+          },
+          {
+            "row": 1,
+            "expected": -9223372036854775808,
+            "actual": -9223372036854776000
+          },
+          {
+            "row": 2,
+            "expected": 9007199254740993,
+            "actual": 9007199254740992
+          }
+        ],
+        "independent_decimal_fixture": {
+          "total": 120,
+          "passed": 0,
+          "failed": 120
+        },
+        "screenshot_size": [
+          1440,
+          885
+        ]
+      },
+      "after": {
+        "sqlite_rows": 3,
+        "mismatches": [],
+        "independent_decimal_fixture": {
+          "total": 120,
+          "passed": 120,
+          "failed": 0
+        },
+        "screenshot_size": [
+          1440,
+          885
+        ]
+      }
+    },
+    "not_verified": [
+      "live PostgreSQL",
+      "native Windows",
+      "native Linux"
+    ]
+  },
+  "annotation": {
+    "mode": "SVG vector overlay",
+    "original": "before.png",
+    "annotated": "before-annotated.svg",
+    "original_png_sha256": "54fd88076042cf156e2ce7f57fa62da5b32fd397aa5d07329da99a8068518e62",
+    "embedded_png_sha256": "54fd88076042cf156e2ce7f57fa62da5b32fd397aa5d07329da99a8068518e62",
+    "original_bytes_unchanged": true,
+    "arrow_target": "Incorrect first big_id in JSON preview: 9223372036854776000",
+    "annotation": "Deterministic SVG red box, arrow and explanation over unchanged PNG",
+    "label": "BUG: 9223372036854775807 is exported as 9223372036854776000",
+    "pixel_changes_bbox": [
+      623,
+      220,
+      1101,
+      337
+    ],
+    "outside_annotation_pixels_identical": true,
+    "highlighted_json_line_pixels_identical": true,
+    "rendered_png": "before-annotated.png"
+  },
+  "checks_passed": [
+    "pnpm typecheck",
+    "pnpm lint (existing warnings outside changed files)",
+    "pnpm format:check",
+    "pnpm knip (existing ignore-config hint)",
+    "pnpm build (including Safari 16 startup API and bundle syntax)",
+    "git diff --check"
+  ],
+  "files_changed": [
+    "src/features/database/export.ts",
+    "src/features/database/export.test.ts",
+    "src/features/database/ExportDialog.test.tsx",
+    "e2e/databaseJsonExport.spec.ts"
+  ]
+}

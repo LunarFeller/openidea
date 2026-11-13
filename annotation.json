@@ -1,0 +1,20 @@
+{
+  "mode": "SVG vector overlay",
+  "original": "before.png",
+  "annotated": "before-annotated.svg",
+  "original_png_sha256": "54fd88076042cf156e2ce7f57fa62da5b32fd397aa5d07329da99a8068518e62",
+  "embedded_png_sha256": "54fd88076042cf156e2ce7f57fa62da5b32fd397aa5d07329da99a8068518e62",
+  "original_bytes_unchanged": true,
+  "arrow_target": "Incorrect first big_id in JSON preview: 9223372036854776000",
+  "annotation": "Deterministic SVG red box, arrow and explanation over unchanged PNG",
+  "label": "BUG: 9223372036854775807 is exported as 9223372036854776000",
+  "pixel_changes_bbox": [
+    623,
+    220,
+    1101,
+    337
+  ],
+  "outside_annotation_pixels_identical": true,
+  "highlighted_json_line_pixels_identical": true,
+  "rendered_png": "before-annotated.png"
+}
