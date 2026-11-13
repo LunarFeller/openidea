@@ -1,0 +1,31 @@
+src/features/database/resultView.test.ts
+  s_149af2c5f31d1c::t_e1ddd411ea264d 73
+  s_149af2c5f31d1c::t_7546b838cd91fd 90,165
+  s_149af2c5f31d1c::t_f6410fc8c9cec3 88-89,91-92
+  s_149af2c5f31d1c::t_95f182617f2120 36-72,74-87,93-124,155-164,166-175,192-201
+src/features/database/resultView.ts
+  s_149af2c5f31d1c::t_b501c7cdb61175 16-46,53
+e2e/databaseNumericSort.spec.ts
+  s_149af2c5f31d1c::t_7546b838cd91fd 94-97
+  s_149af2c5f31d1c::t_91c411d2953e54 48,61,76,92
+  s_149af2c5f31d1c::t_32a08e0d1a44f0 1-47,49-60,62,64-75,77-79,81-82,87-91,93,98-103
+  s_149af2c5f31d1c::t_2f39fe274f689b 80
+  s_149af2c5f31d1c::t_5fe396a4acd4d3 63
+  s_149af2c5f31d1c::t_1361cd8cc665b8 83-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "7dbbc8cbb5e656e6d1ced1ddcb123a7804498c52",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
