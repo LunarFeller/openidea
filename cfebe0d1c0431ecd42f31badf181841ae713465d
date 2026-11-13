@@ -1,0 +1,19 @@
+verification.json
+  s_149af2c5f31d1c::t_b38bba9271ba34 271-370
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "cfebe0d1c0431ecd42f31badf181841ae713465d",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
