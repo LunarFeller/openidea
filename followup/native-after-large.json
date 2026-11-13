@@ -1,0 +1,29 @@
+{
+  "data": {
+    "formatted": [],
+    "notifications": [],
+    "result": {
+      "body": "{\"data\":{\"id\":9007199254740993,\"amount\":1.0000000000000000002,\"tiny\":1e-400}}",
+      "endpoint": {
+        "headers": {},
+        "name": "local",
+        "url": "http://127.0.0.1:59076/graphql"
+      },
+      "error": null,
+      "path": "/private/tmp/openidea-pr3176-followup/native-fixture/query.graphql",
+      "size": 77,
+      "status": 200,
+      "totalMs": 48.940833000000005
+    },
+    "statePreservesInput": true,
+    "variableCharacters": 3000089
+  },
+  "error": null,
+  "id": "191299c2-b761-41cd-80a1-b735863a34fc",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

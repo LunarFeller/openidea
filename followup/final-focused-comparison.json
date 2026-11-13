@@ -1,0 +1,19 @@
+{
+  "base": "85f4ffb6",
+  "same_case_ids": true,
+  "production_snapshots_restored": true,
+  "before": {
+    "numTotalTests": 288,
+    "numPassedTests": 164,
+    "numFailedTests": 124,
+    "exit_code": 1,
+    "seconds": 11.9
+  },
+  "after": {
+    "numTotalTests": 288,
+    "numPassedTests": 288,
+    "numFailedTests": 0,
+    "exit_code": 0,
+    "seconds": 4.1
+  }
+}

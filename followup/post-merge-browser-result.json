@@ -1,0 +1,23 @@
+{
+  "command": [
+    "pnpm",
+    "playwright",
+    "test",
+    "--config",
+    "/tmp/openidea-pr3176-followup/playwright-post-merge.config.ts",
+    "--workers=2",
+    "--retries=0",
+    "numericPrecision.spec.ts",
+    "database"
+  ],
+  "exit_code": 0,
+  "seconds": 52.2,
+  "stats": {
+    "startTime": "2026-11-13T14:47:54.289Z",
+    "duration": 51391.909999999996,
+    "expected": 33,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

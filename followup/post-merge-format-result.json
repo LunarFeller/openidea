@@ -1,0 +1,9 @@
+{
+  "check": "format",
+  "command": [
+    "pnpm",
+    "format:check"
+  ],
+  "exit_code": 0,
+  "seconds": 7.8
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pnpm",
+    "vitest",
+    "run",
+    "--maxWorkers=4",
+    "--reporter=json",
+    "--outputFile=/tmp/openidea-pr3176-followup/post-merge-unit-all.json"
+  ],
+  "exit_code": 1,
+  "seconds": 374.2,
+  "numTotalTests": 11330,
+  "numPassedTests": 11320,
+  "numFailedTests": 4,
+  "numPendingTests": 6
+}

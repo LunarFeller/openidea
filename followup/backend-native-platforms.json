@@ -1,0 +1,41 @@
+{
+  "tested_head": "12515698a5de3ef025ef88f880596ad21ea4e7ef",
+  "current_head": "e5ef7557e681b3e18b368a31c2098c60d96089e8",
+  "paths_unchanged": {
+    "crates/ide-http/Cargo.toml": "c63408cff5fd05bc28044a0d3fb5207d4c6ba288",
+    "crates/ide-http/src/env.rs": "b91e47e61f40641bcb745f30bcfb9203440fc604",
+    "crates/ide-http/src/exec.rs": "aa6a8bf3483beb59c7ac9a3a29e65a27c8fa247b"
+  },
+  "platforms": {
+    "macos": {
+      "job": 131926197174,
+      "url": "https://github.com/l0ng-ai/openidea/actions/runs/43435310610/job/131926197174",
+      "exact_tests": {
+        "exact_environment_parsing_keeps_types_and_precedence": "2026-11-13T14:08:50.0354290Z         PASS [   0.012s] (2120/4540) ide-http env::tests::exact_environment_parsing_keeps_types_and_precedence",
+        "preserves_exact_numeric_environment_tokens": "2026-11-13T14:08:50.0480880Z         PASS [   0.013s] (2125/4540) ide-http env::tests::preserves_exact_numeric_environment_tokens",
+        "sends_exact_environment_numbers_to_a_local_server": "2026-11-13T14:08:50.0946610Z         PASS [   0.017s] (2136/4540) ide-http exec::tests::sends_exact_environment_numbers_to_a_local_server"
+      },
+      "workspace_summary": "2026-11-13T14:09:50.3396300Z      Summary [ 125.707s] 4540 tests run: 4540 passed, 114 skipped"
+    },
+    "linux": {
+      "job": 131926197136,
+      "url": "https://github.com/l0ng-ai/openidea/actions/runs/43435310610/job/131926197136",
+      "exact_tests": {
+        "exact_environment_parsing_keeps_types_and_precedence": "2026-11-13T14:11:28.1459625Z         PASS [   0.010s] (2117/4537) ide-http env::tests::exact_environment_parsing_keeps_types_and_precedence",
+        "preserves_exact_numeric_environment_tokens": "2026-11-13T14:11:28.1693134Z         PASS [   0.010s] (2122/4537) ide-http env::tests::preserves_exact_numeric_environment_tokens",
+        "sends_exact_environment_numbers_to_a_local_server": "2026-11-13T14:11:28.2639539Z         PASS [   0.015s] (2132/4537) ide-http exec::tests::sends_exact_environment_numbers_to_a_local_server"
+      },
+      "workspace_summary": "2026-11-13T14:12:38.9465350Z      Summary [ 177.395s] 4537 tests run: 4537 passed, 115 skipped"
+    },
+    "windows": {
+      "job": 131926197176,
+      "url": "https://github.com/l0ng-ai/openidea/actions/runs/43435310610/job/131926197176",
+      "exact_tests": {
+        "exact_environment_parsing_keeps_types_and_precedence": "2026-11-13T14:49:09.3622244Z         PASS [   0.014s] (1956/4203) ide-http env::tests::exact_environment_parsing_keeps_types_and_precedence",
+        "preserves_exact_numeric_environment_tokens": "2026-11-13T14:49:09.4307560Z         PASS [   0.010s] (1961/4203) ide-http env::tests::preserves_exact_numeric_environment_tokens",
+        "sends_exact_environment_numbers_to_a_local_server": "2026-11-13T14:49:09.6059382Z         PASS [   0.022s] (1973/4203) ide-http exec::tests::sends_exact_environment_numbers_to_a_local_server"
+      },
+      "workspace_summary": "2026-11-13T14:52:16.4749625Z      Summary [ 345.706s] 4203 tests run: 4199 passed, 4 failed, 105 skipped"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "data": {
+    "formatted": [],
+    "notifications": [],
+    "result": {
+      "body": null,
+      "endpoint": {
+        "headers": {},
+        "name": "local",
+        "url": "http://127.0.0.1:59076/graphql"
+      },
+      "error": "IpcError: unresolved variable(s): host (no environment selected)",
+      "path": "/private/tmp/openidea-pr3176-followup/native-fixture/query.graphql",
+      "size": null,
+      "status": null,
+      "totalMs": null
+    },
+    "statePreservesInput": true,
+    "variableCharacters": 3000089
+  },
+  "error": null,
+  "id": "7ec58da6-9703-4da7-87e9-beda744168ec",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

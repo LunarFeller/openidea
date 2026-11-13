@@ -1,0 +1,150 @@
+{
+  "before_head": "12515698a5de3ef025ef88f880596ad21ea4e7ef",
+  "after_head": "e5ef7557e681b3e18b368a31c2098c60d96089e8",
+  "method": "macOS JavaScriptCore via osascript, production GraphQL functions and JSON helpers",
+  "input": "\\u0041 repeated then literal {{host}},plus exact id/amount/tiny",
+  "before": [
+    {
+      "escapedCharacters": 100000,
+      "inputLength": 600083,
+      "decodedCharacters": 100008,
+      "ours": {
+        "ms": 18,
+        "length": 600144,
+        "templatesRemain": false,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    },
+    {
+      "escapedCharacters": 500000,
+      "inputLength": 3000083,
+      "decodedCharacters": 500008,
+      "ours": {
+        "ms": 67,
+        "length": 3000124,
+        "templatesRemain": true,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    },
+    {
+      "escapedCharacters": 750000,
+      "inputLength": 4500083,
+      "decodedCharacters": 750008,
+      "ours": {
+        "ms": 46,
+        "length": 4500124,
+        "templatesRemain": true,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    },
+    {
+      "escapedCharacters": 850000,
+      "inputLength": 5100083,
+      "decodedCharacters": 850008,
+      "ours": {
+        "ms": 46,
+        "length": 5100124,
+        "templatesRemain": true,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    },
+    {
+      "escapedCharacters": 1000000,
+      "inputLength": 6000083,
+      "decodedCharacters": 1000008,
+      "ours": {
+        "ms": 53,
+        "length": 6000124,
+        "templatesRemain": true,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    }
+  ],
+  "after": [
+    {
+      "escapedCharacters": 100000,
+      "inputLength": 600083,
+      "decodedCharacters": 100008,
+      "ours": {
+        "ms": 23,
+        "length": 600144,
+        "templatesRemain": false,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    },
+    {
+      "escapedCharacters": 500000,
+      "inputLength": 3000083,
+      "decodedCharacters": 500008,
+      "ours": {
+        "ms": 102,
+        "length": 3000144,
+        "templatesRemain": false,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    },
+    {
+      "escapedCharacters": 750000,
+      "inputLength": 4500083,
+      "decodedCharacters": 750008,
+      "ours": {
+        "ms": 145,
+        "length": 4500144,
+        "templatesRemain": false,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    },
+    {
+      "escapedCharacters": 850000,
+      "inputLength": 5100083,
+      "decodedCharacters": 850008,
+      "ours": {
+        "ms": 164,
+        "length": 5100144,
+        "templatesRemain": false,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    },
+    {
+      "escapedCharacters": 1000000,
+      "inputLength": 6000083,
+      "decodedCharacters": 1000008,
+      "ours": {
+        "ms": 195,
+        "length": 6000144,
+        "templatesRemain": false,
+        "exactId": true,
+        "exactAmount": true,
+        "exactTiny": true,
+        "semantics": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "check": "cargo-format",
+  "command": [
+    "cargo",
+    "fmt",
+    "--all",
+    "--check"
+  ],
+  "exit_code": 0,
+  "seconds": 16.6
+}

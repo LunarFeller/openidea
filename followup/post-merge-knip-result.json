@@ -1,0 +1,9 @@
+{
+  "check": "knip",
+  "command": [
+    "pnpm",
+    "knip"
+  ],
+  "exit_code": 0,
+  "seconds": 11.6
+}

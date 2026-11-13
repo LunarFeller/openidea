@@ -1,0 +1,13 @@
+{
+  "request_sent": true,
+  "variable_characters": 3000089,
+  "message_length": 500008,
+  "message_sha256": "20a70ca1344b30100ce2e58f566a2e3c7cc78c8c0397fd6f66a4b5af456f1b37",
+  "id_exact": true,
+  "amount_exact": true,
+  "tiny_exact": true,
+  "literal_template_preserved": true,
+  "status": 200,
+  "port": 9223,
+  "identifier": "ai.l0ng.openidea.dev.w7d2a353326a97d88"
+}

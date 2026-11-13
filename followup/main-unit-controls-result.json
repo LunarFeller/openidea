@@ -1,0 +1,22 @@
+{
+  "base": "85f4ffb6",
+  "command": [
+    "pnpm",
+    "vitest",
+    "run",
+    "scripts/theme/theme.test.ts",
+    "src/platform/i18n.test.ts",
+    "--reporter=json",
+    "--outputFile=/tmp/openidea-pr3176-followup/main-unit-controls.json"
+  ],
+  "exit_code": 1,
+  "seconds": 3.6,
+  "total": 48,
+  "passed": 44,
+  "failed": [
+    "theme token reference is current in plugins/themes.md (run pnpm gen:theme-docs)",
+    "theme plugin template sets every UI token in the theme file and every editor token in the scheme file",
+    "theme plugin template groups tokens under the section comments of tokens.css",
+    "catalogs translate source text into text different from English, in locales with another script"
+  ]
+}
