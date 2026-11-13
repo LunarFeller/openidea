@@ -1,0 +1,89 @@
+src/platform/keymaps/intellij-windows.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 405
+src/features/database/store.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 28,31,48,51-52,188,697-698,704,733-734,737-747,750,752-790
+src/platform/actions.test.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 2-10,102-119
+  s_149af2c5f31d1c::t_1d60ddde072117 120
+src/editor/lsp/navigation.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 1052,1054-1056
+src/platform/keymaps/intellij-macos.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 407
+plugins/official/graphviz/web-src/src/main.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 9,76
+plugins/official/csv-editor/dist/plugin.wasm.sources
+  s_149af2c5f31d1c::t_658d71da25e24f 1
+src/ui/Tree.tsx
+  s_149af2c5f31d1c::t_658d71da25e24f 64-65,423,427
+plugins/official/checkstyle/src/lib.rs
+  s_149af2c5f31d1c::t_658d71da25e24f 109,113-118,320-325
+  s_149af2c5f31d1c::t_29a13a672a6f89 326-327
+crates/ide-host/tests/plugins.rs
+  s_149af2c5f31d1c::t_658d71da25e24f 2557-2558,2996-3000,3007
+plugins/official/solidity/dist/plugin.wasm.sources
+  s_149af2c5f31d1c::t_658d71da25e24f 1
+plugins/official/solidity/src/lib.rs
+  s_149af2c5f31d1c::t_658d71da25e24f 350-351,371,380-382,402,519-520,694-707
+  s_149af2c5f31d1c::t_22f9de7e9d4abe 708
+plugins/official/string-tools/src/lib.rs
+  s_149af2c5f31d1c::t_658d71da25e24f 233-234,342-343,421,432-433
+plugins/official/ai-completion/src/lib.rs
+  s_149af2c5f31d1c::t_658d71da25e24f 34-42,46,208-227
+  s_149af2c5f31d1c::t_e959e98f2245a1 228-230
+plugins/official/license-header/dist/plugin.wasm.sources
+  s_149af2c5f31d1c::t_658d71da25e24f 1
+plugins/official/regex-tester/src/lib.rs
+  s_149af2c5f31d1c::t_658d71da25e24f 97-113,260-266
+plugins/official/string-tools/dist/plugin.wasm.sources
+  s_149af2c5f31d1c::t_658d71da25e24f 1
+src/features/database/requestLifecycle.test.ts
+  s_149af2c5f31d1c::t_5fe71252c85c6c 428-441
+src/platform/keymaps/vscode-macos.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 395
+plugins/official/ai-completion/dist/plugin.wasm.sources
+  s_149af2c5f31d1c::t_658d71da25e24f 1
+src/features/database/DatabaseView.tsx
+  s_149af2c5f31d1c::t_658d71da25e24f 147,150,152,693,697
+plugins/official/regex-tester/dist/plugin.wasm.sources
+  s_149af2c5f31d1c::t_658d71da25e24f 1
+plugins/official/mybatis/dist/plugin.wasm.sources
+  s_149af2c5f31d1c::t_658d71da25e24f 1
+plugins/official/checkstyle/dist/plugin.wasm.sources
+  s_149af2c5f31d1c::t_658d71da25e24f 1
+plugins/official/mybatis/src/lib.rs
+  s_149af2c5f31d1c::t_658d71da25e24f 12,17-20,92-144,149,155-162,220-221,285,521-522,603,605,655-656,659,662,666,669,678,681,696-702,716,720-725,730-731,755-759,765-768,795-802,832,877,996,1014,1031-1032,1036,1053,1057-1058,1071,1555-1639
+src/features/database/treeActions.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 34,504-511
+  s_149af2c5f31d1c::t_66bae9d625c766 512
+plugins/official/graphviz/web-src/src/render.test.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 3,45-61
+  s_149af2c5f31d1c::t_204cfd07f86462 62
+plugins/official/license-header/src/lib.rs
+  s_149af2c5f31d1c::t_658d71da25e24f 61-67,70,93-94,182,186-191,323-331,351-354
+  s_149af2c5f31d1c::t_d1fdd5b26b129f 355-356
+src/platform/actions.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 119-120,133-139,141-150
+plugins/official/csv-editor/src/lib.rs
+  s_149af2c5f31d1c::t_658d71da25e24f 146-148,170-171
+src/features/database/DatabaseView.test.tsx
+  s_149af2c5f31d1c::t_658d71da25e24f 8-10,114-166
+  s_149af2c5f31d1c::t_2d67571e02a9a8 167-168
+plugins/official/graphviz/web-src/src/render.ts
+  s_149af2c5f31d1c::t_658d71da25e24f 69-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "e300aad291629e94b1d8ae47bdd11c6a15f1281b",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
