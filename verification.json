@@ -268,5 +268,104 @@
     "pnpm build (including Safari 16 startup API and bundle syntax checks)"
   ],
   "recording": "numeric-sort.webm: browser production result grid, ascending / descending / query order",
-  "source_commit": "7dbbc8cbb5e656e6d1ced1ddcb123a7804498c52"
+  "pull_request": "https://github.com/l0ng-ai/openidea/pull/3075",
+  "source_commit": "7dbbc8cbb5e656e6d1ced1ddcb123a7804498c52",
+  "follow_up": {
+    "head_commit": "8f368274888d4d4e2b1d22101c987d315a6be6da",
+    "merged_main_commit": "2e5e9acd9f30fc02649094fa7f8a548d55c0ba4c",
+    "upstream_keymap_fix": "https://github.com/l0ng-ai/openidea/pull/3071",
+    "keymap_tests": {
+      "total": 28,
+      "passed": 28,
+      "failed": 0
+    },
+    "database_and_keymap_tests": {
+      "total": 403,
+      "passed": 403,
+      "failed": 0
+    },
+    "numeric_fix_changed_by_merge": false,
+    "native_evidence": "Original native macOS/SQLite screenshots and recording retained; the comparator and its regression tests are byte-identical after merging main.",
+    "upstream_ci": {
+      "run": "https://github.com/l0ng-ai/openidea/actions/runs/43375787757",
+      "head_commit": "8f368274888d4d4e2b1d22101c987d315a6be6da",
+      "status": "completed",
+      "conclusion": "action_required",
+      "jobs_started": 0,
+      "page_message": "This workflow is awaiting approval from a maintainer in #3075."
+    },
+    "author_feedback": "No PR comments, inline comments, or reviews at the post-push check.",
+    "full_unit_tests": {
+      "numTotalTests": 10817,
+      "numPassedTests": 10811,
+      "numFailedTests": 0,
+      "numPendingTests": 6,
+      "success": true
+    },
+    "commands_passed": [
+      "pnpm vitest run src/features/database src/features/settings/__tests__/keymap.test.ts",
+      "pnpm test --reporter=json --outputFile=/tmp/openidea-pr3075-followup/all-tests.json",
+      "pnpm typecheck",
+      "pnpm lint (existing warnings)",
+      "pnpm format:check",
+      "pnpm knip (existing config hint)",
+      "git diff --check",
+      "pnpm build (including Safari 16 startup API and bundle syntax checks)"
+    ],
+    "main_newer_commits_checked": {
+      "through": "6143011880c5ad2444a089a3a6d98376a949dc5f",
+      "numeric_sort_files_changed": false
+    },
+    "browser_regression": {
+      "command": "OPENIDEA_E2E_PORT=15375 pnpm e2e e2e/databaseDialogLayout.spec.ts e2e/databaseResultSpacing.spec.ts e2e/databaseJsonValue.spec.ts e2e/databaseNumericSort.spec.ts e2e/databaseResultTabs.spec.ts e2e/commit.spec.ts e2e/commitDoubleClick.spec.ts --workers=2 --reporter=json",
+      "database_scenarios": {
+        "passed": 17,
+        "failed": 0,
+        "numeric_scenarios_passed": 4
+      },
+      "all_selected_scenarios": {
+        "startTime": "2026-11-13T05:55:47.153Z",
+        "duration": 60059.778999999995,
+        "expected": 21,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "commit_focus_retry": {
+        "startTime": "2026-11-13T05:57:54.536Z",
+        "duration": 16034.490999999998,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      },
+      "clean_main_control": {
+        "commit": "2e5e9acd9f30fc02649094fa7f8a548d55c0ba4c",
+        "command": "OPENIDEA_E2E_PORT=15376 pnpm e2e e2e/commit.spec.ts e2e/commitDoubleClick.spec.ts --grep 'commits the checked changes|double-click opens the diff by default' --workers=2 --reporter=json",
+        "stats": {
+          "startTime": "2026-11-13T05:59:03.304Z",
+          "duration": 17072.827,
+          "expected": 0,
+          "skipped": 0,
+          "unexpected": 2,
+          "flaky": 0
+        }
+      },
+      "unresolved_failures": [
+        {
+          "test": "commit.spec.ts:60, ⌘K commits the checked changes with the typed message",
+          "assertion": "Commit message textarea expected focused, received inactive",
+          "reproduces_on_clean_main": true
+        },
+        {
+          "test": "commitDoubleClick.spec.ts:115, non-modal Commit window: double-click opens the diff by default",
+          "assertion": "Commit message textarea expected focused, received inactive",
+          "reproduces_on_clean_main": true
+        }
+      ],
+      "assessment": "The two Commit focus checks passed on the original targeted retry but failed again on both the follow-up PR head and clean main. They remain documented as unresolved baseline failures; the numeric sorting PR does not change their production code paths."
+    },
+    "pushed_commit": "8f368274888d4d4e2b1d22101c987d315a6be6da",
+    "checked_at_utc": "2026-11-13T06:01:52.841226+00:00"
+  }
 }
