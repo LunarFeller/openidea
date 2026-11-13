@@ -1,6 +1,6 @@
 {
-  "total": 10,
-  "passed": 10,
+  "total": 14,
+  "passed": 14,
   "failed": 0,
   "tests": [
     {
@@ -50,6 +50,26 @@
     },
     {
       "name": "review: querying a source's default database does not freeze a sibling connection snapshot",
+      "status": "passed",
+      "failureMessages": []
+    },
+    {
+      "name": "review merge: undefined kind infers a view before selecting its path",
+      "status": "passed",
+      "failureMessages": []
+    },
+    {
+      "name": "review merge: a stale details response cannot select or focus the tree",
+      "status": "passed",
+      "failureMessages": []
+    },
+    {
+      "name": "review merge: Select Opened File delegates view selection through inferred kind",
+      "status": "passed",
+      "failureMessages": []
+    },
+    {
+      "name": "review merge: Select Opened File stops after disconnect while tables are pending",
       "status": "passed",
       "failureMessages": []
     }

@@ -19,10 +19,10 @@ const backend = vi.hoisted(() => ({
   execute: vi.fn(),
   statements: vi.fn(),
 }));
-const ui = vi.hoisted(() => ({ show: vi.fn(), notify: vi.fn() }));
+const ui = vi.hoisted(() => ({ show: vi.fn(), notify: vi.fn(), activeInput: vi.fn() }));
 vi.mock("@/workbench/contributions", async (importOriginal) => {
   const actual = await importOriginal<typeof import("@/workbench/contributions")>();
-  return { ...actual, toolWindowService: () => ({ show: ui.show }), notifications: () => ({ notify: ui.notify }) };
+  return { ...actual, maybeEditorService: () => ({ activeInput: ui.activeInput }), toolWindowService: () => ({ show: ui.show }), notifications: () => ({ notify: ui.notify }) };
 });
 vi.mock("@/platform/ipc", async (importOriginal) => {
   const actual = await importOriginal<typeof import("@/platform/ipc")>();
@@ -63,6 +63,7 @@ import {
   refresh,
   renameSource,
   revealInTree,
+  revealOpened,
   saveSource,
   useDatabase,
   withConnection,
@@ -286,4 +287,64 @@ it("review: querying a source's default database does not freeze a sibling conne
   await pending;
   expect(useDatabase.getState().connected.has("pg")).toBe(true);
   expect(useDatabase.getState().connected.has("pg:app")).toBe(false);
+});
+
+
+it("review merge: undefined kind infers a view before selecting its path", async () => {
+  useDatabase.setState({
+    databases: { pg: { status: "ok", value: { current: "app", names: ["app"] } } },
+    schemas: { pg: { status: "ok", value: ["public"] } },
+    tables: { "pg\u0000public": { status: "ok", value: [{ name: "users", kind: "view" }] } },
+  });
+  await revealInTree("pg", "public", "users", undefined);
+  expect(useDatabase.getState().treeReveal?.path.at(-1)).toBe("pg/public/views/users");
+  expect(ui.show).toHaveBeenCalledWith("database");
+});
+
+it("review merge: a stale details response cannot select or focus the tree", async () => {
+  useDatabase.setState({
+    databases: { pg: { status: "ok", value: { current: "app", names: ["app"] } } },
+    schemas: { pg: { status: "ok", value: ["public"] } },
+    tables: { "pg\u0000public": { status: "ok", value: [{ name: "users", kind: "view" }] } },
+  });
+  const response = deferred();
+  backend.details.mockReturnValueOnce(response.promise);
+  const pending = revealInTree("pg", "public", "users", undefined, "id");
+  expect(backend.details).toHaveBeenCalledOnce();
+  await disconnect("pg");
+  response.resolve(ok(details));
+  await pending;
+  expect(useDatabase.getState().treeReveal).toBeNull();
+  expect(ui.show).not.toHaveBeenCalled();
+});
+
+it("review merge: Select Opened File delegates view selection through inferred kind", async () => {
+  const { tableInput } = await import("@/features/database/tableInput");
+  ui.activeInput.mockReturnValueOnce(tableInput("pg", "public", "users"));
+  useDatabase.setState({
+    databases: { pg: { status: "ok", value: { current: "app", names: ["app"] } } },
+    schemas: { pg: { status: "ok", value: ["public"] } },
+  });
+  backend.tables.mockResolvedValueOnce(ok([{ name: "users", kind: "view" }]));
+  await revealOpened();
+  expect(useDatabase.getState().treeReveal?.path.at(-1)).toBe("pg/public/views/users");
+  expect(ui.show).toHaveBeenCalledWith("database");
+});
+
+it("review merge: Select Opened File stops after disconnect while tables are pending", async () => {
+  const { tableInput } = await import("@/features/database/tableInput");
+  ui.activeInput.mockReturnValueOnce(tableInput("pg", "public", "users"));
+  useDatabase.setState({
+    databases: { pg: { status: "ok", value: { current: "app", names: ["app"] } } },
+    schemas: { pg: { status: "ok", value: ["public"] } },
+  });
+  const response = deferred();
+  backend.tables.mockReturnValueOnce(response.promise);
+  const pending = revealOpened();
+  await vi.waitFor(() => expect(backend.tables).toHaveBeenCalledOnce());
+  await disconnect("pg");
+  response.resolve(ok([{ name: "users", kind: "view" }]));
+  await pending;
+  expect(useDatabase.getState().treeReveal).toBeNull();
+  expect(ui.show).not.toHaveBeenCalled();
 });

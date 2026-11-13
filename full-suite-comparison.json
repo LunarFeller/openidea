@@ -1,19 +1,16 @@
 {
-  "branch": {
-    "total": 11241,
-    "passed": 11232,
-    "failed": 3,
+  "head": "ac7e3c5e268678dad75538856419433b7ada3cb5",
+  "base": "3c781296d6e4527259a8b917ec71d8182f0b465f",
+  "branch_full": {
+    "total": 11248,
+    "passed": 11240,
+    "failed": 2,
     "skipped": 6,
-    "non_database_failures": [
+    "failures": [
       {
         "file": "icons.test.tsx",
         "name": "fileIconName gives every detected language file a specific icon",
         "failure": "AssertionError: expected [ 'slint.toml: name.slint' ] to deeply equal []"
-      },
-      {
-        "file": "textCatalog.test.ts",
-        "name": "source-text catalog zh translates every literal UI text",
-        "failure": "AssertionError: expected [ Array(1) ] to deeply equal []"
       },
       {
         "file": "diffToolbar.test.tsx",
@@ -22,22 +19,21 @@
       }
     ]
   },
-  "main_with_regression_tests": {
-    "total": 11241,
-    "passed": 11140,
-    "failed": 95,
-    "skipped": 6,
-    "non_database_failures": [
-      {
-        "file": "icons.test.tsx",
-        "name": "fileIconName gives every detected language file a specific icon",
-        "failure": "AssertionError: expected [ 'slint.toml: name.slint' ] to deeply equal []"
-      },
-      {
-        "file": "textCatalog.test.ts",
-        "name": "source-text catalog zh translates every literal UI text",
-        "failure": "AssertionError: expected [ Array(1) ] to deeply equal []"
-      }
-    ]
-  }
+  "main_controls": {
+    "icons": {
+      "total": 109,
+      "passed": 108,
+      "failed": 1
+    },
+    "diffToolbar": {
+      "executed": 200,
+      "passed": 157,
+      "failed": 43,
+      "failed_ArrowDown": 25,
+      "failed_F4": 18,
+      "all_failures_same_zero_openFile_calls": true,
+      "duration_ms": 101528.78466796875
+    }
+  },
+  "note": "Main controls are separate deterministic and repeated-case executions, not a claim that the original full-file main run failed."
 }

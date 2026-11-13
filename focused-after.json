@@ -1,7 +1,7 @@
 {
   "phase": "after",
-  "total": 117,
-  "passed": 117,
+  "total": 121,
+  "passed": 121,
   "failed": 0,
   "tests": [
     {
@@ -588,7 +588,31 @@
     },
     {
       "file": "requestLifecycle.test.ts",
-      "name": "connection and metadata continuations stops tree reveal after its connection becomes stale",
+      "name": "connection and metadata continuations stops tree reveal after its connection becomes stale (kind table)",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations stops tree reveal after its connection becomes stale (kind undefined)",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not select a tree node after its pending details become stale (kind table)",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not select a tree node after its pending details become stale (kind undefined)",
+      "status": "passed",
+      "failure": []
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations infers a view's folder while revealing a current table editor",
       "status": "passed",
       "failure": []
     },

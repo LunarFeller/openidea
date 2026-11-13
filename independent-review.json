@@ -1,40 +1,38 @@
 {
   "reviewer": "independent subagent /root/review_db_lifecycle",
-  "reviewed_at_utc": "2026-11-13T17:00:26.247395+00:00",
-  "base_commit": "1b08d5de",
-  "scope": "Read-only review of frontend database metadata request lifetime fix; no native verification or backend build in reviewer process.",
-  "executed_probe_count": 10,
-  "passed": 10,
+  "reviewed_at_utc": "2026-11-13T18:17:18.407652+00:00",
+  "base_commit": "3c781296d6e4527259a8b917ec71d8182f0b465f",
+  "reviewed_head": "e300aad291629e94b1d8ae47bdd11c6a15f1281b",
+  "scope": "Review after merging upstream Select Opened File (#3223), including revealOpened -> revealInTree -> selectInTree and retained stale-request guards.",
+  "executed_probe_count": 14,
+  "passed": 14,
   "failed": 0,
   "pending_review_findings": [],
   "probe_source": "review-probes.test.ts",
   "probe_results": "review-results.json",
   "production_sha256": {
-    "store.ts": "ea6bcb7617a4bef2e15444c0e18c31ace7743310649e3c688c047a86f2ac19f5",
+    "store.ts": "d1d26f9d57e1dd4b54580445c89595f9c05b9a92684ea56975ca57c961be6d71",
     "requests.ts": "6228eae6bf97c2a92d840d791ae75b14b3275412d35ad810751eefb06607994c",
-    "DatabaseView.tsx": "081aec3b98b64612a21d8aec27db8f464905bfabff833695e433eb21c85a4f34",
+    "DatabaseView.tsx": "0e34a93c2afaf5464589875d00ed044df9e142e585c8bc32b4d8f7c4514dbcc4",
     "SourceDialog.tsx": "4a04505ab694bade96494c59cf7ba9b5c7c5077840c8323b17ef000f57a59ebb",
     "console.tsx": "4d65e8173046216236b8a6748a07129fee79564a5b0e9cfcdc63eeb7db442107",
     "index.ts": "212b43c45e82964b07a75f412085806906479680d65732d42614b3db82cd716b",
     "introspection.ts": "6ae627d78ed96c5117c9c222d989125b42a02e278fcee8a1a77eb2520b78a5dd",
-    "treeActions.ts": "369af7d8c231197f24e7c8032ac27feed222417658c910721ec264b8de2f7316"
+    "treeActions.ts": "f1aef2b989b61cb19d20283f2c756369b5d848dfb2f787509c2f7e042e00b183"
   },
-  "resolved_cases": [
-    "Same-root project rename preserves in-flight metadata",
-    "Source-changed event does not skip password/SSH storage",
-    "Failed reconnect leaves a successful disconnect inactive",
-    "Implicit successful reconnect survives old disconnect acknowledgement",
-    "An unrelated source connect does not retain edited-source connected state",
-    "A pending save does not automatically reconnect after a later disconnect",
-    "Whole-source refresh respects a disconnected child and continues siblings",
-    "Late completed DDL does not refresh stale metadata or write current output",
-    "Old SQL is not issued after stale completion returns in a new project",
-    "A default-database query does not freeze a sibling connection snapshot"
+  "additional_merge_probes": [
+    "Undefined table kind infers view and selects the upstream path format",
+    "A details response completing after disconnect cannot select or focus the tree",
+    "Select Opened File delegates active table/view selection through inferred kind",
+    "Select Opened File stops after disconnect while table metadata is pending"
   ],
-  "static_followup": "SourceDialog closes only its captured dialog identity. No additional actionable findings in final static pass.",
+  "merge_assessment": "The current() guard remains after loadDetails and before kind inference/selectInTree. Console revealOpened is synchronous and adds no IPC. Upstream focus and ancestor fallback logic is preserved. No additional actionable findings.",
+  "diff_check": "git diff 3c781296...HEAD --check passed",
   "limitations": [
-    "Deferred IPC mocks exercise real production store functions; they do not establish physical backend pool lifecycle correctness.",
-    "Parent agent owns committed regression tests, full checks and native before/after verification."
+    "Review probes mock IPC while exercising actual production state/orchestration functions; parent owns native integration validation.",
+    "The underlying backend physical pool lifecycle is outside this frontend patch."
   ],
+  "final_head": "ac7e3c5e268678dad75538856419433b7ada3cb5",
+  "production_matches_reviewed_head": true,
   "overlaps_committed_cases": true
 }

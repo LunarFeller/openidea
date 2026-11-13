@@ -1,8 +1,8 @@
 {
   "phase": "before",
-  "total": 117,
-  "passed": 24,
-  "failed": 93,
+  "total": 121,
+  "passed": 25,
+  "failed": 96,
   "tests": [
     {
       "file": "introspection.test.ts",
@@ -756,11 +756,41 @@
     },
     {
       "file": "requestLifecycle.test.ts",
-      "name": "connection and metadata continuations stops tree reveal after its connection becomes stale",
+      "name": "connection and metadata continuations stops tree reveal after its connection becomes stale (kind table)",
       "status": "failed",
       "failure": [
         "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
       ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations stops tree reveal after its connection becomes stale (kind undefined)",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected \"vi.fn()\" to not be called at all, but actually been called 1 times"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not select a tree node after its pending details become stale (kind table)",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { \u2026(2) } to be null"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations does not select a tree node after its pending details become stale (kind undefined)",
+      "status": "failed",
+      "failure": [
+        "AssertionError: expected { \u2026(2) } to be null"
+      ]
+    },
+    {
+      "file": "requestLifecycle.test.ts",
+      "name": "connection and metadata continuations infers a view's folder while revealing a current table editor",
+      "status": "passed",
+      "failure": []
     },
     {
       "file": "requestLifecycle.test.ts",

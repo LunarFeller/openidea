@@ -1,16 +1,16 @@
 {
-  "feature_commit": "e7d32730453652dc7ddd1f7a5c04bbcf6481c630",
-  "base_commit": "01a60ef16458734891d893eaa5f548c2ca8bf324",
-  "native_base_commit": "1b08d5de090fca5e206527613161f495581af097",
-  "native_note": "Database production sources are unchanged between these main commits. Fixed source hashes match the independent review. Real SQLite IPC replies were delayed inside the native WebKit app; 20 cases cover four boundaries and five paths. SQLite database listing exercises its real unsupported-driver error, while schemas/tables/details/completion return real data.",
+  "feature_commit": "ac7e3c5e268678dad75538856419433b7ada3cb5",
+  "base_commit": "3c781296d6e4527259a8b917ec71d8182f0b465f",
+  "native_base_commit": "3c781296d6e4527259a8b917ec71d8182f0b465f",
+  "native_note": "Both latest-main and fixed native checks ran against base3c781296. Real SQLite IPC replies were delayed in the macOS WebKit app. SQLite database listing exercises its actual unsupported-driver error; schemas/tables/details/completion return actual data.",
   "focused_before": {
-    "total": 117,
-    "passed": 24,
-    "failed": 93
+    "total": 121,
+    "passed": 25,
+    "failed": 96
   },
   "focused_after": {
-    "total": 117,
-    "passed": 117,
+    "total": 121,
+    "passed": 121,
     "failed": 0
   },
   "browser_before": {
@@ -47,17 +47,17 @@
     "after_sequence": "after-sequence.gif"
   },
   "production_sha256": {
-    "store.ts": "ea6bcb7617a4bef2e15444c0e18c31ace7743310649e3c688c047a86f2ac19f5",
+    "store.ts": "d1d26f9d57e1dd4b54580445c89595f9c05b9a92684ea56975ca57c961be6d71",
     "requests.ts": "6228eae6bf97c2a92d840d791ae75b14b3275412d35ad810751eefb06607994c",
-    "DatabaseView.tsx": "081aec3b98b64612a21d8aec27db8f464905bfabff833695e433eb21c85a4f34",
+    "DatabaseView.tsx": "0e34a93c2afaf5464589875d00ed044df9e142e585c8bc32b4d8f7c4514dbcc4",
     "SourceDialog.tsx": "4a04505ab694bade96494c59cf7ba9b5c7c5077840c8323b17ef000f57a59ebb",
     "console.tsx": "4d65e8173046216236b8a6748a07129fee79564a5b0e9cfcdc63eeb7db442107",
     "index.ts": "212b43c45e82964b07a75f412085806906479680d65732d42614b3db82cd716b",
     "introspection.ts": "6ae627d78ed96c5117c9c222d989125b42a02e278fcee8a1a77eb2520b78a5dd",
-    "treeActions.ts": "369af7d8c231197f24e7c8032ac27feed222417658c910721ec264b8de2f7316"
+    "treeActions.ts": "f1aef2b989b61cb19d20283f2c756369b5d848dfb2f787509c2f7e042e00b183"
   },
   "database_full_suite": {
-    "passed": 592,
+    "passed": 598,
     "failed": 0
   },
   "database_browser_regression": {
@@ -69,28 +69,31 @@
     "lint": "pass (existing warnings)",
     "format:check": "pass",
     "knip": "pass (existing configuration hint)",
-    "build": "pass, including Safari 16 API/syntax checks",
-    "full_frontend": "see full-suite-comparison.json"
+    "build": "pass, including Safari16 API/syntax checks",
+    "database_unit": "598 passed",
+    "database_browser": "29 passed",
+    "full_frontend": "11240 passed, 6 skipped, 2 failures reproduced on current main; see full-suite-comparison.json"
   },
   "full_suite_remaining_failures": {
-    "deterministic_on_main": [
-      "icons.test.tsx: slint.toml icon mapping",
-      "textCatalog.test.ts: zh source text coverage"
-    ],
-    "intermittent_on_main": {
-      "test": "diffToolbar.test.tsx keyboard navigation",
-      "original_file": {
-        "branch_passed": 66,
-        "main_passed": 66
+    "icons": "Reproduced on current main (109 cases, 1 failure)",
+    "diffToolbar": "Repeated unchanged original keyboard cases on current main: 43/200 fail with the same zero-openFile-call signature; 301 local dependencies match the branch and contain no database modules."
+  },
+  "full_frontend": {
+    "total": 11248,
+    "passed": 11240,
+    "failed": 2,
+    "skipped": 6,
+    "failures": [
+      {
+        "file": "icons.test.tsx",
+        "name": "fileIconName gives every detected language file a specific icon",
+        "failure": "AssertionError: expected [ 'slint.toml: name.slint' ] to deeply equal []"
       },
-      "unchanged_cases_repeated": {
-        "per_side": 200,
-        "branch_failed": 12,
-        "main_failed": 17
-      },
-      "identical_local_dependencies": 301,
-      "database_in_dependency_graph": false,
-      "evidence": "difftoolbar-flakiness.json"
-    }
+      {
+        "file": "diffToolbar.test.tsx",
+        "name": "Jump to Source of a revision diff jumps with ArrowDown when the working copy is found after the pane gains focus",
+        "failure": "AssertionError: expected \"vi.fn()\" to be called once with arguments: [ '/p/a.ts', { \u2026(2) } ]"
+      }
+    ]
   }
 }
