@@ -1,0 +1,116 @@
+[
+  {
+    "source": "native-before-aggregates.png",
+    "annotated": "native-before-aggregates-annotated.png",
+    "source_sha256": "97f46308e45d7e73f3cb85dc5c5ccb596c6cff906222b7b9f5aec615fa205b82",
+    "frame": [
+      1079,
+      592,
+      1402,
+      676
+    ],
+    "changed_original_pixels_bbox": [
+      1079,
+      592,
+      1403,
+      677
+    ],
+    "original_digits_unchanged": true,
+    "method": "Pillow outline and footer; original screenshot pixels preserved inside the frame and everywhere outside it"
+  },
+  {
+    "source": "native-after-aggregates.png",
+    "annotated": "native-after-aggregates-annotated.png",
+    "source_sha256": "f8a90fe47155e480dbf68fd636b40d677320671ece4d61c738d5273ba82dc016",
+    "frame": [
+      1079,
+      592,
+      1402,
+      676
+    ],
+    "changed_original_pixels_bbox": [
+      1079,
+      592,
+      1403,
+      677
+    ],
+    "original_digits_unchanged": true,
+    "method": "Pillow outline and footer; original screenshot pixels preserved inside the frame and everywhere outside it"
+  },
+  {
+    "source": "native-before-decimals.png",
+    "annotated": "native-before-decimals-annotated.png",
+    "source_sha256": "ca81ae3b7946662fed342d8b372fbf4fbde0aea3901f88c190f88c1091dfd7f5",
+    "frame": [
+      1079,
+      592,
+      1402,
+      676
+    ],
+    "changed_original_pixels_bbox": [
+      1079,
+      592,
+      1403,
+      677
+    ],
+    "original_digits_unchanged": true,
+    "method": "Pillow outline and footer; original screenshot pixels preserved inside the frame and everywhere outside it"
+  },
+  {
+    "source": "native-after-decimals.png",
+    "annotated": "native-after-decimals-annotated.png",
+    "source_sha256": "04f715136a0fb139bd7faa6ac87de36e0a31e0aef3b1fc671a3319a5d3189200",
+    "frame": [
+      1079,
+      592,
+      1402,
+      676
+    ],
+    "changed_original_pixels_bbox": [
+      1079,
+      592,
+      1403,
+      677
+    ],
+    "original_digits_unchanged": true,
+    "method": "Pillow outline and footer; original screenshot pixels preserved inside the frame and everywhere outside it"
+  },
+  {
+    "source": "native-before-http.png",
+    "annotated": "native-before-http-annotated.png",
+    "source_sha256": "271ad2e81beb4c260f7ccb74e143567a1dcc6a4b6de362cc4c525b3f36a342d4",
+    "frame": [
+      478,
+      461,
+      836,
+      583
+    ],
+    "changed_original_pixels_bbox": [
+      478,
+      461,
+      837,
+      584
+    ],
+    "original_digits_unchanged": true,
+    "method": "Pillow outline and footer; original screenshot pixels preserved inside the frame and everywhere outside it"
+  },
+  {
+    "source": "native-after-http.png",
+    "annotated": "native-after-http-annotated.png",
+    "source_sha256": "9c995216162e4fff7195d61fe1833210a2926033144a5df8c787b3c807174d10",
+    "frame": [
+      478,
+      461,
+      836,
+      583
+    ],
+    "changed_original_pixels_bbox": [
+      478,
+      461,
+      837,
+      584
+    ],
+    "original_digits_unchanged": true,
+    "method": "Pillow outline and footer; original screenshot pixels preserved inside the frame and everywhere outside it"
+  }
+]

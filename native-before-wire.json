@@ -1,0 +1,10 @@
+[
+  {
+    "path": "/graphql",
+    "body": "{\"query\":\"query Exact($id: BigInt, $amount: Decimal, $tiny: Decimal) \\u007b exact(id: $id, amount: $amount, tiny: $tiny) \\u007b id amount tiny \\u007d \\u007d\\n\",\"variables\":{\"id\":9007199254740992,\"amount\":1,\"tiny\":0}}"
+  },
+  {
+    "path": "/env",
+    "body": "{\"id\":1.2345678901234568e+29,\"amount\":1.0,\"tiny\":0.0}"
+  }
+]

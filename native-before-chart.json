@@ -1,0 +1,53 @@
+{
+  "data": {
+    "body": "\n    NFnative-fixtureVersion ControlCurrent FileProjectnative-fixture/private/tmp/openidea-json-precision/numeric-audit/native-fixture.openidea.graphqlrc.jsonchecks.sqlexact.sqlitehttp-client.env.jsonquery.graphqlrequests.httpschema.graphqlserver.jsonserver.pyScratcheschecks.sql500 rowsTx: AutoExact numeric regression (SQLite)912345SELECT value FROM aggregate_values;SELECT category,value FROM chart_values;SELECT value FROM decimal_values;SELECT value FROM bigint_bounds;ServicesServicesDatabaseOutputResult 4Exact numeric regression (SQLite)CSV0same: 0samecategoryvalue (mean)native-fixturechecks.sqlsqls1:1LFUTF-8Vim4 spacesNo interpreter\n    \n    \n  \n\n",
+    "outcomes": [
+      {
+        "error": null,
+        "result": {
+          "affected": null,
+          "columns": [
+            {
+              "name": "category",
+              "typeName": "TEXT"
+            },
+            {
+              "name": "value",
+              "typeName": "INTEGER"
+            }
+          ],
+          "elapsedMs": 0.134709,
+          "executionMs": 0.109625,
+          "hasMore": false,
+          "rows": [
+            [
+              "same",
+              "9007199254740993"
+            ],
+            [
+              "same",
+              "-9007199254740992"
+            ]
+          ],
+          "statement": "SELECT category,value FROM chart_values"
+        },
+        "statement": {
+          "from": 0,
+          "text": "SELECT category,value FROM chart_values",
+          "to": 39
+        }
+      }
+    ],
+    "titles": [
+      "same: 0"
+    ]
+  },
+  "error": null,
+  "id": "67101134-eb74-4bf5-980c-cbe07c4543f2",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

@@ -1,0 +1,1 @@
+query Exact($id: BigInt, $amount: Decimal, $tiny: Decimal) { exact(id: $id, amount: $amount, tiny: $tiny) { id amount tiny } }

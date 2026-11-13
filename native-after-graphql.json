@@ -1,0 +1,110 @@
+{
+  "data": {
+    "formatted": [
+      "{\"id\":9007199254740993,\"amount\":1.0000000000000000002,\"tiny\":1e-400}\n",
+      "{\n  \"data\": {\n    \"id\": 9007199254740993,\n    \"amount\": 1.0000000000000000002,\n    \"tiny\": 1e-400\n  }\n}"
+    ],
+    "projects": [
+      {
+        "configPath": "/private/tmp/openidea-json-precision/numeric-audit/native-fixture/.graphqlrc.json",
+        "dynamic": false,
+        "endpoints": [
+          {
+            "headers": {},
+            "name": "local",
+            "url": "http://127.0.0.1:63159/graphql"
+          }
+        ],
+        "files": [
+          {
+            "defined": [
+              "BigInt",
+              "Decimal",
+              "Query",
+              "Result"
+            ],
+            "path": "/private/tmp/openidea-json-precision/numeric-audit/native-fixture/schema.graphql",
+            "references": [
+              {
+                "col": 23,
+                "line": 2,
+                "name": "BigInt",
+                "owner": "Query"
+              },
+              {
+                "col": 39,
+                "line": 2,
+                "name": "Decimal",
+                "owner": "Query"
+              },
+              {
+                "col": 54,
+                "line": 2,
+                "name": "Decimal",
+                "owner": "Query"
+              },
+              {
+                "col": 64,
+                "line": 2,
+                "name": "Result",
+                "owner": "Query"
+              },
+              {
+                "col": 18,
+                "line": 3,
+                "name": "BigInt",
+                "owner": "Result"
+              },
+              {
+                "col": 35,
+                "line": 3,
+                "name": "Decimal",
+                "owner": "Result"
+              },
+              {
+                "col": 51,
+                "line": 3,
+                "name": "Decimal",
+                "owner": "Result"
+              }
+            ],
+            "stats": {
+              "directives": 0,
+              "enums": 0,
+              "inputs": 0,
+              "types": 4
+            }
+          }
+        ],
+        "key": "/private/tmp/openidea-json-precision/numeric-audit/native-fixture/.graphqlrc.json",
+        "pointers": [
+          "schema.graphql"
+        ],
+        "remote": [],
+        "root": "/private/tmp/openidea-json-precision/numeric-audit/native-fixture",
+        "variables": []
+      }
+    ],
+    "result": {
+      "body": "{\"data\":{\"id\":9007199254740993,\"amount\":1.0000000000000000002,\"tiny\":1e-400}}",
+      "endpoint": {
+        "headers": {},
+        "name": "local",
+        "url": "http://127.0.0.1:63159/graphql"
+      },
+      "error": null,
+      "path": "/private/tmp/openidea-json-precision/numeric-audit/native-fixture/query.graphql",
+      "size": 77,
+      "status": 200,
+      "totalMs": 7.183415999999999
+    }
+  },
+  "error": null,
+  "id": "40bc0934-b5a7-4e5c-8754-d4166b27b998",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

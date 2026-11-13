@@ -1,0 +1,73 @@
+{
+  "data": {
+    "bounds": {
+      "height": 126,
+      "width": 924.125,
+      "x": 475.875,
+      "y": 459
+    },
+    "exchange": {
+      "entry": {
+        "error": null,
+        "file": "/private/tmp/openidea-json-precision/numeric-audit/native-fixture/requests.http",
+        "id": "6cd52114e56649a5acba88f494814e7c",
+        "method": "GET",
+        "name": "Exact response",
+        "status": 200,
+        "timeMs": 1794574642351.402,
+        "totalMs": 11.659332999999998,
+        "url": "http://127.0.0.1:63159/exact"
+      },
+      "request": {
+        "body": null,
+        "headers": [],
+        "method": "GET",
+        "name": "Exact response",
+        "url": "http://127.0.0.1:63159/exact"
+      },
+      "response": {
+        "body": "{\"id\":9007199254740993,\"amount\":1.0000000000000000002,\"tiny\":1e-400}",
+        "contentType": "application/json",
+        "headers": [
+          [
+            "server",
+            "BaseHTTP/0.6 Python/3.8.10"
+          ],
+          [
+            "date",
+            "Fri, 13 Nov 2026 12:57:22 GMT"
+          ],
+          [
+            "content-type",
+            "application/json"
+          ],
+          [
+            "content-length",
+            "68"
+          ]
+        ],
+        "size": 68,
+        "status": 200,
+        "statusText": "OK",
+        "totalMs": 11.659332999999998,
+        "truncated": false,
+        "ttfbMs": 11.280083,
+        "version": "HTTP/1.0"
+      }
+    },
+    "formatted": "{\n  \"id\": 9007199254740993,\n  \"amount\": 1.0000000000000000002,\n  \"tiny\": 1e-400\n}",
+    "ok": true,
+    "viewport": {
+      "height": 885,
+      "width": 1440
+    }
+  },
+  "error": null,
+  "id": "f6e35b45-2e6c-4e76-b3ef-ba4205ef2314",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

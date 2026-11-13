@@ -1,0 +1,6 @@
+{
+  "baseline_timeout": true,
+  "seconds": 3,
+  "case": "niceTicks(-Number.MAX_VALUE, 0, 7)",
+  "cause": "negative axis tick start overflows to -Infinity; increment never progresses"
+}

@@ -1,0 +1,162 @@
+{
+  "data": {
+    "outcomes": [
+      {
+        "error": null,
+        "result": {
+          "affected": null,
+          "columns": [
+            {
+              "name": "value",
+              "typeName": "TEXT"
+            }
+          ],
+          "elapsedMs": 0.700208,
+          "executionMs": 0.608417,
+          "hasMore": false,
+          "rows": [
+            [
+              "1.0000000000000000002"
+            ],
+            [
+              "2.0000000000000000004"
+            ]
+          ],
+          "statement": "SELECT value FROM decimal_values"
+        },
+        "statement": {
+          "from": 0,
+          "text": "SELECT value FROM decimal_values",
+          "to": 32
+        }
+      }
+    ],
+    "ui": {
+      "aggregates": "RecordValueAggregatesCount2Distinct2Nulls0Sum3.0000000000000000006Avg1.5000000000000000003Median1.5000000000000000003Min1.0000000000000000002Max2.0000000000000000004",
+      "cells": [
+        "1.0000000000000000002",
+        "2.0000000000000000004"
+      ],
+      "rowBounds": [
+        {
+          "bounds": {
+            "height": 26.5,
+            "width": 319,
+            "x": 1081,
+            "y": 513
+          },
+          "label": "Count"
+        },
+        {
+          "bounds": {
+            "height": 27,
+            "width": 319,
+            "x": 1081,
+            "y": 539.5
+          },
+          "label": "Distinct"
+        },
+        {
+          "bounds": {
+            "height": 27,
+            "width": 319,
+            "x": 1081,
+            "y": 566.5
+          },
+          "label": "Nulls"
+        },
+        {
+          "bounds": {
+            "height": 27,
+            "width": 319,
+            "x": 1081,
+            "y": 593.5
+          },
+          "label": "Sum"
+        },
+        {
+          "bounds": {
+            "height": 27,
+            "width": 319,
+            "x": 1081,
+            "y": 620.5
+          },
+          "label": "Avg"
+        },
+        {
+          "bounds": {
+            "height": 27,
+            "width": 319,
+            "x": 1081,
+            "y": 647.5
+          },
+          "label": "Median"
+        },
+        {
+          "bounds": {
+            "height": 27,
+            "width": 319,
+            "x": 1081,
+            "y": 674.5
+          },
+          "label": "Min"
+        },
+        {
+          "bounds": {
+            "height": 27,
+            "width": 319,
+            "x": 1081,
+            "y": 701.5
+          },
+          "label": "Max"
+        }
+      ],
+      "rows": [
+        [
+          "Count",
+          "2"
+        ],
+        [
+          "Distinct",
+          "2"
+        ],
+        [
+          "Nulls",
+          "0"
+        ],
+        [
+          "Sum",
+          "3.0000000000000000006"
+        ],
+        [
+          "Avg",
+          "1.5000000000000000003"
+        ],
+        [
+          "Median",
+          "1.5000000000000000003"
+        ],
+        [
+          "Min",
+          "1.0000000000000000002"
+        ],
+        [
+          "Max",
+          "2.0000000000000000004"
+        ]
+      ],
+      "viewport": {
+        "height": 885,
+        "width": 1440
+      }
+    }
+  },
+  "error": null,
+  "id": "2883b591-98b7-4709-a70f-85d0311d793d",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

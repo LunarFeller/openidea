@@ -1,0 +1,12 @@
+{
+  "passed": 4533,
+  "skipped": 114,
+  "failed": 0,
+  "integration_target_names": 111,
+  "complete": true,
+  "manifest": "original, unchanged",
+  "execution": "nextest --workspace with integration targets, --lib and --bins in batches; completed integration executables removed to save space",
+  "git_fixture_env": "GIT_CONFIG_GLOBAL=/dev/null GIT_CONFIG_NOSYSTEM=1",
+  "go_fixture_env": "Cached Go 1.27.0 at the front of test-process PATH; GOTOOLCHAIN=local",
+  "report": "/tmp/openidea-json-precision/numeric-audit/rust-batches-results.json"
+}

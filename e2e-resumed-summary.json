@@ -1,0 +1,102 @@
+{
+  "full_stats": {
+    "startTime": "2026-11-13T12:05:54.258Z",
+    "duration": 597739.901,
+    "expected": 393,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  },
+  "failed": [
+    {
+      "file": "commit.spec.ts",
+      "title": "\u2318K commits the checked changes with the typed message",
+      "fullTitle": "commit.spec.ts \u2318K commits the checked changes with the typed message",
+      "status": "unexpected",
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('region', { name: 'Commit', exact: true }).getByRole('textbox', { name: 'Commit message' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('region', { name: 'Commit', exact: true }).getByRole('textbox', { name: 'Commit message' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('region', { name: 'Commit', exact: true }).getByRole('textbox', { name: 'Commit message' })\u001b[22m\n\u001b[2m    24 \u00d7 locator resolved to <textarea spellcheck=\"true\" class=\"_message_kgetf_128\" aria-label=\"Commit message\" placeholder=\"Commit Message\"></textarea>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  58 |   await expect(changes.getByRole(\"checkbox\", { name: \"Include Unversioned Files in commit\" })).not.toBeChecked();\n  59 |   const m"
+      ]
+    },
+    {
+      "file": "commitDoubleClick.spec.ts",
+      "title": "non-modal Commit window: double-click opens the diff by default",
+      "fullTitle": "commitDoubleClick.spec.ts non-modal Commit window: double-click opens the diff by default",
+      "status": "unexpected",
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('region', { name: 'Commit', exact: true }).getByRole('textbox', { name: 'Commit message' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('region', { name: 'Commit', exact: true }).getByRole('textbox', { name: 'Commit message' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('region', { name: 'Commit', exact: true }).getByRole('textbox', { name: 'Commit message' })\u001b[22m\n\u001b[2m    24 \u00d7 locator resolved to <textarea spellcheck=\"true\" class=\"_message_kgetf_128\" aria-label=\"Commit message\" placeholder=\"Commit Message\"></textarea>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  113 | test(\"non-modal Commit window: double-click opens the diff by default\", async ({ workbench: page }) => {\n  114 |   const panel = "
+      ]
+    },
+    {
+      "file": "diff-navigation.spec.ts",
+      "title": "skips binary and unchanged siblings and restores after changing preview files",
+      "fullTitle": "diff-navigation.spec.ts skips binary and unchanged siblings and restores after changing preview files",
+      "status": "unexpected",
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('tablist', { name: 'Editor tabs' }).locator('[aria-selected=\"true\"]')\nExpected substring: \u001b[32m\"\u001b[7ma\u001b[27m.ts\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mz\u001b[27m.ts\u001b[7m (HEAD \u2194 Working tree)\u001b[27m\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('tablist', { name: 'Editor tabs' }).locator('[aria-selected=\"true\"]') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('tablist', { name: 'Editor tabs' }).locator('[aria-selected=\"true\"]')\u001b[22m\n\u001b[2m    24 \u00d7 locator resolved to <button role=\"tab\" tabindex=\"0\" type=\"button\" aria-selected=\"true\" data-tooltip-verbatim=\"\" id=\"editor-pane1-tab-tab4\" class=\"_tabButton_fe80x_67\" data-tooltip=\"/dev/acme-api/z.ts\" aria-controls=\"editor-pane1-panel-tab4\">\u2026</button>\u001b[22m\n\u001b[2m       - unexpected value \"z.ts ("
+      ]
+    },
+    {
+      "file": "diff-navigation.spec.ts",
+      "title": "centres the visible caret during split navigation (aligned=false, pane=1)",
+      "fullTitle": "diff-navigation.spec.ts caret navigation with reducedMotion=reduce centres the visible caret during split navigation (aligned=false, pane=1)",
+      "status": "unexpected",
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m2\u001b[39m\nReceived:   \u001b[31m6600\u001b[39m\n\n  163 |               .locator(\".cm-scroller\")\n  164 |               .evaluateAll((els) => els.map((el) => el.scrollTop));\n> 165 |             expect(Math.abs(tops[0]! - tops[1]!)).toBeLessThan(2);\n      |                                                   ^\n  166 |           }\n  167 |         };\n  168 |         await toolbar.getByRole(\"button\", { name: \"Next Difference\", exact: true }).click();\n    at check (/Users/Thomas/code/my_github/openidea-json-precision/e2e/diff-navigation.spec.ts:165:51)\n    at /Users/Thomas/code/my_github/openidea-json-precision/e2e/diff-navigation.spec.ts:177:9"
+      ]
+    },
+    {
+      "file": "toolwindows.spec.ts",
+      "title": "\u23184 toggles Run; Shift+Escape hides the active tool window",
+      "fullTitle": "toolwindows.spec.ts \u23184 toggles Run; Shift+Escape hides the active tool window",
+      "status": "unexpected",
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeHidden\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('region', { name: 'Run' })\nExpected: hidden\nReceived: visible\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeHidden\" getByRole('region', { name: 'Run' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('region', { name: 'Run' })\u001b[22m\n\u001b[2m    24 \u00d7 locator resolved to <section tabindex=\"-1\" aria-label=\"Run\" data-focus-scope=\"\" data-focus-active=\"\" data-toolwindow=\"run\" class=\"_window_1rgex_424\">\u2026</section>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n  75 |   await expect(run).toBeVisible();\n  76 |   await page.keyboard.press(\"Meta+4\");\n> 77 |   await expect(run).toBeHidden();\n     |                     ^\n  78 |   await page.keyboard.press(\"Meta+4\");\n  79 |   await expect(run).toBeVisible();\n  80 |   await page.keyboard.press(\"Shift+Escape\");\n    at /Users/Thomas/c"
+      ]
+    },
+    {
+      "file": "toolwindows.spec.ts",
+      "title": "a terminal view that loads late doesn't take focus moved elsewhere meanwhile",
+      "fullTitle": "toolwindows.spec.ts a terminal view that loads late doesn't take focus moved elsewhere meanwhile",
+      "status": "unexpected",
+      "errors": [
+        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('tree', { name: 'Project' })\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" getByRole('tree', { name: 'Project' }) with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('tree', { name: 'Project' })\u001b[22m\n\u001b[2m    24 \u00d7 locator resolved to <div role=\"tree\" tabindex=\"0\" aria-label=\"Project\" class=\"_tree_1rp7i_9\" aria-multiselectable=\"true\" aria-activedescendant=\"_r_m_-7\">\u2026</div>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  116 |   release();\n  117 |   await expect(terminal.getByRole(\"textbox\", { name: \"Terminal input\" })).toBeAttached();\n> 118 |   await expect(tree).toBeFocused();\n      |                      ^\n  119 | });\n  120 |\n  121 | test(\"Split Right gives the Terminal a tab group with its own header; Unsplit merges it"
+      ]
+    }
+  ],
+  "precision_cases": [
+    {
+      "file": "numericPrecision.spec.ts",
+      "title": "selected BIGINT cells have exact sum, mean and median",
+      "fullTitle": "numericPrecision.spec.ts selected BIGINT cells have exact sum, mean and median",
+      "status": "expected"
+    },
+    {
+      "file": "numericPrecision.spec.ts",
+      "title": "chart aggregates exactly before plotting and retains its value in both chart types",
+      "fullTitle": "numericPrecision.spec.ts chart aggregates exactly before plotting and retains its value in both chart types",
+      "status": "expected"
+    },
+    {
+      "file": "numericPrecision.spec.ts",
+      "title": "chart labels keep BIGINT and DECIMAL values",
+      "fullTitle": "numericPrecision.spec.ts chart labels keep BIGINT and DECIMAL values",
+      "status": "expected"
+    },
+    {
+      "file": "numericPrecision.spec.ts",
+      "title": "HTTP formatted and raw responses preserve the received numbers",
+      "fullTitle": "numericPrecision.spec.ts HTTP formatted and raw responses preserve the received numbers",
+      "status": "expected"
+    },
+    {
+      "file": "numericPrecision.spec.ts",
+      "title": "GraphQL sends exact variables and displays the exact response",
+      "fullTitle": "numericPrecision.spec.ts GraphQL sends exact variables and displays the exact response",
+      "status": "expected"
+    }
+  ],
+  "database": {
+    "total": 29,
+    "passed": 29
+  }
+}

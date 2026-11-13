@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ordinaryIntegers",
+    "rows": 10000,
+    "mainMs": 7.079124999999976,
+    "candidateMs": 6.829000000000065
+  },
+  {
+    "name": "ordinaryDecimals",
+    "rows": 10000,
+    "mainMs": 17.068208000000027,
+    "candidateMs": 17.74258300000008
+  },
+  {
+    "name": "adjacentBigints",
+    "rows": 10000,
+    "mainMs": 49.231583,
+    "candidateMs": 51.112707999999884
+  },
+  {
+    "name": "closeDecimals",
+    "rows": 10000,
+    "mainMs": 90.27312499999971,
+    "candidateMs": 66.23916599999984
+  },
+  {
+    "name": "extremeExponents",
+    "rows": 1000,
+    "mainMs": 4.637917000000016,
+    "candidateMs": 3.3581249999997453
+  }
+]

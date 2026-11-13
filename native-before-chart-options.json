@@ -1,0 +1,18 @@
+{
+  "data": {
+    "lineTitles": [
+      "same: 0"
+    ],
+    "sumTitles": [
+      "same: 0"
+    ]
+  },
+  "error": null,
+  "id": "d276e385-7abc-4604-8a6c-e55332d84adb",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

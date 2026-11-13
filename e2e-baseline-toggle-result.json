@@ -1,0 +1,25 @@
+{
+  "source": "original main b971c8b3",
+  "command": [
+    "pnpm",
+    "playwright",
+    "test",
+    "--config",
+    "/tmp/openidea-json-precision/numeric-audit/playwright-baseline-toggle.config.ts",
+    "--grep",
+    "toolwindows\\.spec\\.ts\\ \u23184\\ toggles\\ Run;\\ Shift\\+Escape\\ hides\\ the\\ active\\ tool\\ window",
+    "--workers=2",
+    "--retries=0",
+    "--repeat-each=20"
+  ],
+  "exit_code": 1,
+  "seconds": 40.1,
+  "stats": {
+    "startTime": "2026-11-13T12:23:42.137Z",
+    "duration": 39623.561,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

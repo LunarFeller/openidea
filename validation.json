@@ -1,0 +1,24 @@
+{
+  "tested_base": "b971c8b391cabf30e1f1bf94fd902b2b426a4904",
+  "latest_upstream_reviewed": "22685815",
+  "no_duplicate_precision_fix": true,
+  "native_source_hashes_match_final_candidate": {
+    "src/features/database/resultView.ts": true,
+    "src/features/database/ChartView.tsx": true,
+    "src/features/database/DataView.tsx": true,
+    "src/features/database/store.ts": true,
+    "src/features/database/export.ts": true,
+    "src/features/database/jsonValue.ts": true,
+    "src/features/graphql/model.ts": true,
+    "src/features/graphql/store.ts": true,
+    "src/features/http-client/format.ts": true,
+    "src/platform/locales/text/en.json": true,
+    "src/platform/locales/text/zh.json": true,
+    "crates/ide-http/src/env.rs": true
+  },
+  "rust_full_workspace_base": "09aa03bb86d65b668cf2b34191606a6376b10777",
+  "rust_after_rebase": "144 ide-core/ide-http tests passed; full-workspace clippy passed",
+  "cargo_fmt_all_check_exit_code": 0,
+  "native_scope": "macOS; actual SQLite INTEGER/TEXT fixtures and a local HTTP/GraphQL test endpoint; no live PostgreSQL or Windows/Linux validation",
+  "browser_scope": "full 399: 393 pass, six failures also reproduced on original main; final expanded database/numeric tests: 33 pass"
+}

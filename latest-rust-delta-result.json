@@ -1,0 +1,18 @@
+{
+  "base": "b971c8b391cabf30e1f1bf94fd902b2b426a4904",
+  "command": [
+    "/tmp/openidea-json-precision/numeric-audit/tools/cargo-nextest",
+    "nextest",
+    "run",
+    "-p",
+    "ide-core",
+    "-p",
+    "ide-http",
+    "--no-fail-fast",
+    "--test-threads",
+    "2"
+  ],
+  "exit_code": 0,
+  "seconds": 35.1,
+  "log": "/tmp/openidea-json-precision/numeric-audit/latest-rust-delta.log"
+}

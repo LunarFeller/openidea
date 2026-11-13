@@ -1,0 +1,6 @@
+{
+  "path": "src/features/database/store.ts",
+  "original_main": "09aa03bb86d65b668cf2b34191606a6376b10777",
+  "exit_code": 1,
+  "output": "src/features/database/store.ts:1179:19: Keep exact numeric text intact; use a lossless helper. Convert only at an explicitly bounded or approximate boundary. [Error/openidea(exact-numeric-text)]\n\n1 problem\n"
+}

@@ -1,0 +1,48 @@
+{
+  "stats": {
+    "startTime": "2026-11-13T12:19:38.388Z",
+    "duration": 88129.277,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 13,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "file": "commit.spec.ts",
+      "title": "\u2318K commits the checked changes with the typed message",
+      "passed": 0,
+      "failed": 3
+    },
+    {
+      "file": "commitDoubleClick.spec.ts",
+      "title": "non-modal Commit window: double-click opens the diff by default",
+      "passed": 0,
+      "failed": 3
+    },
+    {
+      "file": "diff-navigation.spec.ts",
+      "title": "skips binary and unchanged siblings and restores after changing preview files",
+      "passed": 0,
+      "failed": 3
+    },
+    {
+      "file": "diff-navigation.spec.ts",
+      "title": "centres the visible caret during split navigation (aligned=false, pane=1)",
+      "passed": 2,
+      "failed": 1
+    },
+    {
+      "file": "toolwindows.spec.ts",
+      "title": "\u23184 toggles Run; Shift+Escape hides the active tool window",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "file": "toolwindows.spec.ts",
+      "title": "a terminal view that loads late doesn't take focus moved elsewhere meanwhile",
+      "passed": 0,
+      "failed": 3
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "data": {
+    "exchange": {
+      "entry": {
+        "error": null,
+        "file": "/private/tmp/openidea-json-precision/numeric-audit/native-fixture/requests.http",
+        "id": "359022d19696447ab82b30a4aec6ef98",
+        "method": "POST",
+        "name": "Exact environment",
+        "status": 200,
+        "timeMs": 1794574417672.097,
+        "totalMs": 1.069666,
+        "url": "http://127.0.0.1:63159/env"
+      },
+      "request": {
+        "body": "{\"id\":123456789012345678901234567890,\"amount\":1.0000000000000000002,\"tiny\":1e-400}",
+        "headers": [
+          [
+            "Content-Type",
+            "application/json"
+          ]
+        ],
+        "method": "POST",
+        "name": "Exact environment",
+        "url": "http://127.0.0.1:63159/env"
+      },
+      "response": {
+        "body": "{\"id\":123456789012345678901234567890,\"amount\":1.0000000000000000002,\"tiny\":1e-400}",
+        "contentType": "application/json",
+        "headers": [
+          [
+            "server",
+            "BaseHTTP/0.6 Python/3.8.10"
+          ],
+          [
+            "date",
+            "Fri, 13 Nov 2026 12:53:37 GMT"
+          ],
+          [
+            "content-type",
+            "application/json"
+          ],
+          [
+            "content-length",
+            "82"
+          ]
+        ],
+        "size": 82,
+        "status": 200,
+        "statusText": "OK",
+        "totalMs": 1.069666,
+        "truncated": false,
+        "ttfbMs": 1.053416,
+        "version": "HTTP/1.0"
+      }
+    },
+    "formatted": "{\n  \"id\": 123456789012345678901234567890,\n  \"amount\": 1.0000000000000000002,\n  \"tiny\": 1e-400\n}",
+    "ok": true
+  },
+  "error": null,
+  "id": "047805e4-b6c7-4fe0-999b-88b4da4368fd",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

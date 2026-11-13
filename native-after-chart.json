@@ -1,0 +1,53 @@
+{
+  "data": {
+    "body": "\n    NFnative-fixtureVersion ControlCurrent FileProjectnative-fixture/private/tmp/openidea-json-precision/numeric-audit/native-fixture.openidea.graphqlrc.jsonchecks.sqlexact.sqlitehttp-client.env.jsonquery.graphqlreceived.jsonlrequests.httpschema.graphqlserver.jsonserver.pyScratcheschecks.sqlquery.graphql500 rowsTx: AutoExact numeric regression (SQLite)912345SELECT value FROM aggregate_values;SELECT category,value FROM chart_values;SELECT value FROM decimal_values;SELECT value FROM bigint_bounds;GraphQLSchemas and Project StructureQuery Resultquery.graphql: 2 ms execution time, 77 bytes response1234567{\n  \"data\": {\n    \"id\": 9007199254740993,\n    \"amount\": 1.0000000000000000002,\n    \"tiny\": 1e-400\n  }\n}ServicesServicesHTTP ClientDatabaseOutputResult 7Exact numeric regression (SQLite)CSV00.050.10.150.20.250.30.350.40.450.5same: 0.5samecategoryvalue (mean)2native-fixturechecks.sqlgraphql-lsp +11:1LFUTF-8Vim4 spacesNo interpreter\n    \n    \n  \n\n",
+    "outcomes": [
+      {
+        "error": null,
+        "result": {
+          "affected": null,
+          "columns": [
+            {
+              "name": "category",
+              "typeName": "TEXT"
+            },
+            {
+              "name": "value",
+              "typeName": "INTEGER"
+            }
+          ],
+          "elapsedMs": 0.732041,
+          "executionMs": 0.658416,
+          "hasMore": false,
+          "rows": [
+            [
+              "same",
+              "9007199254740993"
+            ],
+            [
+              "same",
+              "-9007199254740992"
+            ]
+          ],
+          "statement": "SELECT category,value FROM chart_values"
+        },
+        "statement": {
+          "from": 0,
+          "text": "SELECT category,value FROM chart_values",
+          "to": 39
+        }
+      }
+    ],
+    "titles": [
+      "same: 0.5"
+    ]
+  },
+  "error": null,
+  "id": "31ec9804-9e1a-46b5-8979-9c9982066b20",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "environment": {
+    "CARGO_INCREMENTAL": "0",
+    "CARGO_PROFILE_DEV_DEBUG": "0",
+    "CARGO_PROFILE_TEST_DEBUG": "0",
+    "CARGO_BUILD_JOBS": "2"
+  },
+  "results": [
+    {
+      "phase": "before",
+      "command": [
+        "cargo",
+        "test",
+        "-p",
+        "ide-http",
+        "--lib",
+        "exact_",
+        "--",
+        "--nocapture"
+      ],
+      "exit_code": 101
+    },
+    {
+      "phase": "after",
+      "command": [
+        "cargo",
+        "test",
+        "-p",
+        "ide-http",
+        "--lib"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

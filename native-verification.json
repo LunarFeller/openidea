@@ -1,0 +1,73 @@
+{
+  "method": "Python integer/Decimal oracle on real SQLite query values, rendered UI text and local server request bytes",
+  "before": {
+    "checks": {
+      "aggregates.Sum": false,
+      "aggregates.Avg": false,
+      "aggregates.Median": false,
+      "decimals.Sum": false,
+      "decimals.Avg": false,
+      "decimals.Median": false,
+      "bounds.Sum": false,
+      "bounds.Avg": false,
+      "bounds.Median": false,
+      "chart.mean": false,
+      "chart.sum": false,
+      "chart.line": false,
+      "http.formatted.id": false,
+      "http.formatted.amount": false,
+      "http.formatted.tiny": false,
+      "graphql.formatted.id": false,
+      "graphql.formatted.amount": false,
+      "graphql.formatted.tiny": false,
+      "graphql.wire.id": false,
+      "graphql.wire.amount": false,
+      "graphql.wire.tiny": false,
+      "environment.wire.id": false,
+      "environment.wire.amount": false,
+      "environment.wire.tiny": false
+    },
+    "controls": {
+      "aggregates.source-retained": true,
+      "decimals.source-retained": true,
+      "bounds.source-retained": true,
+      "http.raw-received": true,
+      "environment.request-matches-wire": true
+    }
+  },
+  "after": {
+    "checks": {
+      "aggregates.Sum": true,
+      "aggregates.Avg": true,
+      "aggregates.Median": true,
+      "decimals.Sum": true,
+      "decimals.Avg": true,
+      "decimals.Median": true,
+      "bounds.Sum": true,
+      "bounds.Avg": true,
+      "bounds.Median": true,
+      "chart.mean": true,
+      "chart.sum": true,
+      "chart.line": true,
+      "http.formatted.id": true,
+      "http.formatted.amount": true,
+      "http.formatted.tiny": true,
+      "graphql.formatted.id": true,
+      "graphql.formatted.amount": true,
+      "graphql.formatted.tiny": true,
+      "graphql.wire.id": true,
+      "graphql.wire.amount": true,
+      "graphql.wire.tiny": true,
+      "environment.wire.id": true,
+      "environment.wire.amount": true,
+      "environment.wire.tiny": true
+    },
+    "controls": {
+      "aggregates.source-retained": true,
+      "decimals.source-retained": true,
+      "bounds.source-retained": true,
+      "http.raw-received": true,
+      "environment.request-matches-wire": true
+    }
+  }
+}

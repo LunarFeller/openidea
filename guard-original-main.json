@@ -1,0 +1,17 @@
+[
+  {
+    "source": "src/features/database/resultView.ts",
+    "exit_code": 1,
+    "output": "src/features/database/resultView.ts:33:22: error openidea(exact-numeric-text): Keep exact numeric text intact; use a lossless helper. Convert only at an explicitly bounded or approximate boundary.\nsrc/features/database/resultView.ts:33:34: error openidea(exact-numeric-text): Keep exact numeric text intact; use a lossless helper. Convert only at an explicitly bounded or approximate boundary.\nsrc/features/database/resultView.ts:138:61: error openidea(exact-numeric-text): Keep exact numeric text intact; use a lossless helper. Convert only at an explicitly bounded or approximate boundary.\nsrc/features/database/resultView.ts:187:54: error openidea(exact-numeric-text): Keep exact numeric text intact; use a lossless helper. Convert only at an explicitly bounded or approximate boundary.\nsrc/features/database/resultView.ts:194:68: error openidea(exact-numeric-text): Keep exact numeric text intact; use a lossless helper. Convert only at an explicitly bounded or approximate boundary.\n"
+  },
+  {
+    "source": "src/features/http-client/format.ts",
+    "exit_code": 1,
+    "output": "src/features/http-client/format.ts:26:27: error openidea(exact-numeric-text): JSON.parse discards numeric precision. Use the shared JSON text helpers; parsing only to validate must discard the result.\n"
+  },
+  {
+    "source": "src/features/graphql/model.ts",
+    "exit_code": 1,
+    "output": "src/features/graphql/model.ts:674:24: error openidea(exact-numeric-text): JSON.parse discards numeric precision. Use the shared JSON text helpers; parsing only to validate must discard the result.\nsrc/features/graphql/model.ts:686:27: error openidea(exact-numeric-text): JSON.parse discards numeric precision. Use the shared JSON text helpers; parsing only to validate must discard the result.\n"
+  }
+]

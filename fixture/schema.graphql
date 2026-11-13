@@ -1,0 +1,4 @@
+scalar BigInt
+scalar Decimal
+type Query { exact(id: BigInt, amount: Decimal, tiny: Decimal): Result! }
+type Result { id: BigInt!, amount: Decimal!, tiny: Decimal! }

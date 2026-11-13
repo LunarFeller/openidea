@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/graphql",
+    "body": "{\"query\":\"query Exact($id: BigInt, $amount: Decimal, $tiny: Decimal) \\u007b exact(id: $id, amount: $amount, tiny: $tiny) \\u007b id amount tiny \\u007d \\u007d\\n\",\"variables\":{\"id\":9007199254740993,\"amount\":1.0000000000000000002,\"tiny\":1e-400}}"
+  },
+  {
+    "path": "/env",
+    "body": "{\"id\":123456789012345678901234567890,\"amount\":1.0000000000000000002,\"tiny\":1e-400}"
+  },
+  {
+    "path": "/graphql",
+    "body": "{\"query\":\"query Exact($id: BigInt, $amount: Decimal, $tiny: Decimal) \\u007b exact(id: $id, amount: $amount, tiny: $tiny) \\u007b id amount tiny \\u007d \\u007d\\n\",\"variables\":{\"id\":9007199254740993,\"amount\":1.0000000000000000002,\"tiny\":1e-400}}"
+  }
+]

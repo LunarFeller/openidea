@@ -1,0 +1,6 @@
+{
+  "command": "pnpm build",
+  "exit_code": 0,
+  "seconds": 22.8,
+  "log": "/tmp/openidea-json-precision/numeric-audit/latest-build.log"
+}

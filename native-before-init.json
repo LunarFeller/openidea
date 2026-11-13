@@ -1,0 +1,46 @@
+{
+  "data": {
+    "outcomes": [
+      {
+        "error": null,
+        "result": {
+          "affected": null,
+          "columns": [
+            {
+              "name": "value",
+              "typeName": "INTEGER"
+            }
+          ],
+          "elapsedMs": 1.5499159999999998,
+          "executionMs": 1.068916,
+          "hasMore": false,
+          "rows": [
+            [
+              "9007199254740993"
+            ],
+            [
+              "1"
+            ]
+          ],
+          "statement": "SELECT value FROM aggregate_values"
+        },
+        "statement": {
+          "from": 0,
+          "text": "SELECT value FROM aggregate_values",
+          "to": 34
+        }
+      }
+    ],
+    "result": "Result 1",
+    "title": "native-fixture – checks.sql",
+    "url": "http://localhost:18944/"
+  },
+  "error": null,
+  "id": "63605cd3-9f95-45ff-a7ed-5a6da167d1f7",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

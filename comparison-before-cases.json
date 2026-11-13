@@ -1,0 +1,1417 @@
+[
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 0",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token -0",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 9007199254740991",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 9007199254740992",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 9007199254740993",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token -9007199254740993",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 9223372036854775807",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token -9223372036854775808",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 18446744073709551615",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 123456789012345678901234567890",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 1.0000000000000000002",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 0.100000000000000000000000001",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 1e-400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token -1e-400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 1e400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token -1e400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 1.2300e+20",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 5e-324",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 1e-324",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response preserves number token 1.7976931348623157e308",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP formatted response formats an ordinary value (control)",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 0",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token -0",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 9007199254740991",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 9007199254740992",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 9007199254740993",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token -9007199254740993",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 9223372036854775807",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token -9223372036854775808",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 18446744073709551615",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 123456789012345678901234567890",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 1.0000000000000000002",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 0.100000000000000000000000001",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 1e-400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token -1e-400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 1e400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token -1e400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 1.2300e+20",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 5e-324",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 1e-324",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response preserves number token 1.7976931348623157e308",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL formatted response formats an ordinary value (control)",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 0",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token -0",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 9007199254740991",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 9007199254740992",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 9007199254740993",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token -9007199254740993",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 9223372036854775807",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token -9223372036854775808",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 18446744073709551615",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 123456789012345678901234567890",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 1.0000000000000000002",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 0.100000000000000000000000001",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 1e-400",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token -1e-400",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 1e400",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token -1e400",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 1.2300e+20",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 5e-324",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 1e-324",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) preserves number token 1.7976931348623157e308",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "existing database JSON formatter (control) formats an ordinary value (control)",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 0 unchanged",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token -0 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 9007199254740991 unchanged",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 9007199254740992 unchanged",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 9007199254740993 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token -9007199254740993 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 9223372036854775807 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token -9223372036854775808 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 18446744073709551615 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 123456789012345678901234567890 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 1.0000000000000000002 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 0.100000000000000000000000001 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 1e-400 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token -1e-400 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 1e400 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token -1e400 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 1.2300e+20 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 5e-324 unchanged",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 1e-324 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends number token 1.7976931348623157e308 unchanged",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL outgoing variables sends an ordinary value (control)",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic sum [ '9007199254740993', '1' ] = 9007199254740994",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic avg [ '9007199254740993', '1' ] = 4503599627370497",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic median [ '9007199254740993' ] = 9007199254740993",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic median [ '9007199254740993', '1' ] = 4503599627370497",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic sum [ '9007199254740993', \u2026(1) ] = 1",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic sum [ '0.1', '0.2' ] = 0.3",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic avg [ '1.0000000000000000002' ] = 1.0000000000000000002",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic sum [ '-9223372036854775808', \u2026(1) ] = -1",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic avg [ '-9223372036854775808', \u2026(1) ] = -0.5",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic median [ '-9223372036854775808', \u2026(1) ] = -0.5",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic sum [ '-1e-400', '2e-400' ] = 1e-400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic median [ '-1e-400', '2e-400' ] = 5e-401",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic avg [ '1e-400', '2e-400' ] = 1.5e-400",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic sum [ '1e400', '-1e400', '1' ] = 1",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database arithmetic keeps ordinary aggregate values (control)",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 1 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 2 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 3 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 4 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 5 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 6 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 7 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 8 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 9 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 10 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 11 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 12 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 13 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 14 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 15 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 16 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "independent rational arithmetic oracle checks sums, means, medians and NULL handling for 17 numeric cells",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database chart values sum retains cancellation before plotting",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database chart values avg retains cancellation before plotting",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database chart values none can label the actual database value",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database chart values min can label the actual database value",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database chart values max can label the actual database value",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "database chart values keeps counts correct (control)",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants changes whitespace only in {\"n\":-0,\"other\":1.2300e+20}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants changes whitespace only in {\"id\":9007199254740993,\"id\":9223372036854775807}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants changes whitespace only in {\"10\":1e-400,\"2\":1.0000000000000000002}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants changes whitespace only in {\"s\":\"space and \\\"quote\\\" and \\\\ backslash\",\"n\":9007199254740993}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants changes whitespace only in {\"nested\":[{\"n\":9223372036854775807},[1e400,1e-400]],\"null\":null,\"b\":false}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants changes whitespace only in {\"__proto__\":{\"n\":1.0000000000000000002}}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants keeps an invalid body untouched: {",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants keeps an invalid body untouched: [1,]",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants keeps an invalid body untouched: not json",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "HTTP JSON text invariants keeps an invalid body untouched: ",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants changes whitespace only in {\"n\":-0,\"other\":1.2300e+20}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants changes whitespace only in {\"id\":9007199254740993,\"id\":9223372036854775807}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants changes whitespace only in {\"10\":1e-400,\"2\":1.0000000000000000002}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants changes whitespace only in {\"s\":\"space and \\\"quote\\\" and \\\\ backslash\",\"n\":9007199254740993}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants changes whitespace only in {\"nested\":[{\"n\":9223372036854775807},[1e400,1e-400]],\"null\":null,\"b\":false}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants changes whitespace only in {\"__proto__\":{\"n\":1.0000000000000000002}}",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants keeps an invalid body untouched: {",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants keeps an invalid body untouched: [1,]",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants keeps an invalid body untouched: not json",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL JSON text invariants keeps an invalid body untouched: ",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL request text boundaries escapes template braces in both query and variable strings",
+    "status": "failed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL request text boundaries rejects variables that are not a valid object: []",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL request text boundaries rejects variables that are not a valid object: null",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL request text boundaries rejects variables that are not a valid object: true",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL request text boundaries rejects variables that are not a valid object: 42",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL request text boundaries rejects variables that are not a valid object: \"text\"",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL request text boundaries rejects variables that are not a valid object: {",
+    "status": "passed"
+  },
+  {
+    "file": "numericPrecision.test.ts",
+    "title": "GraphQL request text boundaries rejects variables that are not a valid object: {\"v\":01}",
+    "status": "passed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels keeps a finite axis after expanding ticks near the float limit",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels shows the actual value 9007199254740993",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels shows the actual value -9223372036854775808",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels shows the actual value 1.0000000000000000002",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels adds before converting chart coordinates",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels explains a value outside the coordinate range: 1e400",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels explains a value outside the coordinate range: -1e400",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels explains a value outside the coordinate range: 1e-400",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels explains a value outside the coordinate range: -1e-400",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels keeps finite SVG coordinates at the plot boundary: 5e-324",
+    "status": "passed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels keeps finite SVG coordinates at the plot boundary: -5e-324",
+    "status": "passed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels keeps finite SVG coordinates at the plot boundary: 1.7976931348623157e308",
+    "status": "failed"
+  },
+  {
+    "file": "ChartView.test.tsx",
+    "title": "exact chart value labels keeps finite SVG coordinates at the plot boundary: -1e308",
+    "status": "passed"
+  },
+  {
+    "file": "chartTicks.test.ts",
+    "title": "finishes with finite ticks at the negative float limit",
+    "status": "failed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 9007199254740993 (BIGINT, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 9223372036854775807 (BIGINT, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves -9223372036854775808 (BIGINT, sqlite) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 18446744073709551615 (BIGINT UNSIGNED, mysql) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves -9007199254740993 (Int64, clickhouse) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 12345678901234567890123456789012345678 (NUMBER(38,0), snowflake) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 1.0000000000000000002 (DECIMAL(38,19), sqlServer) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves -1.0000000000000000002 (NUMERIC(38,19), postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 1234567890.12345678901234567890 (DECIMAL(38,20), mysql) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 0.0000000000000000001 (NUMERIC, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 1e-400 (NUMERIC, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 1e-325 (NUMERIC, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 1e-9007199254740993 (NUMERIC, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves -2e-999999999999999999999 (NUMERIC, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 99999999999999999999.99999999999999999999 (NUMERIC, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 0.10000000000000000000000000001 (DECIMAL(38,29), mysql) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 1.797693134862315708145274237317043567981e308 (DOUBLE, mysql) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves -2e-400 (NUMERIC, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves 1.0000000000000000002E+100 (NUMERIC, postgres) as a JSON number",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes +9007199254740993 to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes 09007199254740993 to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes -09223372036854775807 to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes  \t+001.0000000000000000002\n to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes .0000000000000000001 to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes -.0000000000000000001 to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes 0001. to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes +001.25e-003 to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes 1.e-400 to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes -000.0000000000000000001 to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export normalizes +.0000000000000000001E-400 to valid JSON without rounding",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps the exact value of base-prefixed 0x20000000000001",
+    "status": "failed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps the exact value of base-prefixed 0X7FFFFFFFFFFFFFFF",
+    "status": "failed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps the exact value of base-prefixed \t0x20000000000001\n",
+    "status": "failed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps the exact value of base-prefixed 0b100000000000000000000000000000000000000000000000000001",
+    "status": "failed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps the exact value of base-prefixed 0o400000000000000001",
+    "status": "failed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for 0",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for -0",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for -000.000e99999",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for 42",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for -12.5",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for +1",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for .5",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for 1.",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for ",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for  \t ",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for 0x10",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for 0b10",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps ordinary numeric coercion for 0o10",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps non-finite or invalid numeric text NaN quoted",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps non-finite or invalid numeric text Infinity quoted",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps non-finite or invalid numeric text -Infinity quoted",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps non-finite or invalid numeric text 1e400 quoted",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps non-finite or invalid numeric text -1e999999999999999999999 quoted",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps non-finite or invalid numeric text 1e quoted",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps non-finite or invalid numeric text 0,\"injected\":true quoted",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps non-finite or invalid numeric text 1\n2 quoted",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps numeric-looking TEXT as text",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps numeric-looking VARCHAR(100) as text",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps numeric-looking jsonb as text",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps numeric-looking BOOLEAN as text",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps numeric-looking POINT as text",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps numeric-looking INTERVAL as text",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves exact numbers inferred from  types",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves exact numbers inferred from unknown types",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export preserves exact numbers inferred from NULL types",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps a mixed unknown column as text",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export escapes column names and text and keeps NULL and missing cells",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps duplicate columns last-wins, integer key order and literal __proto__ keys",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps empty results, zero-column rows and ignored extra cells",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps all-NULL inference samples from changing later values to numbers",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export keeps numeric inference when later rows include text and NULL",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export retains the exact numeric value when the last duplicate column is numeric",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export agrees with independent integer arithmetic over 250 decimal scales and exponents",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "exact JSON number export writes long numbers without losing trailing digits or expanding exponents",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "csv retains exact numeric digits",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "tsv retains exact numeric digits",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "sql retains exact numeric digits",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "markdown retains exact numeric digits",
+    "status": "passed"
+  },
+  {
+    "file": "export.test.ts",
+    "title": "onerow retains exact numeric digits",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid shows the calculation limit on a median without hiding exact totals",
+    "status": "failed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid does not report an inexact or invalid row count: 9007199254740993",
+    "status": "failed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid does not report an inexact or invalid row count: 9223372036854775807",
+    "status": "failed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid does not report an inexact or invalid row count: -1",
+    "status": "failed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid does not report an inexact or invalid row count: 2.5",
+    "status": "failed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid does not report an inexact or invalid row count: null",
+    "status": "failed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid keeps every cell of a pasted row in the submitted edits",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid makes a single-table select with its primary key editable and submits in one transaction",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid keeps navigation focus after leaving an inline cell editor and releases it outside Results",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid records the selected schema or connection default: s2",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid records the selected schema or connection default: ",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid prevents repeated submission while edits are being applied",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid uses the execution schema even after the console selection changes",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid preserves pending edits and shows the error when submit fails",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid highlights the edit and reverts it",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid keeps unsubmitted edits while another result tab is shown",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "editable result grid keeps an aliased column read-only while the plain ones stay editable",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason explains SELECT * FROM a JOIN b ON a.id = b.id",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason explains SELECT count(*) FROM users",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason explains SELECT id FROM a UNION SELECT id FROM b",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason explains SELECT name FROM users",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason keeps an unresolved SQL Server table schema read-only",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason matches case-sensitive key columns exactly for postgres",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason matches case-sensitive key columns exactly for sqlServer",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason keeps ClickHouse read-only",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason keeps a read-only data source read-only",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "read-only results with a reason keeps a table without a primary key read-only",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "result grid keyboard Submit / Revert (#2332) confirms the cell being edited, then submits; reverts pending edits",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "Tab in the results (IDEA: Tab enters the table and moves between its cells) goes from the result tab to the first cell, cell by cell, and back through the toolbar's one stop",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "Tab in the results (IDEA: Tab enters the table and moves between its cells) leaves the grid after the last cell",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "Tab in the results (IDEA: Tab enters the table and moves between its cells) commits the cell editor with Tab and selects the next cell",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "Tab in the results (IDEA: Tab enters the table and moves between its cells) goes from the Output tab to the log, past its toolbar",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "omits a reset inserted cell from Submit instead of writing SQL NULL",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "result tab reuse (IDEA: new results replace the console's unpinned tabs) replaces the console's result in place with a fresh tab, leaving other consoles' results",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "result tab reuse (IDEA: new results replace the console's unpinned tabs) opens one tab per result set of a batch, numbered per execution, and a single run replaces them all",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "result tab reuse (IDEA: new results replace the console's unpinned tabs) leaves a pinned result alone and replaces only the newer unpinned one",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "result tab reuse (IDEA: new results replace the console's unpinned tabs) keeps the previous results when a run returns no result set or fails",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "result tab reuse (IDEA: new results replace the console's unpinned tabs) never replaces the Query Plan from a run, and appends a new plan beside a pinned one",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "result tab reuse (IDEA: new results replace the console's unpinned tabs) drops the oldest unpinned results beyond 12 but never pinned or new ones",
+    "status": "passed"
+  },
+  {
+    "file": "results-view.test.tsx",
+    "title": "result tab reuse (IDEA: new results replace the console's unpinned tabs) stays on the new result when a replaced tab's rerun fails afterwards",
+    "status": "passed"
+  }
+]
