@@ -1,0 +1,121 @@
+README.md
+  s_149af2c5f31d1c::t_2ae605ad195a5c 1-15
+annotate-native.py
+  s_149af2c5f31d1c::t_fd6d296a0b86bc 1-57
+baseline-negative-axis-hang.json
+  s_149af2c5f31d1c::t_f28d50d62062d7 1-6
+comparison-after-cases.json
+  s_149af2c5f31d1c::t_33a031e8973a27 1-1417
+comparison-before-cases.json
+  s_149af2c5f31d1c::t_76e945f15ab364 1-1417
+comparison-performance.json
+  s_149af2c5f31d1c::t_dafe5bcce2a5e1 1-32
+e2e-baseline-focus-summary.json
+  s_149af2c5f31d1c::t_18edbbd5d6ecff 1-48
+e2e-baseline-toggle-result.json
+  s_149af2c5f31d1c::t_f1bcc240182754 1-25
+e2e-expanded-result.json
+  s_149af2c5f31d1c::t_108b144dbda035 1-24
+e2e-resumed-summary.json
+  s_149af2c5f31d1c::t_3a7bf157426f63 1-102
+expanded-comparison.json
+  s_149af2c5f31d1c::t_4465b4fcdc5c45 1-17
+expanded-format-result.json
+  s_149af2c5f31d1c::t_9b98b1c9fb2244 1
+expanded-knip-result.json
+  s_149af2c5f31d1c::t_9a00e3bffbcfff 1
+expanded-lint-result.json
+  s_149af2c5f31d1c::t_eb31fc43a1de17 1
+expanded-typecheck-result.json
+  s_149af2c5f31d1c::t_1b545e2c4977d9 1
+expanded-unit-all-result.json
+  s_149af2c5f31d1c::t_d9053d9c84673b 1-17
+fixture/checks.sql
+  s_149af2c5f31d1c::t_17e6454a46148e 1-4
+fixture/http-client.env.json
+  s_149af2c5f31d1c::t_f1e3b1302b732d 1
+fixture/query.graphql
+  s_149af2c5f31d1c::t_2a99c76f3c840a 1
+fixture/reproduce.sql
+  s_149af2c5f31d1c::t_568f43794cff90 1-14
+fixture/schema.graphql
+  s_149af2c5f31d1c::t_7af9c21b9f228e 1-4
+fixture/server.py
+  s_149af2c5f31d1c::t_66ec1efd479114 1-61
+guard-count-result.json
+  s_149af2c5f31d1c::t_7b1dbd48ed5b4d 1-6
+guard-original-main.json
+  s_149af2c5f31d1c::t_424a7e5d196966 1-17
+latest-build-result.json
+  s_149af2c5f31d1c::t_f66289060a0a9d 1-6
+latest-clippy-result.json
+  s_149af2c5f31d1c::t_88ee2e3d4c41c9 1-15
+latest-rust-delta-result.json
+  s_149af2c5f31d1c::t_9813cd6a3b82f8 1-18
+native-after-aggregates.json
+  s_149af2c5f31d1c::t_a40fc818f61e8d 1-129
+native-after-bounds.json
+  s_149af2c5f31d1c::t_20224b51cf1d06 1-162
+native-after-chart-options.json
+  s_149af2c5f31d1c::t_ead497b2269c8a 1-18
+native-after-chart.json
+  s_149af2c5f31d1c::t_1db7e619d8260d 1-53
+native-after-decimals.json
+  s_149af2c5f31d1c::t_f2661fde11c865 1-162
+native-after-environment.json
+  s_149af2c5f31d1c::t_856566dd6596c0 1-68
+native-after-graphql.json
+  s_149af2c5f31d1c::t_c719814d887f27 1-110
+native-after-http.json
+  s_149af2c5f31d1c::t_58d4ec1131495c 1-73
+native-after-init.json
+  s_149af2c5f31d1c::t_e03fea50548dd7 1-46
+native-after-wire.json
+  s_149af2c5f31d1c::t_c3ec5af0ef5953 1-14
+native-annotations.json
+  s_149af2c5f31d1c::t_d7cb6352a99c6c 1-116
+native-before-aggregates.json
+  s_149af2c5f31d1c::t_830efc743a607f 1-129
+native-before-bounds.json
+  s_149af2c5f31d1c::t_d0552c35ab5e32 1-162
+native-before-chart-options.json
+  s_149af2c5f31d1c::t_29a327c117789d 1-18
+native-before-chart.json
+  s_149af2c5f31d1c::t_15b23f0d15b04e 1-53
+native-before-decimals.json
+  s_149af2c5f31d1c::t_ebe52879699415 1-162
+native-before-environment.json
+  s_149af2c5f31d1c::t_31518a3c7ffaf0 1-68
+native-before-graphql.json
+  s_149af2c5f31d1c::t_db26017d46631e 1-111
+native-before-http.json
+  s_149af2c5f31d1c::t_d27c203f98a1d2 1-73
+native-before-init.json
+  s_149af2c5f31d1c::t_f6cb8f8fb86bde 1-46
+native-before-wire.json
+  s_149af2c5f31d1c::t_9bc0b70bcfc670 1-10
+rust-results.json
+  s_149af2c5f31d1c::t_26a4d256c5dabc 1-35
+rust-workspace-final.json
+  s_149af2c5f31d1c::t_1a6b021dc1e064 1-12
+validation.json
+  s_149af2c5f31d1c::t_3bf3f21cb7009d 1-24
+verify-native.py
+  s_149af2c5f31d1c::t_8976d146f5b50b 1-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "697711240986cefd93cab9f051b97fc014551f9d",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
