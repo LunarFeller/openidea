@@ -15,11 +15,13 @@
   },
   "browser_before": {
     "total": 5,
-    "failed": 5
+    "failed": 5,
+    "base_commit": "01a60ef16458734891d893eaa5f548c2ca8bf324"
   },
   "browser_after": {
     "total": 5,
-    "passed": 5
+    "passed": 5,
+    "base_commit": "3c781296d6e4527259a8b917ec71d8182f0b465f"
   },
   "native_before": {
     "total": 20,
