@@ -1,0 +1,51 @@
+src/features/database/requestLifecycle.test.ts
+  s_149af2c5f31d1c::t_87811c2f41fa0a 442
+  s_149af2c5f31d1c::t_5fe71252c85c6c 428-441
+  s_149af2c5f31d1c::t_3d89931441b767 443-473
+src/editor/lsp/navigation.ts
+  s_149af2c5f31d1c::t_182f6c7da2b4bf 1052,1054-1056
+src/features/database/DatabaseView.test.tsx
+  s_149af2c5f31d1c::t_34a732eec454aa 8-10,114-168
+src/features/database/DatabaseView.tsx
+  s_149af2c5f31d1c::t_61adbc464c67d9 147,150,152,693,697
+src/features/database/store.ts
+  s_41f48b3def81f7::t_b3ffc2688597f5 28,31,48,51-52,188,697-698,704,733-734,737-747,750,752-790
+src/features/database/treeActions.ts
+  s_149af2c5f31d1c::t_d4f2d28f1e1296 34,504-512
+src/platform/actions.test.ts
+  s_149af2c5f31d1c::t_7650cab4b1a4ba 2-10,102-120
+src/platform/actions.ts
+  s_149af2c5f31d1c::t_224884675881f5 119-120,133-139,141-150
+src/platform/keymaps/intellij-macos.ts
+  s_149af2c5f31d1c::t_abd15b9e5d0b04 407
+src/platform/keymaps/intellij-windows.ts
+  s_149af2c5f31d1c::t_28e49b26dd14e4 405
+src/platform/keymaps/vscode-macos.ts
+  s_149af2c5f31d1c::t_fc0f5b0343ce79 395
+src/ui/Tree.tsx
+  s_149af2c5f31d1c::t_45c5de8c374047 64-65,423,427
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "ac7e3c5e268678dad75538856419433b7ada3cb5",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": null
+    },
+    "s_41f48b3def81f7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1cf04-e594-7070-9536-b84302bd2993",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+verification.json
+  s_149af2c5f31d1c::t_b0b84e003b6463 10,15,19,23,28,33,48,58,62,66,74-94
+  s_149af2c5f31d1c::t_1c13c829f22356 7-9
+  s_149af2c5f31d1c::t_c8376783b64695 11-14
+  s_149af2c5f31d1c::t_a458763502c8d6 16-18
+  s_149af2c5f31d1c::t_36e77b1adecc72 20-22
+  s_149af2c5f31d1c::t_13bac7e9d759e5 24-27
+  s_149af2c5f31d1c::t_3053c502f96109 29-32
+  s_149af2c5f31d1c::t_7651df3015e743 34-36,45-47
+  s_149af2c5f31d1c::t_dfa937a5b8179a 49-51,55-57
+  s_149af2c5f31d1c::t_4260079c8dfdb3 59-61
+  s_149af2c5f31d1c::t_cf8142f937e9dd 63-65
+  s_149af2c5f31d1c::t_3e7ce0d88bf288 67-69,71-73
+  s_149af2c5f31d1c::t_f7e6f1ac8aaaf8 95-96
+difftoolbar-flakiness.json
+  s_149af2c5f31d1c::t_b0b84e003b6463 1-43
+annotate.py
+  s_149af2c5f31d1c::t_cde2ef2d195474 1-40
+focused-after.json
+  s_149af2c5f31d1c::t_c1daf28ca1f873 1-710
+focused-before.json
+  s_149af2c5f31d1c::t_c13ec7e18f332a 1-909
+full-suite-comparison.json
+  s_149af2c5f31d1c::t_95ab3529770bd8 1-43
+independent-review.json
+  s_149af2c5f31d1c::t_d87be6c39fa77f 1-40
+mcp.mjs
+  s_149af2c5f31d1c::t_708aee47ad3a4c 1-33
+native-after-matrix-delete.json
+  s_149af2c5f31d1c::t_b6351295fa83dc 1-63
+native-after-matrix-disconnect.json
+  s_149af2c5f31d1c::t_bbeffee9100265 1-63
+native-after-matrix-project.json
+  s_149af2c5f31d1c::t_d5ce8413a86b52 1-63
+native-after-matrix-reconnect.json
+  s_149af2c5f31d1c::t_6feac6792437f8 1-83
+native-after-released.json
+  s_149af2c5f31d1c::t_8395bc730eebab 1-16
+native-before-matrix-delete.json
+  s_149af2c5f31d1c::t_6936bb1c35d3e0 1-68
+native-before-matrix-disconnect.json
+  s_149af2c5f31d1c::t_c00401f2b7c542 1-70
+native-before-matrix-project.json
+  s_149af2c5f31d1c::t_7cd0f5ad0dbde1 1-70
+native-before-matrix-reconnect.json
+  s_149af2c5f31d1c::t_68a1ba2dcf593d 1-82
+native-before-released.json
+  s_149af2c5f31d1c::t_e87e535c30ce88 1-25
+native-deactivate.js
+  s_149af2c5f31d1c::t_220d8bb779d72c 1-10
+native-hold-schema.js
+  s_149af2c5f31d1c::t_b8ad282e6f012a 1-21
+native-init.js
+  s_149af2c5f31d1c::t_eff3bcf57eb8af 1-19
+native-matrix-template.js
+  s_149af2c5f31d1c::t_8679db698470ef 1-66
+native-release.js
+  s_149af2c5f31d1c::t_e035410bc7d99c 1-9
+review-probes.test.ts
+  s_149af2c5f31d1c::t_46c073df52de98 1-289
+review-results.json
+  s_149af2c5f31d1c::t_0999a452c9cde8 1-57
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "8800f974d5ce83c74a95a0d69c764db4d9bb620b",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}

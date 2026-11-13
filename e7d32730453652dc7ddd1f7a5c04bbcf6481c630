@@ -1,0 +1,40 @@
+e2e/databaseRequestLifecycle.spec.ts
+  s_149af2c5f31d1c::t_f33a435366dde1 127-130
+  s_149af2c5f31d1c::t_7cea38d70fe811 1-126,131-149
+src/features/database/DatabaseView.tsx
+  s_149af2c5f31d1c::t_144122e087a155 65,350-353,362-365
+src/features/database/SourceDialog.tsx
+  s_149af2c5f31d1c::t_c9f98c2db4b0d2 515,523
+src/features/database/console.tsx
+  s_149af2c5f31d1c::t_8da3f8c2d44986 86,612,619,628,638,657
+src/features/database/index.ts
+  s_149af2c5f31d1c::t_4c795880d697c5 27,146,148-149,151-153,175,177,189,192,208,212,228,232,272,276,288,290
+src/features/database/introspection.test.ts
+  s_149af2c5f31d1c::t_c2c00207cfdc7b 2,8,20,32-34,50-61,134-197
+src/features/database/introspection.ts
+  s_149af2c5f31d1c::t_d08ae5242fb400 12,16-17,40,50-52,54,72,75,80-81,89-90,96,101,104,118-119,132,142,150-152,167,188-190,192,207-212
+src/features/database/requestLifecycle.test.ts
+  s_149af2c5f31d1c::t_87811c2f41fa0a 1-674
+src/features/database/requests.ts
+  s_149af2c5f31d1c::t_040241ecdf9c23 1-35
+src/features/database/store.ts
+  s_149af2c5f31d1c::t_a0eaae227334ff 55,288-297,301-303,306,310-322,324,332,339,341,344,359-364,370,373,375,379-380,404-405,407,426-428,497,501-503,511,514,520,523,535,537-542,545-549,604-611,614-618,623-632,636,639,642,648,651,654,661,664,667,673,680,683,686,702,709,711,719,721,724,727,744,750-753,755,760-764,766,769-778,895,900,1038,1040,1048,1050,1066
+src/features/database/treeActions.ts
+  s_149af2c5f31d1c::t_4f9d4f41ba44c8 44,102,107-110,112-115,120,129,132-135,139,153,156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "e7d32730453652dc7ddd1f7a5c04bbcf6481c630",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}

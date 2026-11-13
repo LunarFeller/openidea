@@ -1,0 +1,43 @@
+after-clipboard.json
+  s_149af2c5f31d1c::t_209e629e88940f 1-17
+after-decimal-fixture.json
+  s_149af2c5f31d1c::t_09279dd290b6df 1-362
+after-export.json
+  s_149af2c5f31d1c::t_924bd080595b3b 1-17
+after-quick-copy.json
+  s_149af2c5f31d1c::t_168b4bc6f2f922 1-17
+annotation.json
+  s_149af2c5f31d1c::t_8b3ec5633c79fc 1-20
+before-annotated.svg
+  s_149af2c5f31d1c::t_5d9d858c187062 1-7
+before-clipboard.json
+  s_149af2c5f31d1c::t_f36aa461d1521e 1-17
+before-decimal-fixture.json
+  s_149af2c5f31d1c::t_009e1b38be0617 1-362
+before-export.json
+  s_149af2c5f31d1c::t_c47ee262c9533f 1-17
+decimal-cases.json
+  s_149af2c5f31d1c::t_f095e26318f301 1-722
+reproduce.sql
+  s_149af2c5f31d1c::t_eb0d4c1a00b6e6 1-8
+verification.json
+  s_149af2c5f31d1c::t_1239ee771eaccd 1-233
+verify.py
+  s_149af2c5f31d1c::t_76d199c3c466fb 1-47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "eda2da9ffb2778ac85846c550600efca00c80a40",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}

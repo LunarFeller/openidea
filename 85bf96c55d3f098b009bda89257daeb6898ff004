@@ -1,0 +1,49 @@
+followup/backend-native-platforms.json
+  s_149af2c5f31d1c::t_f9fd723728e2e2 1-41
+followup/final-focused-comparison.json
+  s_149af2c5f31d1c::t_f79755f6dd886a 1-19
+followup/graphql-webkit-regression.json
+  s_149af2c5f31d1c::t_dc789ac8609784 1-150
+followup/main-unit-controls-result.json
+  s_149af2c5f31d1c::t_e7917aed9c68d3 1-22
+followup/native-after-large.json
+  s_149af2c5f31d1c::t_58917647e8be74 1-29
+followup/native-before-large.json
+  s_149af2c5f31d1c::t_63721988f03924 1-29
+followup/native-large-verification.json
+  s_149af2c5f31d1c::t_5e76fc8ad4f603 1-13
+followup/post-merge-browser-result.json
+  s_149af2c5f31d1c::t_72f5ff1e262058 1-23
+followup/post-merge-build-result.json
+  s_149af2c5f31d1c::t_b531122cc55ed5 1-9
+followup/post-merge-cargo-format-result.json
+  s_149af2c5f31d1c::t_4faf15b878e81a 1-11
+followup/post-merge-format-result.json
+  s_149af2c5f31d1c::t_47d4d4b16d5347 1-9
+followup/post-merge-knip-result.json
+  s_149af2c5f31d1c::t_ab7bad8607298b 1-9
+followup/post-merge-lint-result.json
+  s_149af2c5f31d1c::t_0ec905064d04f5 1-9
+followup/post-merge-typecheck-result.json
+  s_149af2c5f31d1c::t_9aa178e82e6777 1-9
+followup/post-merge-unit-all-result.json
+  s_149af2c5f31d1c::t_2f7a54abb01a4e 1-16
+followup/verify-followup.py
+  s_149af2c5f31d1c::t_03373896e23354 1-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "85bf96c55d3f098b009bda89257daeb6898ff004",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
