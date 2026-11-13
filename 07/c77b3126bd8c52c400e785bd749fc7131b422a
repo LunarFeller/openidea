@@ -1,0 +1,21 @@
+src/features/agents/Composer.tsx
+  s_149af2c5f31d1c::t_99b30e7bffae06 745-746,754
+src/features/agents/composerCommands.test.tsx
+  s_149af2c5f31d1c::t_808dffa2914499 5,57,284,289-376,381-407,409-410
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "07c77b3126bd8c52c400e785bd749fc7131b422a",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
