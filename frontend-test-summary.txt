@@ -1,0 +1,66 @@
+ ✓ src/features/project-tree/mavenRoots.test.ts (2 tests) 2ms
+ ✓ src/features/run/containerDebug.test.ts (2 tests) 2ms
+ ✓ src/editor/core/extendSelection.test.ts (2 tests) 2ms
+ ✓ src/platform/windowGroups.test.ts (2 tests) 2ms
+ ✓ src/platform/appCsp.test.ts (1 test) 3ms
+ ✓ src/features/debugger/__tests__/closeTab.test.ts (1 test) 3ms
+ ✓ src/features/github/create/RemoteBranchDialog.test.tsx (1 test) 163ms
+ ✓ src/features/settings/__tests__/window.test.ts (2 tests) 4ms
+ ✓ src/platform/webkitCompatibility.test.ts (1 test) 430ms
+   ✓ keeps application regexes parseable in pre-16.4 WebKit 429ms
+ ✓ src/features/terminal/windowsPty.test.ts (2 tests) 2ms
+ ✓ src/platform/navigationModifier.test.ts (1 test) 4ms
+ ✓ src/workbench/stopBackground.test.ts (1 test) 2ms
+ ✓ src/features/search/__tests__/toggleActions.test.ts (1 test) 2ms
+ ✓ src/features/database/nodes.test.ts (2 tests) 2ms
+ ✓ src/platform/localDiagnostics.test.ts (1 test) 3ms
+ ✓ src/platform/buildFiles.test.ts (1 test) 2ms
+ ✓ src/platform/dialog.test.ts (1 test) 165ms
+ ✓ src/features/debugger/editor/runToCursor.test.ts (2 tests) 2ms
+ ✓ src/workbench/projectColor.test.ts (1 test) 3ms
+ ✓ src/features/database/ColumnsPopup.test.ts (2 tests) 3ms
+ ✓ src/features/agents/draft.test.ts (1 test) 2ms
+ ✓ src/features/project-tree/filePath.test.ts (2 tests) 2ms
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 1 unhandled error during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+TypeError: Cannot read properties of undefined (reading 'invoke')
+ ❯ invoke node_modules/.pnpm/@tauri-apps+api@2.12.4/node_modules/@tauri-apps/api/core.js:341:39
+ ❯ invoke src/platform/tauriCore.ts:28:42
+     26|
+     27| export function invoke<T>(cmd: string, args?: InvokeArgs, options?: In…
+     28|   return (route?.(cmd, args, options) ?? invokeLocal<T>(cmd, args, opt…
+       |                                          ^
+     29| }
+     30|
+ ❯ Object.dbTestTunnel src/bindings.ts:1695:107
+ ❯ runTest src/features/database/SourceDialog.tsx:500:43
+ ❯ onClick src/features/database/SourceDialog.tsx:998:31
+ ❯ executeDispatch node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:20804:9
+ ❯ runWithFiberInDEV node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:1048:13
+ ❯ processDispatchQueue node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:20854:19
+ ❯ node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:21423:9
+ ❯ batchedUpdates$1 node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:3437:40
+
+This error originated in "src/features/database/SourceDialog.test.tsx" test file. It doesn't mean the error was thrown inside the file itself, but while it was running.
+The last test to run before this error was "tests the tunnel typed in the SSH/SSL tab, without the database login". This means either:
+- the error was thrown while Vitest was running this test, or
+- the error was thrown after the test completed, and this was the most recent test at that point.
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+
+
+ Test Files  912 passed (912)
+      Tests  11859 passed | 6 skipped (11865)
+     Errors  1 error
+   Start at  18:39:35
+   Duration  284.86s (environment 42%, import 20%, tests 18%, setup 12%, transform 7%)
+
+Environment  jsdom was created 912 times · 439.84s total, 42% of tracked time
+             create it once per worker with pool: 'vmThreads' (keeps per-file isolation) or isolate: false (shares it across files)
+             learn more: https://vitest.dev/guide/improving-performance#test-environments
+
+JSON report written to /tmp/openidea-agent-project-20261114/frontend-full.json
+[ELIFECYCLE] Test failed. See above for more details.

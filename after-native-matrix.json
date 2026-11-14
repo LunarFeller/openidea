@@ -1,0 +1,955 @@
+{
+  "passed": 18,
+  "failed": 0,
+  "cases": [
+    {
+      "kind": "create",
+      "failure": false,
+      "change": "A to B",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-b",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "create",
+      "failure": false,
+      "change": "A to B to A",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "create",
+      "failure": false,
+      "change": "reopen A",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "create",
+      "failure": false,
+      "change": "same project",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "source-a",
+          "old-a"
+        ],
+        "key": "agent:old-a"
+      },
+      "actual": {
+        "active": {
+          "data": {
+            "task": "old-a",
+            "title": "OLD task from project-a"
+          },
+          "key": "agent:old-a",
+          "kind": "agent-session"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 392.5,
+          "y": 757
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": null,
+        "errors": [],
+        "history": [
+          "Task requested in project-a"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": ""
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 179.796875,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "source-a",
+          "old-a"
+        ],
+        "text": "",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "create",
+      "failure": true,
+      "change": "A to B",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-b",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "create",
+      "failure": true,
+      "change": "A to B to A",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "create",
+      "failure": true,
+      "change": "reopen A",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "create",
+      "failure": true,
+      "change": "same project",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "source-a"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "errors": [
+          "OLD failure from project-a"
+        ],
+        "history": [],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Task requested in project-a"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "source-a"
+        ],
+        "text": "Task requested in project-a",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "fork",
+      "failure": false,
+      "change": "A to B",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-b",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "fork",
+      "failure": false,
+      "change": "A to B to A",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "fork",
+      "failure": false,
+      "change": "reopen A",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "fork",
+      "failure": false,
+      "change": "same project",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "source-a",
+          "old-a"
+        ],
+        "key": "agent:old-a"
+      },
+      "actual": {
+        "active": {
+          "data": {
+            "task": "old-a",
+            "title": "OLD task from project-a"
+          },
+          "key": "agent:old-a",
+          "kind": "agent-session"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 392.5,
+          "y": 757
+        },
+        "devicePixelRatio": 2,
+        "errors": [],
+        "history": [],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": ""
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 179.796875,
+          "x": 494.796875,
+          "y": 45.5
+        },
+        "taskIds": [
+          "source-a",
+          "old-a"
+        ],
+        "text": "",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "fork",
+      "failure": true,
+      "change": "A to B",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-b",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "fork",
+      "failure": true,
+      "change": "A to B to A",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "fork",
+      "failure": true,
+      "change": "reopen A",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "current-project"
+        ],
+        "key": "agent:new"
+      },
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "fork",
+      "failure": true,
+      "change": "same project",
+      "passed": true,
+      "expected": {
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tasks": [
+          "source-a"
+        ],
+        "key": "agent:source-a"
+      },
+      "actual": {
+        "active": {
+          "data": {
+            "task": "source-a",
+            "title": "Source task in project-a"
+          },
+          "key": "agent:source-a",
+          "kind": "agent-session"
+        },
+        "closingEntered": false,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 392.5,
+          "y": 757
+        },
+        "devicePixelRatio": 2,
+        "errors": [
+          "Couldn't fork the taskIpcError: OLD failure from project-a",
+          "IpcError: OLD failure from project-a"
+        ],
+        "history": [],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": ""
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 178.796875,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "source-a"
+        ],
+        "text": "",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "create during Home close",
+      "failure": false,
+      "change": "A to B to A",
+      "passed": true,
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": true,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    },
+    {
+      "kind": "create during Home close",
+      "failure": true,
+      "change": "A to B to A",
+      "passed": true,
+      "actual": {
+        "active": {
+          "data": {},
+          "key": "agent:new",
+          "kind": "agent-home"
+        },
+        "closingEntered": true,
+        "composerRect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 417.90625
+        },
+        "devicePixelRatio": 2,
+        "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "errors": [],
+        "history": [
+          "Current project history"
+        ],
+        "homeDraft": {
+          "files": [],
+          "images": [],
+          "text": "Current project draft"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-a",
+        "tabRect": {
+          "height": 28,
+          "width": 132.28125,
+          "x": 290,
+          "y": 45.5
+        },
+        "taskIds": [
+          "current-project"
+        ],
+        "text": "Current project draft",
+        "title": "project-a",
+        "url": "http://localhost:16484/"
+      }
+    }
+  ]
+}

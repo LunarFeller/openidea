@@ -1,0 +1,45 @@
+{
+  "active": {
+    "data": {
+      "task": "old-a",
+      "title": "OLD task from project-a"
+    },
+    "key": "agent:old-a",
+    "kind": "agent-session"
+  },
+  "closingEntered": false,
+  "composerRect": {
+    "height": 31,
+    "width": 900,
+    "x": 392.5,
+    "y": 757
+  },
+  "devicePixelRatio": 2,
+  "draftProjectRoot": null,
+  "errors": [],
+  "history": [
+    "Task requested in project-a",
+    "Current project history"
+  ],
+  "homeDraft": {
+    "files": [],
+    "images": [],
+    "text": "Current project draft"
+  },
+  "innerHeight": 885,
+  "innerWidth": 1440,
+  "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+  "tabRect": {
+    "height": 28,
+    "width": 179.796875,
+    "x": 290,
+    "y": 45.5
+  },
+  "taskIds": [
+    "current-project",
+    "old-a"
+  ],
+  "text": "",
+  "title": "project-b",
+  "url": "http://localhost:16484/"
+}

@@ -1,0 +1,53 @@
+{
+  "reviewer": "/root/review_agent_project_final",
+  "checked_at_utc": "2026-11-14T10:41:24.350573+00:00",
+  "base": "0fd8389b336ad2bc492e2fe68da72dbf5be517a1",
+  "prior_base": "a46f187428ff7dea57990403d4146000cef1d0fa",
+  "result": "No actionable findings; final scoped patch remains valid on latest main",
+  "findings": [],
+  "files_sha256": {
+    "src/features/agents/store.ts": "3794aee8a152a3b2eda98405e7a172c926e588cd03d03165691c087af299d530",
+    "src/features/agents/taskProject.test.ts": "b86893c205c8a355019511e9f508bb73e48bb061e0aa04ae1a1b3c16d465fde9",
+    "e2e/agentTaskProject.spec.ts": "d0fc7fdd64d73a67ae2e818ea9e32480b2d32747ef440fb3dfc88f988196a373"
+  },
+  "hashes_match_prior_review": true,
+  "final_worktree_status": [
+    " M src/features/agents/store.ts",
+    "?? e2e/agentTaskProject.spec.ts",
+    "?? src/features/agents/taskProject.test.ts"
+  ],
+  "temporary_native_configuration_restored": true,
+  "controller_restored_to_latest_main": true,
+  "unrelated_rust_cargo_bindings_controller_diff": [],
+  "upstream_changes_reviewed": [
+    {
+      "path": "src/features/agents/HomeEditor.tsx",
+      "change": "Agent probe/error notes moved under a notes container to keep composer position stable. Start, error and finally handlers, draft payloads, and project lifecycle are unchanged.",
+      "effect": "Does not alter this patch generation ownership checks or existing105 draft tests."
+    },
+    {
+      "path": "src/editor/core/controller.ts",
+      "change": "Busy-close confirmation is performed before discards, and already-confirmed tab keys are tracked; project-generation checks remain before committed removal.",
+      "effect": "No overlap with create/fork reply guards. The controller still awaits releaseDocuments(closed) then returns true without a post-release generation check, so Agents must retain its check after closeInput resolves."
+    },
+    {
+      "path": "src/features/agents/store.ts; src/features/agents/index.ts; src/platform/project.ts",
+      "change": "No intervening upstream lifecycle/Agent store changes.",
+      "effect": "Generation semantics and invocation points used by the reviewed fix remain unchanged."
+    }
+  ],
+  "validation": {
+    "command": "pnpm vitest run src/features/agents/taskProject.test.ts src/features/agents/composerSubmission.test.tsx --maxWorkers=1 --reporter=default",
+    "new_cases": 122,
+    "existing_draft_cases": 105,
+    "passed": 227,
+    "failed": 0,
+    "exit_code": 0,
+    "uncaught_errors": 0,
+    "log": "/tmp/openidea-agent-project-20261114/review/review-latest-main.log"
+  },
+  "limitations": [
+    "This reviewer did not run native, browser E2E or full frontend checks; parent is completing them.",
+    "Review covers exactly the recorded frontend hashes. If official files change after native before/after verification, repeat hash and relevant review checks."
+  ]
+}

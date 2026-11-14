@@ -1,0 +1,44 @@
+{
+  "reviewer": "/root/review_agent_project_final",
+  "base": "a46f187428ff7dea57990403d4146000cef1d0fa",
+  "result": "No actionable findings in the scoped frontend change",
+  "scope": "Create/fork project ownership, stale errors, and navigation after pending Home close",
+  "files_sha256": {
+    "src/features/agents/store.ts": "3794aee8a152a3b2eda98405e7a172c926e588cd03d03165691c087af299d530",
+    "src/features/agents/taskProject.test.ts": "b86893c205c8a355019511e9f508bb73e48bb061e0aa04ae1a1b3c16d465fde9",
+    "e2e/agentTaskProject.spec.ts": "d0fc7fdd64d73a67ae2e818ea9e32480b2d32747ef440fb3dfc88f988196a373"
+  },
+  "findings": [],
+  "verified_invariants": [
+    "startTask captures the initiating connection generation before asynchronous work and checks it before any post-create task, conversation, settings, history, composer or close side effects.",
+    "startTask checks generation again after awaiting closeInput before navigation; false cancels navigation while undefined/absent close service preserves existing success behavior.",
+    "forkTask scopes task insertion and navigation to the initiating generation.",
+    "Current-generation backend, transport and close errors propagate unchanged; errors from a replaced connection resolve quietly before caller global error UI.",
+    "connect/disconnect generation covers same-root reconnect, trust changes and A-B-A; no project-root string comparison or global latest-request token is introduced.",
+    "Same-project task events beating an acknowledgement retain their newer task and conversation state.",
+    "Multiple valid same-project create/fork requests remain independently accepted.",
+    "Existing submitted composer revision checks from3321 are preserved.",
+    "Browser fixtures retain real workbench project lifecycle and delayed replies; the deferred-close fixture invokes the real close before delaying its continuation, reproducing the controller release boundary.",
+    "EditorController already protects its own project replacement and asynchronous open admission; no controller change is needed for the scoped fix."
+  ],
+  "validation": {
+    "command": "pnpm vitest run src/features/agents/taskProject.test.ts src/features/agents/composerSubmission.test.tsx --maxWorkers=1 --reporter=default",
+    "new_cases": 122,
+    "existing_draft_cases": 105,
+    "passed": 227,
+    "failed": 0,
+    "exit_code": 0,
+    "uncaught_errors": 0,
+    "log": "/tmp/openidea-agent-project-20261114/review-independent.log"
+  },
+  "temporary_native_configuration": {
+    "expected": "src-tauri/Cargo.toml currently has crate-type=[rlib] only for the parent native verification build.",
+    "backup_matches_git_head": true,
+    "original_sha256": "ee30e59f39b31e8ab824179cdcae48a0ad915cc28c998d56a5b002565cef9a7e",
+    "required_final_gate": "Restore the manifest byte-for-byte and confirm no Rust/Cargo/bindings or unrelated diff remains before PR. Recheck reviewed file hashes after any native before/after swapping."
+  },
+  "limitations": [
+    "This reviewer did not run native verification, browser E2E or full frontend checks; parent is running them.",
+    "Final clean-diff confirmation remains pending until the parent stops the native build and restores the temporary Cargo manifest."
+  ]
+}

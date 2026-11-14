@@ -1,0 +1,63 @@
+{
+  "base": "0fd8389b336ad2bc492e2fe68da72dbf5be517a1",
+  "branch": "codex/fix-agent-project-replies",
+  "fix": "Scope task creation/fork completions to their initiating Agent connection; recheck after asynchronous Home close.",
+  "files_sha256": {
+    "src/features/agents/store.ts": "3794aee8a152a3b2eda98405e7a172c926e588cd03d03165691c087af299d530",
+    "src/features/agents/taskProject.test.ts": "b86893c205c8a355019511e9f508bb73e48bb061e0aa04ae1a1b3c16d465fde9",
+    "e2e/agentTaskProject.spec.ts": "d0fc7fdd64d73a67ae2e818ea9e32480b2d32747ef440fb3dfc88f988196a373"
+  },
+  "unit_before": {
+    "failed": 84,
+    "passed": 38,
+    "total": 122,
+    "exit_code": 1
+  },
+  "unit_after": {
+    "passed": 227,
+    "failed": 0,
+    "exit_code": 0
+  },
+  "native_before": {
+    "failed": 10,
+    "passed": 8,
+    "total": 18
+  },
+  "native_after": {
+    "failed": 0,
+    "passed": 18,
+    "total": 18
+  },
+  "native_method": "Real macOS Tauri/WebKit workbench and native project open/close with controlled Agent replies. Latest frontend on the existing isolated native host from a46f1874; Agent backend unchanged between these bases. External Agent/model execution and Windows/Linux were not tested.",
+  "native_evidence": {
+    "comparison": "native-comparison.png",
+    "sequence": "native-sequence.gif"
+  },
+  "independent_review": "No actionable findings; 227 tests pass independently on latest main.",
+  "pending": [],
+  "full_frontend": {
+    "passed_assertions": 11859,
+    "skipped": 6,
+    "assertion_failures": 0,
+    "test_files_passed": 912,
+    "uncaught_errors": 1,
+    "exit_code": 1,
+    "baseline_error": "SourceDialog.test.tsx / dbTestTunnel: Cannot read properties of undefined (reading invoke). Reproduced after reverting Agent production changes to main;4 assertions pass, exit1."
+  },
+  "browser_e2e": {
+    "files": 7,
+    "passed": 64,
+    "failed": 0,
+    "exit_code": 0,
+    "includes_new_scenarios": 18
+  },
+  "static_checks": {
+    "typecheck": 0,
+    "lint": 0,
+    "format_check": 0,
+    "knip": 0,
+    "build": 0
+  },
+  "duplicate_check": "Latest upstream store commit remains65c0413d (#3321); no open competing task project reply PR found before submission.",
+  "feature_commit": "b4567fc1547370b03859655d266361251ce7b538"
+}

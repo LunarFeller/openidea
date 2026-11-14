@@ -1,0 +1,24 @@
+# Main0fd8389b; before the Agent fix
+pnpm vitest run src/features/agents/taskProject.test.ts --maxWorkers=1 --reporter=default --reporter=json --outputFile=<scratch>/before-latest.json
+# exit1:84 failed,38 passed
+
+# Fixed production code, unchanged test cases
+pnpm vitest run src/features/agents/taskProject.test.ts src/features/agents/composerSubmission.test.tsx --maxWorkers=1 --reporter=default --reporter=json --outputFile=<scratch>/after-latest.json
+# exit0:227 passed; independent reviewer also reran227 successfully
+
+pnpm test --maxWorkers=4 --reporter=default --reporter=json --reporter=<scratch>/runtime-errors-reporter.mjs --outputFile=<scratch>/frontend-full.json
+# exit1:11859 pass,6 skipped,0 failed assertions,1 baseline unhandled SSH test rejection
+
+# Agent production changes reverted to main for this isolated baseline command, then restored
+pnpm vitest run src/features/database/SourceDialog.test.tsx --maxWorkers=1 --reporter=default --reporter=json --outputFile=<scratch>/baseline-ssh-latest.json
+# exit1:4 pass,the same unhandled rejection
+
+OPENIDEA_E2E_PORT=16485 PLAYWRIGHT_JSON_OUTPUT_FILE=<scratch>/agent-e2e-regression.json pnpm e2e e2e/agentTaskProject.spec.ts e2e/agentDraftSubmission.spec.ts e2e/agentsDock.spec.ts e2e/agentScroll.spec.ts e2e/agentApproval.spec.ts e2e/agentMarkdown.spec.ts e2e/agentQuestions.spec.ts --workers=2 --reporter=list,json --output=<scratch>/e2e-results
+# exit0:64 passed,7 files
+
+pnpm typecheck
+pnpm lint
+pnpm format:check
+pnpm knip
+pnpm build
+# Each exits0; existing lint/chunk warnings remain

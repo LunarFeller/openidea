@@ -1,0 +1,40 @@
+{
+  "active": {
+    "data": {},
+    "key": "agent:new",
+    "kind": "agent-home"
+  },
+  "closingEntered": false,
+  "composerRect": {
+    "height": 31,
+    "width": 900,
+    "x": 393,
+    "y": 417.90625
+  },
+  "devicePixelRatio": 2,
+  "draftProjectRoot": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+  "errors": [],
+  "history": [
+    "Current project history"
+  ],
+  "homeDraft": {
+    "files": [],
+    "images": [],
+    "text": "Current project draft"
+  },
+  "innerHeight": 885,
+  "innerWidth": 1440,
+  "root": "/private/tmp/openidea-agent-project-20261114/fixtures/project-b",
+  "tabRect": {
+    "height": 28,
+    "width": 132.28125,
+    "x": 290,
+    "y": 45.5
+  },
+  "taskIds": [
+    "current-project"
+  ],
+  "text": "Current project draft",
+  "title": "project-b",
+  "url": "http://localhost:16484/"
+}

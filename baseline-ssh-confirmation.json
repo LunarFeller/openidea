@@ -1,0 +1,7 @@
+{
+  "base": "0fd8389b336ad2bc492e2fe68da72dbf5be517a1",
+  "production_sources_match_main_during_run": true,
+  "filtered_test": "src/features/database/SourceDialog.test.tsx",
+  "exit_code": 1,
+  "agent_fix_restored_sha256": "3794aee8a152a3b2eda98405e7a172c926e588cd03d03165691c087af299d530"
+}
