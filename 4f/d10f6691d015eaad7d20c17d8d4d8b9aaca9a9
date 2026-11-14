@@ -1,0 +1,23 @@
+src/features/database/resultView.ts
+  s_149af2c5f31d1c::t_97416b8376367f 194-197,201
+e2e/databaseAverages.spec.ts
+  s_149af2c5f31d1c::t_04756f2c26b4aa 1-79
+src/features/database/resultViewAverages.test.ts
+  s_149af2c5f31d1c::t_1b5aea81b39b73 1-138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "4fd10f6691d015eaad7d20c17d8d4d8b9aaca9a9",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
