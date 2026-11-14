@@ -1,0 +1,52 @@
+{
+  "data": {
+    "averageRect": {
+      "height": 27,
+      "width": 191.40625,
+      "x": 1208.59375,
+      "y": 560.5
+    },
+    "columns": [
+      {
+        "name": "value",
+        "typeName": "INTEGER"
+      }
+    ],
+    "devicePixelRatio": 2,
+    "dismissed": 0,
+    "hasMore": false,
+    "innerHeight": 885,
+    "innerWidth": 1440,
+    "openDialogs": [],
+    "outerHeight": 0,
+    "outerWidth": 0,
+    "panelRect": {
+      "height": 427,
+      "width": 320,
+      "x": 1080,
+      "y": 424
+    },
+    "query": "SELECT value FROM samples WHERE scenario = 'fraction' ORDER BY rowid;",
+    "rows": 8194,
+    "title": "fixture – console.sql",
+    "url": "http://localhost:34010/",
+    "values": {
+      "Avg": "0.000122070313",
+      "Count": "8194",
+      "Distinct": "3",
+      "Max": "1",
+      "Median": "0",
+      "Min": "0",
+      "Nulls": "2",
+      "Sum": "1"
+    }
+  },
+  "error": null,
+  "id": "d4c19a16-d424-4d91-99c9-e8cc92a9a438",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

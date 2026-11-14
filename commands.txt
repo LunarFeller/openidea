@@ -1,0 +1,21 @@
+Base: 4ccff88ccf1d44f93c51e692bfa9e0a39ac8aac5
+PR head: 4fd10f6691d015eaad7d20c17d8d4d8b9aaca9a9
+
+pnpm vitest run src/features/database/resultViewAverages.test.ts src/features/database/resultView.test.ts --maxWorkers=2
+pnpm e2e e2e/databaseAverages.spec.ts e2e/databaseNumericSort.spec.ts e2e/databaseResultTabs.spec.ts e2e/databaseJsonExport.spec.ts e2e/databaseJsonValue.spec.ts e2e/databaseResultSpacing.spec.ts e2e/databaseRequestLifecycle.spec.ts --workers=2
+pnpm typecheck
+pnpm lint
+pnpm format:check
+pnpm knip
+pnpm build
+pnpm test --maxWorkers=4
+
+Full-suite assertions pass; process exits1 due to1 preexisting SourceDialog SSH tunnel unhandled rejection. Exact-main standalone reproduction: pnpm vitest run src/features/database/SourceDialog.test.tsx --maxWorkers=1 --reporter=default
+
+Independent probes (from an installed PR checkout): node review-probes.cjs /path/to/checkout /path/to/checkout/src/features/database/resultView.ts 4ccff88ccf1d44f93c51e692bfa9e0a39ac8aac5
+
+Native: isolated macOS Tauri/WebKit app, real SQLite samples. native-cases.json lists the six scenarios; native-before-matrix.json and native-after-matrix.json record selection and chart means. All screenshot pixels come from native captures; annotate.py only crops, draws boxes, and adds captions.
+
+A minimal SQLite scenario for 1/8192 (select the returned values, open Aggregates; do not use SQL AVG):
+WITH RECURSIVE rows(i) AS (VALUES(0) UNION ALL SELECT i+1 FROM rows WHERE i < 8191)
+SELECT CASE WHEN i=0 THEN 1 ELSE 0 END AS value FROM rows;

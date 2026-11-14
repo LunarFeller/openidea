@@ -1,0 +1,77 @@
+{
+  "data": {
+    "fixedSource": false,
+    "observed": [
+      {
+        "chart": "all: 0.000122070313",
+        "chartCoordinatesFinite": true,
+        "chartMatches": false,
+        "expected": "0.0001220703125",
+        "numericCount": 8192,
+        "scenario": "fraction",
+        "selection": "0.000122070313",
+        "selectionMatches": false
+      },
+      {
+        "chart": "all: -0.000122070313",
+        "chartCoordinatesFinite": true,
+        "chartMatches": false,
+        "expected": "-0.0001220703125",
+        "numericCount": 8192,
+        "scenario": "negative",
+        "selection": "-0.000122070313",
+        "selectionMatches": false
+      },
+      {
+        "chart": "all: 1220703130000",
+        "chartCoordinatesFinite": true,
+        "chartMatches": false,
+        "expected": "1220703125000",
+        "numericCount": 8192,
+        "scenario": "integer",
+        "selection": "1220703130000",
+        "selectionMatches": false
+      },
+      {
+        "chart": "all: 0.000122070313",
+        "chartCoordinatesFinite": true,
+        "chartMatches": false,
+        "expected": "0.0001220703125",
+        "numericCount": 24576,
+        "scenario": "cancelled",
+        "selection": "0.000122070313",
+        "selectionMatches": false
+      },
+      {
+        "chart": "all: 0.000244140625",
+        "chartCoordinatesFinite": true,
+        "chartMatches": true,
+        "expected": "0.000244140625",
+        "numericCount": 4096,
+        "scenario": "threshold",
+        "selection": "0.000244140625",
+        "selectionMatches": true
+      },
+      {
+        "chart": "all: 0.333333333333",
+        "chartCoordinatesFinite": true,
+        "chartMatches": true,
+        "expected": "0.333333333333",
+        "numericCount": 3,
+        "scenario": "repeating",
+        "selection": "0.333333333333",
+        "selectionMatches": true
+      }
+    ],
+    "title": "fixture – console.sql",
+    "url": "http://localhost:34010/"
+  },
+  "error": null,
+  "id": "85837e2f-84d7-4ffa-8b33-8f28007a4190",
+  "success": true,
+  "windowContext": {
+    "totalWindows": 1,
+    "warning": null,
+    "windowLabel": "main"
+  }
+}

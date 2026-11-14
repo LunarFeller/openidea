@@ -1,0 +1,44 @@
+[
+  {
+    "scenario": "fraction",
+    "numeric_count": 8192,
+    "null_count": 2,
+    "total": "1",
+    "expected_mean": "0.0001220703125"
+  },
+  {
+    "scenario": "negative",
+    "numeric_count": 8192,
+    "null_count": 2,
+    "total": "-1",
+    "expected_mean": "-0.0001220703125"
+  },
+  {
+    "scenario": "integer",
+    "numeric_count": 8192,
+    "null_count": 2,
+    "total": "10000000000000000",
+    "expected_mean": "1220703125000"
+  },
+  {
+    "scenario": "cancelled",
+    "numeric_count": 24576,
+    "null_count": 2,
+    "total": "3",
+    "expected_mean": "0.0001220703125"
+  },
+  {
+    "scenario": "threshold",
+    "numeric_count": 4096,
+    "null_count": 2,
+    "total": "1",
+    "expected_mean": "0.000244140625"
+  },
+  {
+    "scenario": "repeating",
+    "numeric_count": 3,
+    "null_count": 2,
+    "total": "1",
+    "expected_mean": "0.333333333333"
+  }
+]

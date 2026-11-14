@@ -1,0 +1,86 @@
+{
+  "platform": "macOS / Tauri 2.12.4 / native WebKit",
+  "base": "4ccff88ccf1d44f93c51e692bfa9e0a39ac8aac5",
+  "real_sqlite_rows": true,
+  "sql_avg_used": false,
+  "fixture_scenarios": 6,
+  "checks_per_scenario": [
+    "selection mean",
+    "chart mean text"
+  ],
+  "before": {
+    "wrong": 8,
+    "correct_controls": 4
+  },
+  "after": {
+    "passed": 12,
+    "failed": 0
+  },
+  "source_and_test_hashes_match_independent_review": true,
+  "screenshots": [
+    "native-before.png",
+    "native-after.png"
+  ],
+  "results": [
+    {
+      "chart": "all: 0.0001220703125",
+      "chartCoordinatesFinite": true,
+      "chartMatches": true,
+      "expected": "0.0001220703125",
+      "numericCount": 8192,
+      "scenario": "fraction",
+      "selection": "0.0001220703125",
+      "selectionMatches": true
+    },
+    {
+      "chart": "all: -0.0001220703125",
+      "chartCoordinatesFinite": true,
+      "chartMatches": true,
+      "expected": "-0.0001220703125",
+      "numericCount": 8192,
+      "scenario": "negative",
+      "selection": "-0.0001220703125",
+      "selectionMatches": true
+    },
+    {
+      "chart": "all: 1220703125000",
+      "chartCoordinatesFinite": true,
+      "chartMatches": true,
+      "expected": "1220703125000",
+      "numericCount": 8192,
+      "scenario": "integer",
+      "selection": "1220703125000",
+      "selectionMatches": true
+    },
+    {
+      "chart": "all: 0.0001220703125",
+      "chartCoordinatesFinite": true,
+      "chartMatches": true,
+      "expected": "0.0001220703125",
+      "numericCount": 24576,
+      "scenario": "cancelled",
+      "selection": "0.0001220703125",
+      "selectionMatches": true
+    },
+    {
+      "chart": "all: 0.000244140625",
+      "chartCoordinatesFinite": true,
+      "chartMatches": true,
+      "expected": "0.000244140625",
+      "numericCount": 4096,
+      "scenario": "threshold",
+      "selection": "0.000244140625",
+      "selectionMatches": true
+    },
+    {
+      "chart": "all: 0.333333333333",
+      "chartCoordinatesFinite": true,
+      "chartMatches": true,
+      "expected": "0.333333333333",
+      "numericCount": 3,
+      "scenario": "repeating",
+      "selection": "0.333333333333",
+      "selectionMatches": true
+    }
+  ]
+}

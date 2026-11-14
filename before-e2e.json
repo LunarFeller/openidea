@@ -1,0 +1,267 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node@22/22.22.0_1/bin/node",
+      "$WORKTREE/node_modules/.pnpm/@playwright+test@1.64.1/node_modules/@playwright/test/cli.js",
+      "test",
+      "e2e/databaseAverages.spec.ts",
+      "--grep",
+      "positive fraction",
+      "--workers=2",
+      "--reporter=json"
+    ],
+    "configFile": "$WORKTREE/playwright.config.ts",
+    "rootDir": "$WORKTREE/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "$WORKTREE/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "$WORKTREE/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "$WORKTREE/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "name": "chromium",
+        "testDir": "$WORKTREE/e2e",
+        "snapshotDir": "$WORKTREE/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://localhost:1457",
+          "viewport": {
+            "width": 1400,
+            "height": 900
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "off",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 2,
+    "webServer": {
+      "command": "pnpm exec vite --port 1457 --strictPort",
+      "url": "http://localhost:1457",
+      "reuseExistingServer": true,
+      "timeout": 60000,
+      "stdout": "ignore",
+      "stderr": "pipe"
+    }
+  },
+  "suites": [
+    {
+      "title": "databaseAverages.spec.ts",
+      "file": "databaseAverages.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "selection mean stays exact: positive fraction",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15605,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('complementary', { name: 'Value panel', exact: true }).getByRole('row', { name: /^Avg / }).getByRole('cell')\nExpected: \u001b[32m\"0.00012207031\u001b[7m25\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"0.00012207031\u001b[7m3\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('complementary', { name: 'Value panel', exact: true }).getByRole('row', { name: /^Avg / }).getByRole('cell') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('complementary', { name: 'Value panel', exact: true }).getByRole('row', { name: /^Avg / }).getByRole('cell')\u001b[22m\n\u001b[2m    24 × locator resolved to <td>0.000122070313</td>\u001b[22m\n\u001b[2m       - unexpected value \"0.000122070313\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('complementary', { name: 'Value panel', exact: true }).getByRole('row', { name: /^Avg / }).getByRole('cell')\nExpected: \u001b[32m\"0.00012207031\u001b[7m25\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"0.00012207031\u001b[7m3\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('complementary', { name: 'Value panel', exact: true }).getByRole('row', { name: /^Avg / }).getByRole('cell') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('complementary', { name: 'Value panel', exact: true }).getByRole('row', { name: /^Avg / }).getByRole('cell')\u001b[22m\n\u001b[2m    24 × locator resolved to <td>0.000122070313</td>\u001b[22m\n\u001b[2m       - unexpected value \"0.000122070313\"\u001b[22m\n\n    at $WORKTREE/e2e/databaseAverages.spec.ts:68:79",
+                    "location": {
+                      "file": "$WORKTREE/e2e/databaseAverages.spec.ts",
+                      "column": 79,
+                      "line": 68
+                    },
+                    "snippet": "  66 |     const panel = page.getByRole(\"complementary\", { name: \"Value panel\", exact: true });\n  67 |     await panel.getByRole(\"tab\", { name: \"Aggregates\", exact: true }).click();\n> 68 |     await expect(panel.getByRole(\"row\", { name: /^Avg / }).getByRole(\"cell\")).toHaveText(expected);\n     |                                                                               ^\n  69 |     await expect(panel.getByRole(\"row\", { name: \"Nulls 2\", exact: true })).toBeVisible();\n  70 |   });\n  71 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "$WORKTREE/e2e/databaseAverages.spec.ts",
+                        "column": 79,
+                        "line": 68
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('complementary', { name: 'Value panel', exact: true }).getByRole('row', { name: /^Avg / }).getByRole('cell')\nExpected: \u001b[32m\"0.00012207031\u001b[7m25\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"0.00012207031\u001b[7m3\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('complementary', { name: 'Value panel', exact: true }).getByRole('row', { name: /^Avg / }).getByRole('cell') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('complementary', { name: 'Value panel', exact: true }).getByRole('row', { name: /^Avg / }).getByRole('cell')\u001b[22m\n\u001b[2m    24 × locator resolved to <td>0.000122070313</td>\u001b[22m\n\u001b[2m       - unexpected value \"0.000122070313\"\u001b[22m\n\n\n  66 |     const panel = page.getByRole(\"complementary\", { name: \"Value panel\", exact: true });\n  67 |     await panel.getByRole(\"tab\", { name: \"Aggregates\", exact: true }).click();\n> 68 |     await expect(panel.getByRole(\"row\", { name: /^Avg / }).getByRole(\"cell\")).toHaveText(expected);\n     |                                                                               ^\n  69 |     await expect(panel.getByRole(\"row\", { name: \"Nulls 2\", exact: true })).toBeVisible();\n  70 |   });\n  71 |\n    at $WORKTREE/e2e/databaseAverages.spec.ts:68:79"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-14T05:44:39.285Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "$WORKTREE/test-results/databaseAverages-selection-f42a7-ays-exact-positive-fraction-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "$WORKTREE/test-results/databaseAverages-selection-f42a7-ays-exact-positive-fraction-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "$WORKTREE/e2e/databaseAverages.spec.ts",
+                    "column": 79,
+                    "line": 68
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a34023d1cae72201db34-ad28ab731aea590c3324",
+          "file": "databaseAverages.spec.ts",
+          "line": 60,
+          "column": 3
+        },
+        {
+          "title": "chart mean stays exact: positive fraction",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 15464,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('img', { name: 'value (mean) by category', exact: true }).locator('rect title')\nExpected: \u001b[32m\"all: 0.00012207031\u001b[7m25\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"all: 0.00012207031\u001b[7m3\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('img', { name: 'value (mean) by category', exact: true }).locator('rect title') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img', { name: 'value (mean) by category', exact: true }).locator('rect title')\u001b[22m\n\u001b[2m    24 × locator resolved to <title>all: 0.000122070313</title>\u001b[22m\n\u001b[2m       - unexpected value \"all: 0.000122070313\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('img', { name: 'value (mean) by category', exact: true }).locator('rect title')\nExpected: \u001b[32m\"all: 0.00012207031\u001b[7m25\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"all: 0.00012207031\u001b[7m3\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('img', { name: 'value (mean) by category', exact: true }).locator('rect title') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img', { name: 'value (mean) by category', exact: true }).locator('rect title')\u001b[22m\n\u001b[2m    24 × locator resolved to <title>all: 0.000122070313</title>\u001b[22m\n\u001b[2m       - unexpected value \"all: 0.000122070313\"\u001b[22m\n\n    at $WORKTREE/e2e/databaseAverages.spec.ts:77:47",
+                    "location": {
+                      "file": "$WORKTREE/e2e/databaseAverages.spec.ts",
+                      "column": 47,
+                      "line": 77
+                    },
+                    "snippet": "  75 |     const chart = page.getByRole(\"img\", { name: \"value (mean) by category\", exact: true });\n  76 |     await expect(chart).toBeVisible();\n> 77 |     await expect(chart.locator(\"rect title\")).toHaveText(`all: ${expected}`);\n     |                                               ^\n  78 |   });\n  79 | }\n  80 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "$WORKTREE/e2e/databaseAverages.spec.ts",
+                        "column": 47,
+                        "line": 77
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('img', { name: 'value (mean) by category', exact: true }).locator('rect title')\nExpected: \u001b[32m\"all: 0.00012207031\u001b[7m25\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"all: 0.00012207031\u001b[7m3\u001b[27m\"\u001b[39m\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('img', { name: 'value (mean) by category', exact: true }).locator('rect title') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('img', { name: 'value (mean) by category', exact: true }).locator('rect title')\u001b[22m\n\u001b[2m    24 × locator resolved to <title>all: 0.000122070313</title>\u001b[22m\n\u001b[2m       - unexpected value \"all: 0.000122070313\"\u001b[22m\n\n\n  75 |     const chart = page.getByRole(\"img\", { name: \"value (mean) by category\", exact: true });\n  76 |     await expect(chart).toBeVisible();\n> 77 |     await expect(chart.locator(\"rect title\")).toHaveText(`all: ${expected}`);\n     |                                               ^\n  78 |   });\n  79 | }\n  80 |\n    at $WORKTREE/e2e/databaseAverages.spec.ts:77:47"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-14T05:44:39.292Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "$WORKTREE/test-results/databaseAverages-chart-mean-stays-exact-positive-fraction-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "$WORKTREE/test-results/databaseAverages-chart-mean-stays-exact-positive-fraction-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "$WORKTREE/e2e/databaseAverages.spec.ts",
+                    "column": 47,
+                    "line": 77
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a34023d1cae72201db34-353b3632d09c7f5c69c1",
+          "file": "databaseAverages.spec.ts",
+          "line": 72,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-14T05:44:38.396Z",
+    "duration": 16948.172,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
