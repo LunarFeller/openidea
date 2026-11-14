@@ -1,0 +1,235 @@
+src/features/vcs/createRepository.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1-26
+crates/ide-host/tests/mcp_secrets.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 1-133
+src/features/vcs/inlineBlame.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 92-96,101-105,109-112,114-117,121-127,132,144,147-148,193-194,198-204,206,279-283,331-334,357,391-393
+src/features/vcs/MergeEditor.module.css
+  s_149af2c5f31d1c::t_10b8c224f871be 8,88
+src/features/vcs/store.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 269
+src/features/terminal/cliKinds.test.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 1-163
+src/features/debugger/attach.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 13,18,88-89
+crates/ide-host/src/ops/deploy.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 191-198,240
+src/features/terminal/keys.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 154-156,169-170,191,195
+src/platform/editorSettings.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 162
+src/features/terminal/cliSessions.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1-130
+src/platform/locales/zh.json
+  s_149af2c5f31d1c::t_10b8c224f871be 110-112
+crates/ide-agent/src/lib.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 1100-1101,1171-1172
+src-tauri/src/commands/mod.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 679
+src/features/terminal/TerminalView.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 420
+src/editor/core/cm/linkedTags.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1-271
+src/editor/core/controller.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 44,95,1230-1234,1236-1263,1333-1356,1430-1431
+src/workbench/toolwindows/store.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 254,344-354,381
+src/platform/virtualDocs.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 76-80
+crates/ide-host/tests/plugins.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 2612-2687
+src/features/search/index.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 188
+src/features/debugger/java.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 83-105
+src/features/run/index.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 384
+src/features/terminal/cli.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1-135
+src/editor/core/model/customDocuments.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 55-67
+src/features/terminal/cli.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1-131
+src/editor/lsp/diagnostics.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 238-239,246-247,261-264,272-273,276-281
+src/features/debugger/__tests__/attach.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 22-29,48,58,95-97
+crates/ide-host/src/lib.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 183
+crates/ide-host/src/ops/agent.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 5,346-412,414-416,431-435,439,448-450,499-500,504,508-509,676,689,698,702-715,718
+src/features/settings/pages/deployment.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 8,36,294-335,339,380-397,420-424,432,463-464,953-954
+src/platform/locales/text/zh.json
+  s_149af2c5f31d1c::t_10b8c224f871be 2-3,5,7-9,11,7852,7924-7935
+src/styles/tokens.css
+  s_149af2c5f31d1c::t_10b8c224f871be 207-208,648-649,942-943,1156-1157
+java/java-usages/src/ai/openidea/archives/RefreshArchivesCommand.java
+  s_149af2c5f31d1c::t_10b8c224f871be 1-68
+src/editor/core/busyClose.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1-168
+crates/ide-host/tests/trust.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 186
+crates/ide-dap/Cargo.toml
+  s_149af2c5f31d1c::t_10b8c224f871be 31-33
+src/features/settings/pages/editor/colorScheme.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 13,127-128,143-145,148-165,168,224-227
+  s_149af2c5f31d1c::t_50d4aa30775514 228
+src/features/debugger/actions.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 31-37,487-499
+  s_149af2c5f31d1c::t_1a1a1f0d497841 500
+crates/ide-host/src/ops/build.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 18,334,340,347-356,361-386
+  s_149af2c5f31d1c::t_af77db13bf3d20 387-388
+src/features/terminal/cliSessions.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1-88
+src/features/terminal/copyKeys.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 11-18
+src/features/terminal/runtime.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 20-31
+src-tauri/src/commands/app.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 192,197-219,221,227,229,252,270
+src-tauri/src/commands/ssh.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 30-36
+src/features/code-insight/index.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 80
+crates/ide-sdk/src/java.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 1550
+src/features/run/javaDebug.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 7-8,20,22-25,53-54,77-84
+  s_149af2c5f31d1c::t_5a4bc0ac374be8 85
+src/workbench/StatusBar.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 2,132-138
+src-tauri/src/commands/deploy.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 161,163
+crates/ide-remote/src/service.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 83-87,98,105-115
+crates/ide-agent/src/native/claude/tests.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 314-315,336,434,468-484,751,795
+src/workbench/tasks.test.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 144-160
+src/features/agents/AgentsView.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 8,12,20,43,194-195,210-219,221,225-228,231-235,272-297,300,379-383,404-415
+src/platform/colorScheme.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 7,345-383
+crates/ide-ssh/src/manager.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 113-117
+crates/ide-lsp/src/jdtls.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 812-826
+src/editor/core/cm/linkedTags.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1-84
+src/features/terminal/Cli.module.css
+  s_149af2c5f31d1c::t_10b8c224f871be 1-115
+src/features/vcs/actions.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 52,250-257
+  s_149af2c5f31d1c::t_9324d9be23fc9c 258
+src/features/project-tree/store.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 6,118-135
+  s_149af2c5f31d1c::t_70e7f424881623 136-138
+src/platform/colorScheme.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 34-35,143-158,160-182,379-383,522,552-557,582-584,696-709
+src/features/terminal/CliEditor.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 1-66
+crates/ide-host/src/project.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 678,681
+java/java-usages/plugin.xml
+  s_149af2c5f31d1c::t_10b8c224f871be 20-22
+src/editor/lsp/codeLens.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 12,109-114,267
+src/features/project-tree/index.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 37,257
+crates/ide-agent/src/native/claude/mod.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 586-588,591,602-607
+  s_149af2c5f31d1c::t_39f73225cd1eeb 608-610
+src/features/vcs/MergeEditor.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 544-547
+src/workbench/TitleBar.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 98
+src/features/run/javaDebug.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 153-171,177
+src/workbench/contributions.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 79-83,145-150
+plugins/official/git-toolbox/src/lib.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 3,17-22,75-79,85,88-89,92-118,159-162,165-170,174,190-193,195,233,246,248,252,256-300,306,308,311,319
+crates/ide-lsp/src/virtual_doc.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 175-188,319-341
+src/features/project-tree/store.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 568-577
+crates/ide-dap/tests/real_adapters.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 560-570
+README.md
+  s_149af2c5f31d1c::t_10b8c224f871be 13-15
+  s_149af2c5f31d1c::t_dc109dedcfd2c4 12
+README.zh-CN.md
+  s_149af2c5f31d1c::t_10b8c224f871be 1-88
+crates/ide-agent/src/tests.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 2394-2414
+src/editor/core/cm/prefs.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 55,484-491,617-621
+src/editor/core/librarySources.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 4,7,85-87,124
+src/bindings.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1597-1598,1628,2507,9610-9611
+src/features/agents/AgentsView.test.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 394-419
+src/features/agents/taskSearch.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 1-14
+src/editor/navigation/implementationGutter.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 42,171-177,213-223,228,232,501-503
+src/features/settings/__tests__/deploymentFtpPassword.test.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 1-87
+src/editor/navigation/lineMarkers.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 128-152,154-155,188-198,269-291
+  s_149af2c5f31d1c::t_f3f221c486ff66 292-293
+crates/ide-lsp/src/lib.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 244-246,514,3209-3229,3236-3246,3390,3392,3395,3398-3401
+src/features/terminal/CliLauncher.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 1-107
+src/platform/locales/en.json
+  s_149af2c5f31d1c::t_10b8c224f871be 110-112
+src/platform/locales/text/en.json
+  s_149af2c5f31d1c::t_10b8c224f871be 2-6,8-9,11-13,15-16,1453,1528-1539
+  s_149af2c5f31d1c::t_51b690a5b4ade3 35-36
+src/workbench/toolwindows/store.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 209-231
+src/editor/navigation/lineMarkers.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 41-45,62-63,98,105-121,164-167,197,204-205,255-273
+  s_149af2c5f31d1c::t_a4554aadea2f95 274-275
+src/features/settings/pages/editor/general.tsx
+  s_149af2c5f31d1c::t_10b8c224f871be 704
+src/features/terminal/index.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 3-4,10-15,17,114-131,133-142,304-307,311-318,326-327,335
+e2e/mergeEditor.spec.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 125-141
+java/java-usages/MANIFEST.MF
+  s_149af2c5f31d1c::t_10b8c224f871be 5
+src/features/debugger/index.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 76
+src/features/vcs/__tests__/inlineBlame.test.ts
+  s_149af2c5f31d1c::t_10b8c224f871be 58-62,158,167,178,185-203,314,331,336,341,346
+crates/ide-dap/src/attach.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 3-4,18,100-109,115-122,150-152,167,189-199,216,225-226,234-236,238-361,403,417-418,452,458-481
+  s_149af2c5f31d1c::t_38938bc9636012 482
+crates/ide-core/src/editor_settings.rs
+  s_149af2c5f31d1c::t_10b8c224f871be 273-274,294
+plugins/official/git-toolbox/dist/plugin.wasm.sources
+  s_149af2c5f31d1c::t_10b8c224f871be 1
+src/features/agents/Agents.module.css
+  s_149af2c5f31d1c::t_10b8c224f871be 183-186
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "d76786f1d21ac628b7b3c23a404535e38719ce5a",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}

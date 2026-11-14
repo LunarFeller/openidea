@@ -1,0 +1,45 @@
+native-visible-paste.js
+  s_149af2c5f31d1c::t_67234f623de8f0 1-22
+after-product-fix.log
+  s_149af2c5f31d1c::t_dd5a555ed88dd6 1-73
+independent-review.json
+  s_149af2c5f31d1c::t_efd6b244ad2902 1-48
+mcp.mjs
+  s_149af2c5f31d1c::t_c768fde004fc8b 1-33
+native-matrix.js
+  s_149af2c5f31d1c::t_ea15a2696302a7 1-54
+annotate.py
+  s_149af2c5f31d1c::t_484ed5d3d049d6 1-35
+browser-matrix.json
+  s_149af2c5f31d1c::t_f849a80f8f624b 1-90
+native-before-matrix.json
+  s_149af2c5f31d1c::t_d9a94965ad10f3 1-267
+native-init.js
+  s_149af2c5f31d1c::t_a60e79e170f371 1-14
+native-after-matrix.json
+  s_149af2c5f31d1c::t_4a3ed91eefb46e 1-267
+native-after-visible.json
+  s_149af2c5f31d1c::t_8143625b81f2fb 1-28
+native-before-visible.json
+  s_149af2c5f31d1c::t_3e7e6bc1df005f 1-28
+verification.json
+  s_149af2c5f31d1c::t_1ed0a2c057bc07 1-97
+before-product-fix.log
+  s_149af2c5f31d1c::t_c56bf30a54f98c 1-162
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "fa49f1b18b74a5cdad7da1e7b1f25e49033b7fdc",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "gang.wu@ximalaya.com <gang.wu@ximalaya.com>"
+    }
+  }
+}

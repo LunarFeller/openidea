@@ -1,0 +1,55 @@
+difftoolbar-flakiness.json
+  s_149af2c5f31d1c::t_19df00da096d7c 2-12,14,16-17,22-24,27-33
+difftoolbar-repeat-main.json
+  s_149af2c5f31d1c::t_f96a1cf0115442 1-1414
+focused-after.json
+  s_149af2c5f31d1c::t_02321d824f3391 3-4,591-615
+focused-before.json
+  s_149af2c5f31d1c::t_8fb6b16813b1c8 3-5,759,765-794
+full-suite-comparison.json
+  s_149af2c5f31d1c::t_60728856290291 2-7,9,22-38
+independent-review.json
+  s_149af2c5f31d1c::t_391900de3c0a73 3-8,14,16,21,23-27,29-30,32-33,35-36
+native-after-matrix-delete.json
+  s_149af2c5f31d1c::t_0a6c231c468e5b 56
+native-after-matrix-disconnect.json
+  s_149af2c5f31d1c::t_91093d7df4dfd5 56
+native-after-matrix-project.json
+  s_149af2c5f31d1c::t_ed616e1b3dc150 56
+native-after-matrix-reconnect.json
+  s_149af2c5f31d1c::t_955bb3055b298e 76
+native-after-released.json
+  s_149af2c5f31d1c::t_e49c7377eaba05 9
+native-before-matrix-delete.json
+  s_149af2c5f31d1c::t_4564eab4f91545 61
+native-before-matrix-disconnect.json
+  s_149af2c5f31d1c::t_3fcd8718d197e3 63
+native-before-matrix-project.json
+  s_149af2c5f31d1c::t_fb5f74f719b997 63
+native-before-matrix-reconnect.json
+  s_149af2c5f31d1c::t_0cde8845381fba 75
+native-before-released.json
+  s_149af2c5f31d1c::t_0399c868893255 18
+review-probes.test.ts
+  s_149af2c5f31d1c::t_057acfad0a32bc 22,25,66,291-350
+review-results.json
+  s_149af2c5f31d1c::t_cb66f008b6ae52 2-3,55-74
+verification.json
+  s_149af2c5f31d1c::t_18527ac0efdde6 2-5,7-9,12-13,50,52,57,60,72-75,78-90,92-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "24e4a4427076072b3907b99f14ae28efb3d09b69",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
