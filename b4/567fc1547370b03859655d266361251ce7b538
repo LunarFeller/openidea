@@ -1,0 +1,23 @@
+src/features/agents/store.ts
+  s_149af2c5f31d1c::t_8b7361015d5241 817-841,964-974
+e2e/agentTaskProject.spec.ts
+  s_149af2c5f31d1c::t_bfbcd08f4251e0 1-212
+src/features/agents/taskProject.test.ts
+  s_149af2c5f31d1c::t_c4dbd850ec4e8a 1-399
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "b4567fc1547370b03859655d266361251ce7b538",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
