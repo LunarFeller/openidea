@@ -1,0 +1,23 @@
+crates/ide-http/Cargo.toml
+  s_0b399c96e55f7c::t_7eec9e0293e675 12
+crates/ide-http/src/env.rs
+  s_0b399c96e55f7c::t_e2be2eff0d1e94 55-57,60,62-65,67-70,73-77,81,83,316-394
+crates/ide-http/src/exec.rs
+  s_0b399c96e55f7c::t_8de8b1725c9b04 252-313
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "c391fdc92ca4a112ed0b499fe7ca1447a2469de1",
+  "prompts": {},
+  "sessions": {
+    "s_0b399c96e55f7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d822-877b-7f63-bc60-7a673d6fb8be",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "LunarFeller <justnowgone@gmail.com>"
+    }
+  }
+}
