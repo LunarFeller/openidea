@@ -1,0 +1,99 @@
+{
+  "commit": "a501d92920f98e7f00222e719d42e7a85aba6f02",
+  "base": "e41cf32a9443124c5eabd31c3e5b64aaaf44a9e5",
+  "unit_before": {
+    "command": "pnpm vitest run src/features/agents/composerSubmission.test.tsx --maxWorkers=1",
+    "passed": 37,
+    "failed": 68,
+    "exit": 1
+  },
+  "unit_after": {
+    "command": "pnpm vitest run src/features/agents/composerSubmission.test.tsx --maxWorkers=1",
+    "passed": 105,
+    "failed": 0,
+    "exit": 0,
+    "independently_repeated_on_final_base": true
+  },
+  "frontend_full": {
+    "command": "pnpm test --maxWorkers=4 --reporter=default --reporter=json --reporter=/tmp/openidea-agent-draft-ack-20261114/runtime-errors-reporter.mjs --outputFile=/tmp/openidea-agent-draft-ack-20261114/frontend-full.json",
+    "files": 902,
+    "passed": 11667,
+    "failed": 0,
+    "skipped": 6,
+    "uncaught_errors": 1,
+    "exit": 1,
+    "baseline_error": "SourceDialog.test.tsx SSH test calls native invoke in jsdom; same error reproduced without this patch"
+  },
+  "agents_regression": {
+    "files": 26,
+    "passed": 603,
+    "failed": 0
+  },
+  "e2e_before": {
+    "command": "OPENIDEA_E2E_PORT=15541 pnpm e2e e2e/agentDraftSubmission.spec.ts --workers=1",
+    "passed": 6,
+    "failed": 2,
+    "exit": 1
+  },
+  "e2e_after": {
+    "command": "OPENIDEA_E2E_PORT=15541 pnpm e2e e2e/agentDraftSubmission.spec.ts --workers=1",
+    "passed": 8,
+    "failed": 0,
+    "exit": 0
+  },
+  "e2e_regression": {
+    "command": "OPENIDEA_E2E_PORT=15541 pnpm e2e e2e/agent*.spec.ts --workers=2",
+    "passed": 46,
+    "failed": 0,
+    "exit": 0
+  },
+  "native": {
+    "platform": "macOS x86_64 Tauri 2.12.4 / WKWebView",
+    "build_base": "eeb20f467c6e63135042cd3b1185245850e11671",
+    "agent_sources_identical_to_final_base": true,
+    "before": {
+      "passed": 4,
+      "failed": 8
+    },
+    "after": {
+      "passed": 12,
+      "failed": 0
+    },
+    "controlled_backend_acknowledgements": true,
+    "real_provider_calls": false,
+    "windows_linux_native_verified": false,
+    "app_stopped": true,
+    "local_manifest_restored": true,
+    "task_cargo_output_removed": true
+  },
+  "checks": {
+    "pnpm typecheck": {
+      "exit": 0
+    },
+    "pnpm lint": {
+      "exit": 0
+    },
+    "pnpm format:check": {
+      "exit": 0
+    },
+    "pnpm knip": {
+      "exit": 0
+    },
+    "pnpm build": {
+      "exit": 0
+    },
+    "git diff --check": {
+      "exit": 0
+    }
+  },
+  "review": {
+    "result": "No actionable findings",
+    "original": "review-summary.json",
+    "final_base_addendum": "review-latest-main-addendum.json"
+  },
+  "files_sha256": {
+    "src/features/agents/store.ts": "5870ae5f5ca4dcb66b4428729cdf97d7b607327799a54d1b63720168ecc7c70d",
+    "src/features/agents/composerSubmission.test.tsx": "4904899912356118ba5d0cecb29289c7f726b48fe77e04e58a36ddb828cb1fda",
+    "e2e/agentDraftSubmission.spec.ts": "58ba004ed0b87a127d77a61ddf361ab9c76b14a3a4d159c8ad6d3ca014a85cc1"
+  }
+}

@@ -1,0 +1,11 @@
+
+ RUN  v5.0.5 /Users/Thomas/code/my_github/openidea-agent-draft-ack
+
+ ✓ src/features/agents/composerSubmission.test.tsx (105 tests) 300ms
+
+ Test Files  1 passed (1)
+      Tests  105 passed (105)
+   Start at  15:23:22
+   Duration  2.42s (transform 40%, environment 26%, import 14%, tests 13%, setup 7%)
+
+JSON report written to /tmp/openidea-agent-draft-ack-20261114/after.json

@@ -1,0 +1,486 @@
+{
+  "passed": 12,
+  "failed": 0,
+  "cases": [
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [],
+          "text": ""
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 392.5,
+          "y": 757
+        },
+        "text": ""
+      },
+      "expected": {
+        "files": [],
+        "images": [],
+        "text": ""
+      },
+      "mode": "unchanged",
+      "passed": true,
+      "path": "session",
+      "submitted": {
+        "kind": "prompt",
+        "now": false,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [],
+          "text": "B: next unsent prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 392.5,
+          "y": 757
+        },
+        "text": "B: next unsent prompt"
+      },
+      "expected": {
+        "files": [],
+        "images": [],
+        "text": "B: next unsent prompt"
+      },
+      "mode": "edited",
+      "passed": true,
+      "path": "session",
+      "submitted": {
+        "kind": "prompt",
+        "now": false,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 392.5,
+          "y": 757
+        },
+        "text": "A: submitted prompt"
+      },
+      "expected": {
+        "files": [],
+        "images": [],
+        "text": "A: submitted prompt"
+      },
+      "mode": "ABA",
+      "passed": true,
+      "path": "session",
+      "submitted": {
+        "kind": "prompt",
+        "now": false,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [
+            {
+              "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4z8DwHwAFgAI/ScLbtAAAAABJRU5ErkJggg==",
+              "mimeType": "image/png",
+              "name": "next.png"
+            }
+          ],
+          "text": "A: submitted prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 392.5,
+          "y": 757
+        },
+        "text": "A: submitted prompt"
+      },
+      "expected": {
+        "files": [],
+        "images": [
+          {
+            "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4z8DwHwAFgAI/ScLbtAAAAABJRU5ErkJggg==",
+            "mimeType": "image/png",
+            "name": "next.png"
+          }
+        ],
+        "text": "A: submitted prompt"
+      },
+      "mode": "new image",
+      "passed": true,
+      "path": "session",
+      "submitted": {
+        "kind": "prompt",
+        "now": false,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [
+            {
+              "attached": true,
+              "path": "/private/tmp/openidea-agent-draft-ack-20261114/native-fixture/package.json",
+              "rel": "package.json"
+            }
+          ],
+          "images": [],
+          "text": "A: submitted prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 392.5,
+          "y": 757
+        },
+        "text": "A: submitted prompt"
+      },
+      "expected": {
+        "files": [
+          {
+            "attached": true,
+            "path": "/private/tmp/openidea-agent-draft-ack-20261114/native-fixture/package.json",
+            "rel": "package.json"
+          }
+        ],
+        "images": [],
+        "text": "A: submitted prompt"
+      },
+      "mode": "new file",
+      "passed": true,
+      "path": "session",
+      "submitted": {
+        "kind": "prompt",
+        "now": false,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [],
+          "text": "B: next unsent prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 392.5,
+          "y": 757
+        },
+        "text": "B: next unsent prompt"
+      },
+      "expected": {
+        "files": [],
+        "images": [],
+        "text": "B: next unsent prompt"
+      },
+      "mode": "failed edited",
+      "passed": true,
+      "path": "session",
+      "submitted": {
+        "kind": "prompt",
+        "now": false,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [],
+          "text": ""
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 409.90625
+        },
+        "text": ""
+      },
+      "expected": {
+        "files": [],
+        "images": [],
+        "text": ""
+      },
+      "mode": "unchanged",
+      "passed": true,
+      "path": "new task",
+      "submitted": {
+        "kind": "create",
+        "now": null,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [],
+          "text": "B: next unsent prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 409.90625
+        },
+        "text": "B: next unsent prompt"
+      },
+      "expected": {
+        "files": [],
+        "images": [],
+        "text": "B: next unsent prompt"
+      },
+      "mode": "edited",
+      "passed": true,
+      "path": "new task",
+      "submitted": {
+        "kind": "create",
+        "now": null,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 409.90625
+        },
+        "text": "A: submitted prompt"
+      },
+      "expected": {
+        "files": [],
+        "images": [],
+        "text": "A: submitted prompt"
+      },
+      "mode": "ABA",
+      "passed": true,
+      "path": "new task",
+      "submitted": {
+        "kind": "create",
+        "now": null,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [
+            {
+              "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4z8DwHwAFgAI/ScLbtAAAAABJRU5ErkJggg==",
+              "mimeType": "image/png",
+              "name": "next.png"
+            }
+          ],
+          "text": "A: submitted prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 433.90625
+        },
+        "text": "A: submitted prompt"
+      },
+      "expected": {
+        "files": [],
+        "images": [
+          {
+            "data": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWP4z8DwHwAFgAI/ScLbtAAAAABJRU5ErkJggg==",
+            "mimeType": "image/png",
+            "name": "next.png"
+          }
+        ],
+        "text": "A: submitted prompt"
+      },
+      "mode": "new image",
+      "passed": true,
+      "path": "new task",
+      "submitted": {
+        "kind": "create",
+        "now": null,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [
+            {
+              "attached": true,
+              "path": "/private/tmp/openidea-agent-draft-ack-20261114/native-fixture/package.json",
+              "rel": "package.json"
+            }
+          ],
+          "images": [],
+          "text": "A: submitted prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 425.90625
+        },
+        "text": "A: submitted prompt"
+      },
+      "expected": {
+        "files": [
+          {
+            "attached": true,
+            "path": "/private/tmp/openidea-agent-draft-ack-20261114/native-fixture/package.json",
+            "rel": "package.json"
+          }
+        ],
+        "images": [],
+        "text": "A: submitted prompt"
+      },
+      "mode": "new file",
+      "passed": true,
+      "path": "new task",
+      "submitted": {
+        "kind": "create",
+        "now": null,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    },
+    {
+      "actual": {
+        "devicePixelRatio": 2,
+        "draft": {
+          "files": [],
+          "images": [],
+          "text": "B: next unsent prompt"
+        },
+        "innerHeight": 885,
+        "innerWidth": 1440,
+        "rect": {
+          "height": 31,
+          "width": 900,
+          "x": 393,
+          "y": 409.90625
+        },
+        "text": "B: next unsent prompt"
+      },
+      "expected": {
+        "files": [],
+        "images": [],
+        "text": "B: next unsent prompt"
+      },
+      "mode": "failed edited",
+      "passed": true,
+      "path": "new task",
+      "submitted": {
+        "kind": "create",
+        "now": null,
+        "payload": {
+          "files": [],
+          "images": [],
+          "text": "A: submitted prompt"
+        }
+      }
+    }
+  ]
+}

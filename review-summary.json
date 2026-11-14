@@ -1,0 +1,44 @@
+{
+  "reviewer": "/root/review_agent_draft_ack_final",
+  "base": "eeb20f467c6e63135042cd3b1185245850e11671",
+  "result": "No actionable findings",
+  "scope": "Submitted composer acknowledgement clearing only; excludes stale task insertion/navigation and Changes request ordering",
+  "verified_design": [
+    "All production composer writers replace the ComposerDraft object and attachment arrays.",
+    "Identity guards protect edits and A-B-A revisions without blocking clearing after an unrelated composer edit.",
+    "Existing generation changes on connect/disconnect and protects retained objects across project lifecycle changes.",
+    "Missing composer map entries are not recreated by old acknowledgements.",
+    "Acknowledgement clearing preserves lastComposer; normal explicit task navigation remains unchanged.",
+    "CodeMirror store-origin updates are annotated and do not spuriously create a new composer revision.",
+    "Commands receive submitted content; later edits do not change Home history.",
+    "Failed command and transport acknowledgements preserve drafts."
+  ],
+  "validation": [
+    {
+      "command": "pnpm vitest run src/features/agents/composerSubmission.test.tsx --maxWorkers=1 --reporter=default",
+      "passed": 105,
+      "failed": 0,
+      "exit_code": 0,
+      "uncaught_errors": 0,
+      "log": "/tmp/openidea-agent-draft-ack-20261114/review-independent.log"
+    },
+    {
+      "command": "pnpm vitest run src/features/agents/composerSubmission.test.tsx src/features/agents/draft.test.ts src/features/agents/messageEditing.test.tsx --maxWorkers=1 --reporter=default",
+      "passed": 130,
+      "failed": 0,
+      "exit_code": 0,
+      "uncaught_errors": 0,
+      "log": "/tmp/openidea-agent-draft-ack-20261114/review-independent-regression.log"
+    }
+  ],
+  "limitations": [
+    "Reviewer did not run broad frontend checks, browser E2E or native application; parent is completing those.",
+    "Existing messageEditing error-path fixtures emit expected notification logs; test processes exited 0."
+  ],
+  "files_sha256": {
+    "src/features/agents/store.ts": "5870ae5f5ca4dcb66b4428729cdf97d7b607327799a54d1b63720168ecc7c70d",
+    "src/features/agents/composerSubmission.test.tsx": "4904899912356118ba5d0cecb29289c7f726b48fe77e04e58a36ddb828cb1fda",
+    "e2e/agentDraftSubmission.spec.ts": "58ba004ed0b87a127d77a61ddf361ab9c76b14a3a4d159c8ad6d3ca014a85cc1"
+  },
+  "findings": []
+}

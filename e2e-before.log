@@ -1,0 +1,101 @@
+$ playwright test e2e/agentDraftSubmission.spec.ts --workers=1
+[WebServer] (node:38720) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:38722) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:38742) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 
+[WebServer] A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+  ✓  1 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: successful acknowledgement with unchanged draft (3.9s)
+  ✓  2 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: failed acknowledgement with unchanged draft (2.3s)
+  ✘  3 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: successful acknowledgement with new typing (12.4s)
+(node:39004) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: failed acknowledgement with new typing (2.0s)
+  ✓  5 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: successful acknowledgement with unchanged draft (2.1s)
+  ✓  6 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: failed acknowledgement with unchanged draft (1.8s)
+  ✘  7 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: successful acknowledgement with new typing (12.1s)
+(node:39159) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  8 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: failed acknowledgement with new typing (2.0s)
+
+
+  1) [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: successful acknowledgement with new typing 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByRole('textbox', { name: 'Message', exact: true })
+    Expected: "next unsent prompt"
+    Received: "Reply to the agent"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveText" getByRole('textbox', { name: 'Message', exact: true }) with timeout 10000ms
+      - waiting for getByRole('textbox', { name: 'Message', exact: true })
+        24 × locator resolved to <div translate="no" role="textbox" autocorrect="off" spellcheck="false" autocapitalize="off" aria-label="Message" aria-multiline="true" contenteditable="true" writingsuggestions="false" class="cm-content cm-lineWrapping" aria-placeholder="Reply to the agent">…</div>
+           - unexpected value "Reply to the agent"
+
+
+      112 |         }
+      113 |         const expected = edited ? "next unsent prompt" : failure ? "submitted prompt" : "";
+    > 114 |         if (expected) await expect(box).toHaveText(expected);
+          |                                         ^
+      115 |         else await expect(box.locator(".cm-placeholder")).toBeVisible();
+      116 |         await expect
+      117 |           .poll(() =>
+        at /Users/Thomas/code/my_github/openidea-agent-draft-ack/e2e/agentDraftSubmission.spec.ts:114:41
+
+    Error Context: test-results/agentDraftSubmission-sessi-fb7b8-owledgement-with-new-typing-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/agentDraftSubmission-sessi-fb7b8-owledgement-with-new-typing-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/agentDraftSubmission-sessi-fb7b8-owledgement-with-new-typing-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: successful acknowledgement with new typing 
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByRole('textbox', { name: 'Message', exact: true })
+    Expected: "next unsent prompt"
+    Received: "Describe a task for the agent. @ references a file or folder, / runs a command"
+    Timeout:  10000ms
+
+    Call log:
+      - Expect "toHaveText" getByRole('textbox', { name: 'Message', exact: true }) with timeout 10000ms
+      - waiting for getByRole('textbox', { name: 'Message', exact: true })
+        24 × locator resolved to <div translate="no" role="textbox" autocorrect="off" spellcheck="false" autocapitalize="off" aria-label="Message" aria-multiline="true" contenteditable="true" writingsuggestions="false" class="cm-content cm-lineWrapping" aria-placeholder="Describe a task for the agent. @ references a file or folder, / runs a command">…</div>
+           - unexpected value "Describe a task for the agent. @ references a file or folder, / runs a command"
+
+
+      112 |         }
+      113 |         const expected = edited ? "next unsent prompt" : failure ? "submitted prompt" : "";
+    > 114 |         if (expected) await expect(box).toHaveText(expected);
+          |                                         ^
+      115 |         else await expect(box.locator(".cm-placeholder")).toBeVisible();
+      116 |         await expect
+      117 |           .poll(() =>
+        at /Users/Thomas/code/my_github/openidea-agent-draft-ack/e2e/agentDraftSubmission.spec.ts:114:41
+
+    Error Context: test-results/agentDraftSubmission-new-t-3a330-owledgement-with-new-typing-chromium/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/agentDraftSubmission-new-t-3a330-owledgement-with-new-typing-chromium/trace.zip
+    Usage:
+
+        pnpm exec playwright show-trace test-results/agentDraftSubmission-new-t-3a330-owledgement-with-new-typing-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: successful acknowledgement with new typing 
+    [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: successful acknowledgement with new typing 
+  6 passed (41.4s)
+[ELIFECYCLE] Command failed with exit code 1.

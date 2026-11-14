@@ -1,0 +1,24 @@
+{
+  "phase": "process-exit",
+  "processExitCode": 1,
+  "errorCount": 1,
+  "errors": [
+    {
+      "name": "TypeError",
+      "message": "Cannot read properties of undefined (reading 'invoke')",
+      "stack": "TypeError: Cannot read properties of undefined (reading 'invoke')\n    at invoke (file:///Users/Thomas/code/my_github/openidea-agent-draft-ack/node_modules/.pnpm/@tauri-apps+api@2.12.4/node_modules/@tauri-apps/api/core.js:341:39)\n    at invoke (/Users/Thomas/code/my_github/openidea-agent-draft-ack/src/platform/tauriCore.ts:28:42)\n    at Object.dbTestTunnel (/Users/Thomas/code/my_github/openidea-agent-draft-ack/src/bindings.ts:1692:107)\n    at runTest (/Users/Thomas/code/my_github/openidea-agent-draft-ack/src/features/database/SourceDialog.tsx:500:43)\n    at onClick (/Users/Thomas/code/my_github/openidea-agent-draft-ack/src/features/database/SourceDialog.tsx:998:31)\n    at executeDispatch (/Users/Thomas/code/my_github/openidea-agent-draft-ack/node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:20804:9)\n    at runWithFiberInDEV (/Users/Thomas/code/my_github/openidea-agent-draft-ack/node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:1048:13)\n    at processDispatchQueue (/Users/Thomas/code/my_github/openidea-agent-draft-ack/node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:20854:19)\n    at /Users/Thomas/code/my_github/openidea-agent-draft-ack/node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:21423:9\n    at batchedUpdates$1 (/Users/Thomas/code/my_github/openidea-agent-draft-ack/node_modules/.pnpm/react-dom@19.3.1_react@19.3.1/node_modules/react-dom/cjs/react-dom-client.development.js:3437:40)",
+      "type": "Unhandled Rejection",
+      "keys": [
+        "stack",
+        "message",
+        "constructor",
+        "name",
+        "toString",
+        "VITEST_TEST_NAME",
+        "VITEST_TEST_PATH",
+        "type",
+        "stacks"
+      ]
+    }
+  ]
+}

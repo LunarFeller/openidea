@@ -1,0 +1,22 @@
+$ playwright test e2e/agentDraftSubmission.spec.ts --workers=1
+[WebServer] (node:37528) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] (node:37530) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:37550) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 
+[WebServer] A PostCSS plugin did not pass the `from` option to `postcss.parse`. This may cause imported assets to be incorrectly transformed. If you've recently added a PostCSS plugin that raised this warning, please contact the package author to fix the issue.
+  ✓  1 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: successful acknowledgement with unchanged draft (3.5s)
+  ✓  2 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: failed acknowledgement with unchanged draft (1.9s)
+  ✓  3 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: successful acknowledgement with new typing (1.9s)
+  ✓  4 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › session: failed acknowledgement with new typing (1.9s)
+  ✓  5 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: successful acknowledgement with unchanged draft (2.1s)
+  ✓  6 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: failed acknowledgement with unchanged draft (2.2s)
+  ✓  7 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: successful acknowledgement with new typing (2.2s)
+  ✓  8 [chromium] › e2e/agentDraftSubmission.spec.ts:92:7 › new task: failed acknowledgement with new typing (2.3s)
+
+  8 passed (19.4s)

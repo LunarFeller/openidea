@@ -1,0 +1,835 @@
+
+ RUN  v5.0.5 /Users/Thomas/code/my_github/openidea-agent-draft-ack
+
+ ❯ src/features/agents/composerSubmission.test.tsx (105 tests | 68 failed) 302ms
+   ❯ queued message acknowledgement (34)
+     ✓ clears unchanged text after success 2ms
+     ✓ clears unchanged file only after success 1ms
+     ✓ clears unchanged image only after success 0ms
+     ✓ clears unchanged text, files and images after success 1ms
+     ✓ does not send an empty draft ("") 1ms
+     ✓ does not send an empty draft (" \n\t ") 0ms
+     × keeps the newer draft after replace text 5ms
+     × keeps the newer draft after append text 1ms
+     × keeps the newer draft after delete text 1ms
+     × keeps the newer draft after whitespace edit 1ms
+     × keeps the newer draft after add file 1ms
+     × keeps the newer draft after remove file 0ms
+     × keeps the newer draft after replace file 0ms
+     × keeps the newer draft after add image 0ms
+     × keeps the newer draft after remove image 1ms
+     × keeps the newer draft after replace image 0ms
+     × keeps the newer draft after replace everything 0ms
+     × keeps a new revision even when edits restore the submitted content 0ms
+     ✓ keeps current content after a command error (edited=false) 1ms
+     ✓ keeps current content after a command error (edited=true) 0ms
+     ✓ keeps current content after a transport error (edited=false) 0ms
+     ✓ keeps current content after a transport error (edited=true) 0ms
+     × clears only the submitted composer and keeps the last edited destination 1ms
+     ✓ still clears when task status, provider or model settings change 1ms
+     × does not consume a retained draft after disconnect 1ms
+     × does not consume a retained draft after reconnect 1ms
+     × does not consume a retained draft after switch project 1ms
+     × does not consume a retained draft after switch away and back 1ms
+     × does not recreate a deleted composer 1ms
+     × does not consume a retained draft after replacing the connection without disconnecting 0ms
+     × handles overlapping submissions with old first 0ms
+     × handles overlapping submissions with new first 0ms
+     × keeps a third draft when both earlier acknowledgements arrive 0ms
+     ✓ sends the submitted payload and remembers only the submitted Home prompt 0ms
+   ❯ send now acknowledgement (34)
+     ✓ clears unchanged text after success 0ms
+     ✓ clears unchanged file only after success 0ms
+     ✓ clears unchanged image only after success 0ms
+     ✓ clears unchanged text, files and images after success 0ms
+     ✓ does not send an empty draft ("") 0ms
+     ✓ does not send an empty draft (" \n\t ") 0ms
+     × keeps the newer draft after replace text 0ms
+     × keeps the newer draft after append text 0ms
+     × keeps the newer draft after delete text 0ms
+     × keeps the newer draft after whitespace edit 0ms
+     × keeps the newer draft after add file 0ms
+     × keeps the newer draft after remove file 0ms
+     × keeps the newer draft after replace file 0ms
+     × keeps the newer draft after add image 0ms
+     × keeps the newer draft after remove image 0ms
+     × keeps the newer draft after replace image 0ms
+     × keeps the newer draft after replace everything 0ms
+     × keeps a new revision even when edits restore the submitted content 0ms
+     ✓ keeps current content after a command error (edited=false) 0ms
+     ✓ keeps current content after a command error (edited=true) 0ms
+     ✓ keeps current content after a transport error (edited=false) 0ms
+     ✓ keeps current content after a transport error (edited=true) 0ms
+     × clears only the submitted composer and keeps the last edited destination 0ms
+     ✓ still clears when task status, provider or model settings change 0ms
+     × does not consume a retained draft after disconnect 0ms
+     × does not consume a retained draft after reconnect 0ms
+     × does not consume a retained draft after switch project 0ms
+     × does not consume a retained draft after switch away and back 0ms
+     × does not recreate a deleted composer 0ms
+     × does not consume a retained draft after replacing the connection without disconnecting 0ms
+     × handles overlapping submissions with old first 0ms
+     × handles overlapping submissions with new first 0ms
+     × keeps a third draft when both earlier acknowledgements arrive 0ms
+     ✓ sends the submitted payload and remembers only the submitted Home prompt 0ms
+   ❯ new task acknowledgement (34)
+     ✓ clears unchanged text after success 0ms
+     ✓ clears unchanged file only after success 0ms
+     ✓ clears unchanged image only after success 0ms
+     ✓ clears unchanged text, files and images after success 2ms
+     ✓ does not send an empty draft ("") 0ms
+     ✓ does not send an empty draft (" \n\t ") 0ms
+     × keeps the newer draft after replace text 1ms
+     × keeps the newer draft after append text 1ms
+     × keeps the newer draft after delete text 0ms
+     × keeps the newer draft after whitespace edit 0ms
+     × keeps the newer draft after add file 0ms
+     × keeps the newer draft after remove file 0ms
+     × keeps the newer draft after replace file 0ms
+     × keeps the newer draft after add image 0ms
+     × keeps the newer draft after remove image 0ms
+     × keeps the newer draft after replace image 0ms
+     × keeps the newer draft after replace everything 0ms
+     × keeps a new revision even when edits restore the submitted content 0ms
+     ✓ keeps current content after a command error (edited=false) 0ms
+     ✓ keeps current content after a command error (edited=true) 0ms
+     ✓ keeps current content after a transport error (edited=false) 0ms
+     ✓ keeps current content after a transport error (edited=true) 0ms
+     × clears only the submitted composer and keeps the last edited destination 0ms
+     ✓ still clears when task status, provider or model settings change 0ms
+     × does not consume a retained draft after disconnect 0ms
+     × does not consume a retained draft after reconnect 0ms
+     × does not consume a retained draft after switch project 0ms
+     × does not consume a retained draft after switch away and back 0ms
+     × does not recreate a deleted composer 0ms
+     × does not consume a retained draft after replacing the connection without disconnecting 0ms
+     × handles overlapping submissions with old first 0ms
+     × handles overlapping submissions with new first 0ms
+     × keeps a third draft when both earlier acknowledgements arrive 1ms
+     ✓ sends the submitted payload and remembers only the submitted Home prompt 1ms
+   ❯ composer UI during submission (3)
+     × keeps typing and attachments in the session after Send completes 178ms
+     ✓ clears an unchanged session draft after only moving the caret 47ms
+     × keeps the next Home draft when task creation succeeds and opens the created task 38ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 68 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after replace text
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after replace text
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after replace text
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: 'next prompt', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
+-   "text": "next prompt",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after append text
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after append text
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after append text
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { …(3) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
+-   "text": "  submitted prompt  and another instruction",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after delete text
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after delete text
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after delete text
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '', files: [ { …(3) } ], …(1) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
++   "files": [],
++   "images": [],
+    "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after whitespace edit
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after whitespace edit
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after whitespace edit
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt   ', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
+-   "text": "  submitted prompt   ",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after add file
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after add file
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after add file
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt  ', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-     {
+-       "attached": true,
+-       "path": "/project-a/next.ts",
+-       "rel": "next.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
+-   "text": "  submitted prompt  ",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after remove file
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after remove file
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after remove file
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt  ', …(2) }
+
+- Expected
++ Received
+
+  {
+    "files": [],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
+-   "text": "  submitted prompt  ",
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after replace file
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after replace file
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after replace file
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt  ', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/next.ts",
+-       "rel": "next.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
+-   "text": "  submitted prompt  ",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after add image
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after add image
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after add image
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt  ', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-     {
+-       "data": "next.png",
+-       "mimeType": "image/png",
+-       "name": "next.png",
+-     },
+-   ],
+-   "text": "  submitted prompt  ",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after remove image
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after remove image
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after remove image
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt  ', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
++   "files": [],
+    "images": [],
+-   "text": "  submitted prompt  ",
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after replace image
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after replace image
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after replace image
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt  ', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "next.png",
+-       "mimeType": "image/png",
+-       "name": "next.png",
+-     },
+-   ],
+-   "text": "  submitted prompt  ",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps the newer draft after replace everything
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps the newer draft after replace everything
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps the newer draft after replace everything
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: 'next prompt', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/next.ts",
+-       "rel": "next.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "next.png",
+-       "mimeType": "image/png",
+-       "name": "next.png",
+-     },
+-   ],
+-   "text": "next prompt",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:198:37
+    196|     response.resolve(success());
+    197|     await response.pending;
+    198|     expect(composerDraft(path.key)).toEqual(next);
+       |                                     ^
+    199|   });
+    200|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps a new revision even when edits restore the submitted content
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps a new revision even when edits restore the submitted content
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps a new revision even when edits restore the submitted content
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt  ', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
+-   "text": "  submitted prompt  ",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:209:37
+    207|     response.resolve(success());
+    208|     await response.pending;
+    209|     expect(composerDraft(path.key)).toEqual(submitted);
+       |                                     ^
+    210|   });
+    211|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > clears only the submitted composer and keeps the last edited destination
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > clears only the submitted composer and keeps the last edited destination
+AssertionError: expected 'A' to be 'B' // Object.is equality
+
+Expected: "B"
+Received: "A"
+
+ ❯ src/features/agents/composerSubmission.test.tsx:242:47
+    240|     expect(composerDraft(path.key)).toEqual(emptyDraft());
+    241|     expect(composerDraft("B")).toEqual({ text: "another session", file…
+    242|     expect(useAgents.getState().lastComposer).toBe("B");
+       |                                               ^
+    243|   });
+    244|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > does not consume a retained draft after disconnect
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > does not consume a retained draft after reconnect
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > does not consume a retained draft after switch project
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > does not consume a retained draft after switch away and back
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > does not consume a retained draft after disconnect
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > does not consume a retained draft after reconnect
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > does not consume a retained draft after switch project
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > does not consume a retained draft after switch away and back
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > does not consume a retained draft after disconnect
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > does not consume a retained draft after reconnect
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > does not consume a retained draft after switch project
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > does not consume a retained draft after switch away and back
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt  ', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
+-   "text": "  submitted prompt  ",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:275:39
+    273|       response.resolve(success());
+    274|       await response.pending;
+    275|       expect(composerDraft(path.key)).toEqual(mixed());
+       |                                       ^
+    276|     },
+    277|   );
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > does not recreate a deleted composer
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > does not recreate a deleted composer
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > does not recreate a deleted composer
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/features/agents/composerSubmission.test.tsx:285:58
+    283|     response.resolve(success());
+    284|     await response.pending;
+    285|     expect(useAgents.getState().composers.has(path.key)).toBe(false);
+       |                                                          ^
+    286|   });
+    287|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > does not consume a retained draft after replacing the connection without disconnecting
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > does not consume a retained draft after replacing the connection without disconnecting
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > does not consume a retained draft after replacing the connection without disconnecting
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: '  submitted prompt  ', …(2) }
+
+- Expected
++ Received
+
+  {
+-   "files": [
+-     {
+-       "attached": true,
+-       "path": "/project-a/sent.ts",
+-       "rel": "sent.ts",
+-     },
+-   ],
+-   "images": [
+-     {
+-       "data": "sent.png",
+-       "mimeType": "image/png",
+-       "name": "sent.png",
+-     },
+-   ],
+-   "text": "  submitted prompt  ",
++   "files": [],
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:295:37
+    293|     response.resolve(success());
+    294|     await response.pending;
+    295|     expect(composerDraft(path.key)).toEqual(mixed());
+       |                                     ^
+    296|   });
+    297|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > handles overlapping submissions with old first
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > handles overlapping submissions with old first
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > handles overlapping submissions with old first
+AssertionError: expected '' to be 'second' // Object.is equality
+
+- Expected
++ Received
+
+- second
+
+ ❯ src/features/agents/composerSubmission.test.tsx:306:44
+    304|       first.resolve(success());
+    305|       await first.pending;
+    306|       expect(composerDraft(path.key).text).toBe("second");
+       |                                            ^
+    307|       second.resolve(success());
+    308|       await second.pending;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > handles overlapping submissions with new first
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > handles overlapping submissions with new first
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > handles overlapping submissions with new first
+AssertionError: expected '' to be 'third' // Object.is equality
+
+- Expected
++ Received
+
+- third
+
+ ❯ src/features/agents/composerSubmission.test.tsx:316:42
+    314|       await first.pending;
+    315|     }
+    316|     expect(composerDraft(path.key).text).toBe(order === "old first" ? …
+       |                                          ^
+    317|   });
+    318|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > queued message acknowledgement > keeps a third draft when both earlier acknowledgements arrive
+ FAIL  src/features/agents/composerSubmission.test.tsx > send now acknowledgement > keeps a third draft when both earlier acknowledgements arrive
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > keeps a third draft when both earlier acknowledgements arrive
+AssertionError: expected { text: '', files: [], images: [] } to deeply equal { text: 'third', files: [], …(1) }
+
+- Expected
++ Received
+
+  {
+    "files": [],
+-   "images": [
+-     {
+-       "data": "third.png",
+-       "mimeType": "image/png",
+-       "name": "third.png",
+-     },
+-   ],
+-   "text": "third",
++   "images": [],
++   "text": "",
+  }
+
+ ❯ src/features/agents/composerSubmission.test.tsx:328:37
+    326|     second.resolve(success());
+    327|     await Promise.all([first.pending, second.pending]);
+    328|     expect(composerDraft(path.key)).toEqual({ text: "third", files: []…
+       |                                     ^
+    329|   });
+    330|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > new task acknowledgement > clears only the submitted composer and keeps the last edited destination
+AssertionError: expected 'home' to be 'B' // Object.is equality
+
+Expected: "B"
+Received: "home"
+
+ ❯ src/features/agents/composerSubmission.test.tsx:242:47
+    240|     expect(composerDraft(path.key)).toEqual(emptyDraft());
+    241|     expect(composerDraft("B")).toEqual({ text: "another session", file…
+    242|     expect(useAgents.getState().lastComposer).toBe("B");
+       |                                               ^
+    243|   });
+    244|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[20/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > composer UI during submission > keeps typing and attachments in the session after Send completes
+AssertionError: expected '' to be 'next unsent message' // Object.is equality
+
+- Expected
++ Received
+
+- next unsent message
+
+ ❯ src/features/agents/composerSubmission.test.tsx:358:25
+    356|     act(() => updateComposer("A", { files: [file("next.ts")], images: …
+    357|     await act(async () => response.resolve(ok(null)));
+    358|     expect(textOf(box)).toBe("next unsent message");
+       |                         ^
+    359|     expect(composerDraft("A").files).toEqual([file("next.ts")]);
+    360|     expect(composerDraft("A").images).toEqual([image("next.png")]);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[21/68]⎯
+
+ FAIL  src/features/agents/composerSubmission.test.tsx > composer UI during submission > keeps the next Home draft when task creation succeeds and opens the created task
+AssertionError: expected '' to be 'next unsent task' // Object.is equality
+
+- Expected
++ Received
+
+- next unsent task
+
+ ❯ src/features/agents/composerSubmission.test.tsx:395:49
+    393|     home.unmount();
+    394|     render(<HomeEditor />);
+    395|     expect(textOf(screen.getByRole("textbox"))).toBe("next unsent task…
+       |                                                 ^
+    396|     expect(useAgents.getState().history).toEqual(["submitted task"]);
+    397|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22/68]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  68 failed | 37 passed (105)
+   Start at  15:27:34
+   Duration  3.00s (transform 43%, environment 24%, import 15%, tests 11%, setup 7%)
+
+JSON report written to /tmp/openidea-agent-draft-ack-20261114/before.json
