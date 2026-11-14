@@ -1,0 +1,89 @@
+{
+  "pr": "https://github.com/l0ng-ai/openidea/pull/3176",
+  "scope": "Only lossless HTTP environment-variable substitution; exact aggregates/charts and shared frontend JSON implementation on main are retained",
+  "reproduction_base": "91ac7f417cb2defa556ce9aaf1358852fe62594e",
+  "final_base": "75344c21ef4cc6907d00f3b4e926ea8b82b2fb44",
+  "base_advance": "The only change between reproduction and final base is ide-build/src/compile/parse.rs; ide-http,ide-core,ide-vfs,Cargo.toml,Cargo.lock did not change",
+  "prior_pr_head": "e5ef7557e681b3e18b368a31c2098c60d96089e8",
+  "local_backup_branch": "codex/backup-3176-full-scope-20261114",
+  "files": [
+    "crates/ide-http/Cargo.toml",
+    "crates/ide-http/src/env.rs",
+    "crates/ide-http/src/exec.rs"
+  ],
+  "same_extended_tests": {
+    "main": {
+      "passed": 31,
+      "failed": 4,
+      "exit_code": 101
+    },
+    "fixed": {
+      "passed": 35,
+      "failed": 0,
+      "exit_code": 0
+    }
+  },
+  "related_native_regressions": {
+    "crates": [
+      "ide-core",
+      "ide-vfs",
+      "ide-http"
+    ],
+    "passed": 217,
+    "failed": 0,
+    "exit_code": 0
+  },
+  "cases": {
+    "valid_numeric_tokens": 25,
+    "invalid_numeric_tokens": 11,
+    "invalid_ignored_nested_json": 1,
+    "checks": [
+      "signed zero",
+      "integer precision boundaries",
+      "large signed integers",
+      "long decimal fractions",
+      "underflow/overflow exponents",
+      "original exponent spelling/trailing zeroes",
+      "duplicate/escaped JSON keys and whitespace/BOM",
+      "booleans and decoded strings",
+      "null and SSL/auth objects ignored as variables",
+      "private/public/shared and file-variable lookup precedence",
+      "actual TCP URL/header/body and echoed response"
+    ]
+  },
+  "example_wire_body": {
+    "main": "{\"id\":1.2345678901234568e+29,\"amount\":1.0,\"tiny\":0.0}",
+    "fixed": "{\"id\":123456789012345678901234567890,\"amount\":1.0000000000000000002,\"tiny\":1e-400}"
+  },
+  "commands": {
+    "http": "RUSTUP_TOOLCHAIN=stable-aarch64-apple-darwin CARGO_BUILD_JOBS=2 CARGO_PROFILE_DEV_DEBUG=0 CARGO_PROFILE_TEST_DEBUG=0 CARGO_INCREMENTAL=0 cargo test --locked -p ide-http --config 'profile.dev.package.\"*\".opt-level=0' --config 'profile.test.package.\"*\".opt-level=0' -- --nocapture",
+    "related": "cargo test --locked -p ide-core -p ide-vfs -p ide-http (same profile/toolchain flags)",
+    "fmt": "cargo fmt --all --check",
+    "clippy": "cargo clippy --locked -p ide-http --all-targets -- -D warnings (same native toolchain and dev profile override)"
+  },
+  "checks": {
+    "fmt": 0,
+    "clippy": 0,
+    "diff_check": 0
+  },
+  "independent_review": {
+    "findings": [],
+    "http_tests": 35,
+    "source_sha256": {
+      "crates/ide-http/Cargo.toml": "ddd1d48ac4198ac8916865a8f4e9610d7044f4b625fea4dfd850b9007abbb3c0",
+      "crates/ide-http/src/env.rs": "c62e6bbb1fa9cddd59671b7c54354f9c036577cabd7c02b1446fa6529d777a68",
+      "crates/ide-http/src/exec.rs": "28a9e44ab9183a65f552e36e155bb91b6826ca3dfd004b225a6c2220ae3b0b05"
+    }
+  },
+  "native_validation": "Native macOS ARM Rust production run entry point and real loopback HTTP request/response; no WebView mock",
+  "limits": [
+    "Desktop GUI not rerun for this backend-only scope",
+    "Windows/Linux native GUI not run locally; fresh CI matrix will validate the narrowed commit"
+  ],
+  "origin_evidence": {
+    "env_blob_before_3175": "c9ea84c45938e41b81e2607c2f08c61d610b3886",
+    "env_blob_after_3175": "c9ea84c45938e41b81e2607c2f08c61d610b3886",
+    "note": "PR3175 explicitly excludes the Rust environment substitution path. The issue predates that merge."
+  },
+  "fix_commit": "c391fdc92ca4a112ed0b499fe7ca1447a2469de1"
+}

@@ -1,0 +1,262 @@
+   Compiling ide-vfs v0.1.44 (/Users/Thomas/code/my_github/openidea-http-env-precision/crates/ide-vfs)
+   Compiling ide-core v0.1.44 (/Users/Thomas/code/my_github/openidea-http-env-precision/crates/ide-core)
+    Finished `test` profile [unoptimized] target(s) in 7.29s
+     Running unittests src/lib.rs (target/debug/deps/ide_core-70509c5a9d977d77)
+
+running 111 tests
+test editor_settings::auto_import_tests::imports_on_paste_defaults_to_ask_for_existing_settings ... ok
+test event::tests::invalidated_event_json_shape ... ok
+test error::tests::legacy_errors_need_no_data ... ok
+test event::tests::jvm_backend_events_json_shape ... ok
+test ignored::tests::matches_names_and_wildcards ... ok
+test ignored::tests::matches_any_path_segment ... ok
+test error::tests::tool_errors_round_trip_without_changing_diagnostics ... ok
+test editor_settings::auto_import_tests::imports_on_paste_modes_round_trip ... ok
+test input::tests::readiness_errors_are_reported_and_reject_following_writes ... ok
+test input::tests::tiny_writes_are_also_bounded ... ok
+test input::tests::partial_writes_preserve_order_and_finish_drains_before_eof ... ok
+test ipc_path::tests::round_trips_through_json ... ok
+test jsonc::tests::drops_comments_and_trailing_commas_outside_strings ... ok
+test inspection_settings::tests::active_profile_falls_back_to_default ... ok
+test output_encoding::tests::build_tools_reach_the_jvms_they_fork ... ok
+test output_encoding::tests::gradle_script_respects_the_builds_own_file_encoding ... ok
+test inspection_settings::tests::overrides_parse_partially ... ok
+test output_encoding::tests::forked_application_jvms_get_a_utf8_default_charset ... ok
+test output_encoding::tests::java_debug_launches_write_what_java_debug_decodes ... ok
+test output_encoding::tests::java_debug_preserves_user_options_independently ... ok
+test output_encoding::tests::java_launches_write_the_console_encoding_on_windows ... ok
+test output_encoding::tests::nothing_changes_where_output_already_matches ... ok
+test ignored::tests::finds_the_repository_at_or_above_a_directory ... ok
+test output_encoding::tests::shell_command_lines_get_variables_from_their_first_word ... ok
+test output_encoding::tests::options_chosen_by_the_user_win ... ok
+test output_encoding::tests::spring_boot_run_forks_get_a_utf8_default_charset ... ok
+test output_encoding::tests::tool_output_prefers_utf8 ... ok
+test platform::tests::windows_build_is_platform_specific ... ok
+test output_encoding::tests::tool_output_decodes_native_diagnostics_and_mixed_lines ... ok
+test process::tests::a_saved_original_value_wins ... ok
+test process::tests::append_path_entries_keeps_the_order_and_adds_what_is_missing ... ok
+test process::tests::appimage_entries_are_dropped_and_host_entries_kept ... ok
+test output_encoding::tests::notice_lines_are_dropped_wherever_the_chunks_split ... ok
+test process::tests::changes_apply_in_order ... ok
+test process::tests::entries_of_a_previous_updates_mount_are_dropped ... ok
+test process::tests::host_env_keeps_what_the_call_site_set ... ok
+test process::tests::outside_an_appimage_nothing_changes ... ok
+test process::tests::process_alive_rejects_ids_that_are_not_a_single_process ... ok
+test process::tests::find_executable_finds_bare_names_on_the_given_path ... ok
+test process::tests::shell_env_adds_only_what_the_process_lacks_and_the_overlay_wins ... ok
+test process::tests::variables_left_empty_are_removed ... ok
+test process::tests::process_alive_tells_live_from_dead_pids ... ok
+test project_roots::tests::discovery_never_follows_directory_symlinks ... ok
+test input::tests::bounds_include_inflight_bytes_and_reject_whole_writes ... ok
+test project_roots::tests::paths_keep_component_boundaries_and_external_roots ... ok
+test proxy_settings::tests::auto_is_the_default_and_defers_to_the_system ... ok
+test proxy_settings::tests::child_processes_get_the_manual_proxy ... ok
+test proxy_settings::tests::credentials_are_percent_encoded ... ok
+test proxy_settings::tests::jvm_args_carry_the_proxy_as_system_properties ... ok
+test proxy_settings::tests::manual_http_and_socks_urls ... ok
+test proxy_settings::tests::no_proxy_for_list_matches_globs_and_loopback ... ok
+test project_roots::tests::package_manager_declarations_are_shared_by_build_and_run ... ok
+test proxy_settings::tests::no_proxy_goes_direct ... ok
+test proxy_settings::tests::url_hosts ... ok
+test remote_settings::deployment_tests::deployment_type_defaults_and_round_trips ... ok
+test remote_settings::deployment_tests::run_target_kind_defaults_to_ssh_and_round_trips ... ok
+test settings::go_module_tests::old_go_settings_inherit_module_defaults ... ok
+test settings::gradle_settings_tests::absent_and_explicitly_empty_gradle_links_remain_distinct ... ok
+test settings::java_settings_tests::shared_jdtls_defaults_off_and_round_trips ... ok
+test settings::maven_linkage_tests::daemon_settings_round_trip ... ok
+test settings::maven_linkage_tests::maven_linkage_defaults_and_round_trips ... ok
+test settings::maven_linkage_tests::maven_profiles_and_toolchains_round_trip_and_default_to_empty ... ok
+test settings::maven_linkage_tests::maven_profiles_combine_settings_and_tool_window_choices ... ok
+test settings::maven_linkage_tests::maven_runner_jre_defaults_and_round_trips ... ok
+test settings::maven_linkage_tests::thread_count_round_trips_and_defaults_to_empty ... ok
+test settings::maven_linkage_tests::thread_count_takes_counts_and_core_multipliers_only ... ok
+test settings::gradle_settings_tests::defaults_and_round_trip ... ok
+test settings::tests::agent_meters_default_and_round_trip ... ok
+test settings::tests::cmake_profile_argument_arrays_round_trip ... ok
+test settings::tests::custom_keymaps_round_trip ... ok
+test settings::tests::double_click_opens_diff_is_unset_by_default_and_round_trips ... ok
+test settings::tests::editor_font_weights_default_to_regular_and_bold ... ok
+test settings::tests::exclude_files_patterns_join_the_file_excludes ... ok
+test settings::tests::docstring_format_defaults_and_round_trips ... ok
+test settings::tests::hand_edited_agent_values_it_does_not_know_keep_the_rest ... ok
+test settings::tests::file_icon_theme_options_default_empty_and_round_trip ... ok
+test settings::tests::keymap_overrides_are_camel_case_and_default_empty ... ok
+test settings::tests::main_menu_style_defaults_and_round_trips ... ok
+test settings::tests::removed_one_themes_read_as_islands_themes ... ok
+test settings::tests::project_structure_modules_libraries_facets_and_artifacts_round_trip ... ok
+test settings::tests::tool_window_badges_default_on_and_round_trip ... ok
+test settings::tests::ui_font_fallback_defaults_empty_and_round_trips ... ok
+test task::tests::cancel_runs_the_callback_once_while_the_handle_lives ... ok
+test process::kill_tests::kill_tree_kills_what_the_child_started ... ok
+test task::tests::display_title_shows_a_leading_executable_path_as_its_name ... ok
+test settings::tests::window_close_settings_default_off_and_round_trip ... ok
+test text::workspace_edit_tests::aliases_are_one_edit_but_resource_operations_preserve_order ... ok
+test text::workspace_edit_tests::repeated_edits_within_one_entry_survive_but_repeats_across_entries_do_not ... ok
+test tool_path::tests::commands_resolve_on_path_and_explicit_paths_under_root ... ok
+test tool_path::tests::non_executable_files_do_not_shadow_commands ... ok
+test tool_path::tests::nvm_versions_newest_first ... ok
+test updates::tests::announcements_are_per_version_across_windows_sources_and_manual_checks ... ok
+test updates::tests::automatic_and_manual_checks_resolve_the_same_preferred_source ... ok
+test updates::tests::checks_at_startup_and_every_four_hours_even_after_failure ... ok
+test updates::tests::manual_checks_reset_the_schedule_without_losing_last_success_on_failure ... ok
+test version_managers::tests::data_dirs_follow_the_environment ... ok
+test process::tests::kill_tree_of_reaches_what_the_child_started ... ok
+test version_managers::tests::shims_join_a_path_the_hook_did_not_set ... ok
+test wsl::tests::distro_list_is_decoded_from_utf16_and_utf8 ... ok
+test wsl::tests::distro_names_cannot_smuggle_options_or_paths ... ok
+test wsl::tests::distro_root_and_foreign_paths ... ok
+test wsl::tests::every_spelling_of_the_share_is_recognised ... ok
+test version_managers::tests::installs_skip_alias_links ... ok
+test project_roots::tests::discovery_has_one_depth_boundary_and_exclusion_policy_for_all_families ... ok
+test tool_path::tests::search_dirs_append_user_path_entries_once_after_the_inherited_path ... ok
+test tool_path::tests::search_dirs_put_the_process_path_first_and_shims_after_real_tools ... ok
+test input::tests::writable_input_resumes_without_timer_delays ... ok
+test process::kill_tests::terminate_tree_still_kills_a_child_that_ignores_sigterm ... ok
+test process::tests::process_tree_lists_the_child_of_a_shell ... ok
+test input::tests::close_interrupts_a_full_os_pipe_while_the_peer_stays_open ... ok
+test process::kill_tests::terminate_tree_lets_the_child_clean_up ... ok
+
+test result: ok. 111 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.54s
+
+     Running unittests src/lib.rs (target/debug/deps/ide_http-08179a5126aa13df)
+
+running 35 tests
+test curl::tests::a_browser_copied_command_becomes_a_request ... ok
+test curl::tests::a_prepared_request_becomes_a_quoted_curl_command ... ok
+test curl::tests::other_text_is_not_a_curl_command ... ok
+test curl::tests::options_map_to_headers_query_and_multipart ... ok
+test env::tests::exact_environment_parsing_keeps_types_and_precedence ... ok
+test env::tests::iso_timestamps ... ok
+test env::tests::merges_private_public_and_shared ... ok
+test env::tests::preserves_exact_numeric_environment_tokens ... ok
+test env::tests::an_environment_file_is_found_up_the_tree_or_created_next_to_the_request ... ok
+test env::tests::reads_numeric_tokens_with_whitespace_and_escaped_names ... ok
+test env::tests::finds_variable_keys_in_every_environment_private_first ... ok
+test env::tests::rejects_malformed_numeric_environment_tokens ... ok
+test env::tests::self_reference_terminates ... ok
+test env::tests::substitutes_file_env_and_dynamic_variables ... ok
+test env::tests::finds_env_files_in_ancestors_up_to_root ... ok
+test exec::tests::multipart_bodies_join_lines_with_crlf ... ok
+test exec::tests::non_multipart_bodies_join_lines_with_lf ... ok
+test exec::tests::prepares_with_env_and_includes ... ok
+test exec::tests::relative_urls_use_the_host_header ... ok
+test exec::tests::reports_unresolved_variables ... ok
+test env::tests::reads_env_files_in_the_encodings_windows_editors_save ... ok
+test exec::tests::urls_without_a_scheme_default_to_http ... ok
+test client::tests::builds_for_every_mode ... ok
+test parse::tests::ignores_blocks_without_a_request_and_crlf ... ok
+test parse::tests::parses_requests_names_and_blocks ... ok
+test parse::tests::plain_text_is_not_a_request ... ok
+test client::tests::check_reports_errors ... ok
+test exec::tests::executes_against_a_local_server ... ok
+test client::tests::manual_proxy_without_authentication_sends_no_credentials ... ok
+test client::tests::manual_proxy_receives_the_request_with_credentials ... ok
+test exec::tests::sends_exact_environment_numbers_to_a_local_server ... ok
+test client::tests::no_proxy_hosts_and_no_proxy_mode_connect_directly ... ok
+test client::tests::localhost_reaches_ipv4_and_ipv6_servers ... ok
+test history::tests::stores_newest_first_and_caps ... ok
+test exec::tests::cancels ... ok
+
+test result: ok. 35 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running unittests src/lib.rs (target/debug/deps/ide_vfs-bbd137a66238d2d9)
+
+running 58 tests
+test assertions::types_are_thread_safe ... ok
+test bytes::tests::base64_matches_rfc4648_vectors ... ok
+test archive::tests::splits_archive_paths ... ok
+test bytes::tests::read_range_is_bounded_by_the_file ... ok
+test bytes::tests::data_url_for_images_only ... ok
+test bytes::tests::probe_classifies_text_and_binary ... ok
+test archive::tests::read_dir_and_load_text_go_through_archives ... ok
+test archive::tests::lists_and_reads_entries_with_implicit_directories ... ok
+test encoding::tests::decode_variants ... ok
+test compare::tests::cancellation_stops_before_scan_during_scan_and_during_hashing ... ok
+test encoding::tests::properties_ascii_escapes_are_not_escaped_again ... ok
+test encoding::tests::encode_variants ... ok
+test compare::tests::size_mismatches_are_not_hashed_and_directory_status_tracks_children ... ok
+test encoding::tests::properties_line_terminator_escapes_survive_an_edit ... ok
+test encoding::tests::properties_unicode_escapes ... ok
+test encoding::tests::replacing_is_retried_only_while_a_file_is_held ... ok
+test encoding::tests::strict_write_does_not_truncate_when_sibling_creation_is_denied ... ok
+test compare::tests::symlinks_compare_link_text_and_are_not_followed_when_copying ... ok
+test encoding::tests::sync_errors_without_fsync_support_are_tolerable ... ok
+test encoding::tests::strict_write_replaces_complete_contents ... ok
+test compare::tests::merges_copies_with_explicit_overwrite_and_keeps_destination_only_files ... ok
+test compare::tests::subtree_copy_keeps_excludes_anchored_to_each_comparison_root ... ok
+test encoding::tests::strict_write_preserves_symlink_and_target_permissions ... ok
+test rules::tests::exclude_patterns ... ok
+test compare::tests::confirmed_copy_replaces_file_directory_type_conflicts ... ok
+test tests::decodes_text_like_the_editor ... ok
+test compare::tests::reports_add_delete_modify_equal_binary_unicode_empty_and_type_conflicts ... ok
+test tests::natural_ordering ... ok
+test tests::delete_in_tests_is_permanent ... ok
+test tests::toggles_the_writable_bit ... ok
+test rules::tests::cached_stack_reuses_the_repository_lookup ... ok
+test private::tests::private_creation_and_editor_save_preserve_owner_only_access ... ok
+test rules::tests::a_repository_created_inside_the_workspace_becomes_a_boundary ... ok
+test rules::tests::cached_stack_sees_every_edit_of_the_ignore_files_at_once ... ok
+test watch::tests::atomic_save_temp_files_are_not_reported ... ok
+test watch::tests::a_watch_refused_for_the_limit_fails_the_start_with_a_hint ... ok
+test compare::tests::applies_project_anchored_excludes_and_layered_ignores ... ok
+test rules::tests::nested_repository_shares_one_gitignore_stack_across_subdirectories ... ok
+test watch::tests::fsevents_deletion_with_history_flags_is_a_removal ... ok
+test watch::tests::git_internal_paths ... ok
+test encoding::tests::bounded_snapshots_match_editor_decoding_and_enforce_both_limits ... ok
+test watch::tests::ordinary_watcher_errors_keep_the_bare_message ... ok
+test watch::tests::other_watch_errors_skip_only_that_directory ... ok
+test watch::tests::coalesces_and_filters ... ok
+test watch::tests::excluded_and_ignored_directories_report_themselves_but_not_contents ... ok
+test watch::tests::only_rule_file_mutations_invalidate_subtrees ... ok
+test watch::tests::nested_gitignore_and_rule_changes_in_one_batch ... ok
+test watch::tests::access_events_do_not_reload_rules_or_report_changes ... ok
+test watch::tests::watch_dir_selection ... ok
+test watch::tests::unwatched_reason_reports_the_watch_limit ... ok
+test watch::tests::a_new_directory_refused_for_the_limit_still_reports_its_contents ... ok
+test watch::tests::debounce_preserves_transient_removals_and_atomic_replacements ... ok
+test watch::tests::flat_mode_reports_the_roots_own_entries_only ... ok
+test watch::tests::per_directory_mode_follows_worktree_registrations ... ok
+test watch::tests::per_directory_mode_watches_the_rest_of_a_large_tree_after_start ... ok
+test watch::tests::per_directory_mode_skips_excluded_dirs_and_follows_new_ones ... ok
+test watch::tests::polling_skips_excluded_dirs_and_follows_new_ones ... ok
+test watch::tests::a_watch_refused_for_the_limit_after_start_polls_the_whole_tree ... ok
+
+test result: ok. 58 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.37s
+
+     Running tests/vfs.rs (target/debug/deps/vfs-53b2b60c63ccc8c3)
+
+running 13 tests
+test create_file_bytes_does_not_follow_existing_symlink ... ok
+test create_file_bytes_is_exclusive ... ok
+test create_file_bytes_creates_parents ... ok
+test save_preserves_permissions_and_symlinks ... ok
+test walk_honours_ignores ... ok
+test file_operations ... ok
+test load_and_save_round_trips ... ok
+test read_dir_sorting_and_flags ... ok
+test large_files_are_flagged ... ok
+test walk_scopes_gitignore_to_each_repository ... ok
+test worktree_and_nested_repository_local_excludes_are_reflected_in_listings ... ok
+test watcher_reports_changes ... ok
+test rule_changes_notify_the_affected_subtree ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.06s
+
+   Doc-tests ide_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests ide_http
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests ide_vfs
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

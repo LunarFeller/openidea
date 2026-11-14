@@ -1,0 +1,35 @@
+{
+  "reviewer": "independent subagent review_http_env_narrow",
+  "base_commit": "91ac7f417cb2defa556ce9aaf1358852fe62594e",
+  "findings": [],
+  "source_sha256": {
+    "crates/ide-http/Cargo.toml": "ddd1d48ac4198ac8916865a8f4e9610d7044f4b625fea4dfd850b9007abbb3c0",
+    "crates/ide-http/src/env.rs": "c62e6bbb1fa9cddd59671b7c54354f9c036577cabd7c02b1446fa6529d777a68",
+    "crates/ide-http/src/exec.rs": "28a9e44ab9183a65f552e36e155bb91b6826ca3dfd004b225a6c2220ae3b0b05"
+  },
+  "review_checks": [
+    "Diff contains exactly the three requested ide-http files; production behavior changes only parse_env plus required serde_json raw_value feature",
+    "Application-reachable path prepare -> Environments::load -> parse_env -> Resolver substitutes original tokens into URL, headers and body",
+    "RawValue validates JSON syntax before numeric tokens are accepted, including ignored nested configuration objects",
+    "JSON string scalars still deserialize through serde_json::from_str<String>, so escape decoding remains intact",
+    "Booleans remain true/false text; null/arrays/objects remain non-variable values; non-object environment entries are ignored",
+    "BTreeMap deserialization keeps last duplicate object key, including escaped names; lookup order private/public/shared and file variables is unchanged",
+    "Numeric spelling cases include signed zero, integer precision boundaries, large positive/negative integers, long decimals, large/small exponents, uppercase exponent and trailing zeros",
+    "Loopback test loads a real environment file via crate::run and verifies the actual TCP request line, header, body and echoed response",
+    "serde_json raw_value enables raw token support without changing Number to arbitrary_precision or changing other crates numeric semantics",
+    "Adjacent history JSON serialization stores request/response payloads as strings and does not need the environment-number parser change",
+    "git diff --check passed"
+  ],
+  "test": {
+    "command": "RUSTUP_TOOLCHAIN=stable-aarch64-apple-darwin CARGO_BUILD_JOBS=2 CARGO_PROFILE_DEV_DEBUG=0 CARGO_PROFILE_TEST_DEBUG=0 CARGO_INCREMENTAL=0 cargo test --locked -p ide-http --config 'profile.dev.package.\"*\".opt-level=0' --config 'profile.test.package.\"*\".opt-level=0' -- --nocapture",
+    "passed": 35,
+    "failed": 0,
+    "ignored": 0,
+    "exit_code": 0,
+    "log": "independent-review-tests.log"
+  },
+  "limits": [
+    "Native macOS Rust unit and loopback network tests; no desktop GUI, Windows or Linux runtime validation performed by this reviewer",
+    "Parent owns remaining formatting/clippy/CI checks and PR update"
+  ]
+}

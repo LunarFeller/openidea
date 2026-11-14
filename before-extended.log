@@ -1,0 +1,73 @@
+   Compiling ide-http v0.1.44 (/Users/Thomas/code/my_github/openidea-http-env-precision/crates/ide-http)
+    Finished `test` profile [unoptimized] target(s) in 3.26s
+     Running unittests src/lib.rs (target/debug/deps/ide_http-6ebb4b043cd6aa78)
+
+running 35 tests
+test curl::tests::a_browser_copied_command_becomes_a_request ... ok
+test curl::tests::a_prepared_request_becomes_a_quoted_curl_command ... ok
+test curl::tests::other_text_is_not_a_curl_command ... ok
+test curl::tests::options_map_to_headers_query_and_multipart ... ok
+
+thread 'env::tests::exact_environment_parsing_keeps_types_and_precedence' (16946938) panicked at crates/ide-http/src/env.rs:375:9:
+assertion `left == right` failed
+  left: "1.0"
+ right: "1.0000000000000000002"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test env::tests::exact_environment_parsing_keeps_types_and_precedence ... FAILED
+test env::tests::an_environment_file_is_found_up_the_tree_or_created_next_to_the_request ... ok
+test env::tests::finds_variable_keys_in_every_environment_private_first ... ok
+test env::tests::iso_timestamps ... ok
+thread 'env::tests::preserves_exact_numeric_environment_tokens' (16946943) panicked at crates/ide-http/src/env.rs:339:13:
+assertion `left == right` failed
+  left: "-0.0"
+ right: "-0"
+
+test client::tests::builds_for_every_mode ... ok
+test env::tests::merges_private_public_and_shared ... ok
+
+thread 'env::tests::reads_numeric_tokens_with_whitespace_and_escaped_names' (16946945) panicked at crates/ide-http/src/env.rs:364:9:
+assertion `left == right` failed
+  left: "1.0"
+ right: "1.0000000000000000002"
+test client::tests::check_reports_errors ... ok
+test env::tests::preserves_exact_numeric_environment_tokens ... FAILED
+test env::tests::finds_env_files_in_ancestors_up_to_root ... ok
+test env::tests::reads_numeric_tokens_with_whitespace_and_escaped_names ... FAILED
+test env::tests::rejects_malformed_numeric_environment_tokens ... ok
+test env::tests::self_reference_terminates ... ok
+test client::tests::manual_proxy_receives_the_request_with_credentials ... ok
+test env::tests::substitutes_file_env_and_dynamic_variables ... ok
+test client::tests::manual_proxy_without_authentication_sends_no_credentials ... ok
+test exec::tests::non_multipart_bodies_join_lines_with_lf ... ok
+test exec::tests::multipart_bodies_join_lines_with_crlf ... ok
+test exec::tests::relative_urls_use_the_host_header ... ok
+test exec::tests::reports_unresolved_variables ... ok
+test exec::tests::urls_without_a_scheme_default_to_http ... ok
+test parse::tests::ignores_blocks_without_a_request_and_crlf ... ok
+test exec::tests::executes_against_a_local_server ... ok
+test parse::tests::plain_text_is_not_a_request ... ok
+test parse::tests::parses_requests_names_and_blocks ... ok
+test client::tests::no_proxy_hosts_and_no_proxy_mode_connect_directly ... ok
+test client::tests::localhost_reaches_ipv4_and_ipv6_servers ... ok
+test exec::tests::prepares_with_env_and_includes ... ok
+
+thread 'exec::tests::sends_exact_environment_numbers_to_a_local_server' (16946958) panicked at crates/ide-http/src/exec.rs:307:9:
+assertion `left == right` failed
+  left: "POST /echo?id=1.2345678901234568e+29 HTTP/1.1"
+ right: "POST /echo?id=123456789012345678901234567890 HTTP/1.1"
+test exec::tests::sends_exact_environment_numbers_to_a_local_server ... FAILED
+test env::tests::reads_env_files_in_the_encodings_windows_editors_save ... ok
+test history::tests::stores_newest_first_and_caps ... ok
+test exec::tests::cancels ... ok
+
+failures:
+
+failures:
+    env::tests::exact_environment_parsing_keeps_types_and_precedence
+    env::tests::preserves_exact_numeric_environment_tokens
+    env::tests::reads_numeric_tokens_with_whitespace_and_escaped_names
+    exec::tests::sends_exact_environment_numbers_to_a_local_server
+
+test result: FAILED. 31 passed; 4 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+error: test failed, to rerun pass `-p ide-http --lib`
