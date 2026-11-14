@@ -1,0 +1,35 @@
+after.log
+  s_149af2c5f31d1c::t_7955b11f8f92c5 1-52
+before-extended.log
+  s_149af2c5f31d1c::t_d42c654d32f083 1-73
+before.log
+  s_149af2c5f31d1c::t_c72cf76b8ca6c5 1-297
+clippy.log
+  s_149af2c5f31d1c::t_cf3236eb823a38 1-207
+dependency-regression.log
+  s_149af2c5f31d1c::t_cb96f611c1d829 1-262
+independent-review-tests.log
+  s_149af2c5f31d1c::t_e39132051d5957 1-49
+independent-review.json
+  s_149af2c5f31d1c::t_7ef42a9d73e8e2 1-35
+scope.diff
+  s_149af2c5f31d1c::t_ed24abcd001766 1-222
+verification.json
+  s_149af2c5f31d1c::t_b7ebb03f117554 1-89
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.1",
+  "base_commit_sha": "229086bbe8dbce12296acbb3de04550f207efbb4",
+  "prompts": {},
+  "sessions": {
+    "s_149af2c5f31d1c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d2fa-07b2-7f53-b8b9-8a19ad1eec11",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "gang.wu@ximalaya.com <gang.wu@ximalaya.com>"
+    }
+  }
+}
